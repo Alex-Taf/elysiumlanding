@@ -1,0 +1,49 @@
+{
+    "pages": [
+        {
+            "title": "Token",
+            "link": "#"
+        },
+        {
+            "title": "Products",
+            "link": "#"
+        },
+        {
+            "title": "Listing",
+            "link": "#"
+        },
+        {
+            "title": "Team",
+            "link": "#"
+        },
+        {
+            "title": "Whitepaper",
+            "link": "#"
+        },
+        {
+            "title": "Como comprar?",
+            "link": "#"
+        }
+    ],
+    "service": [
+        {
+            "title": "Terms of Use",
+            "link": "#"
+        },
+        {
+            "title": "Privacy Policy",
+            "link": "#"
+        },
+        {
+            "title": "Cookies Policy",
+            "link": "#"
+        },{
+            "title": "Disclaimer",
+            "link": "#"
+        },
+        {
+            "title": "FAQ",
+            "link": "#"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+@layer components {
+    .body-text-1 {
+        font-family: 'Roboto Regular';
+        font-size: 20pt;
+    }
+
+    .body-text-2 {
+        font-family: 'Roboto Regular';
+        font-size: 14pt;
+    }
+
+    .link {
+        font-family: 'Roboto Regular';
+        font-size: 17pt;
+    }
+
+    .overline {
+        font-family: 'Roboto Regular';
+        font-size: 12pt;
+    }
+}

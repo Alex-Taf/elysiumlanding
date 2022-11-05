@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "group": [
+                {
+                    "id": 1,
+                    "title": "Reflections",
+                    "popper": {
+                        "show": false,
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
+                    }
+                },
+                {
+                    "id": 2,
+                    "title": "Charty Fund"
+                },
+                {
+                    "id": 3,
+                    "title": "Liquidity generation",
+                    "popper": {
+                        "show": false,
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
+                    }
+                }
+            ]
+        },
+        {
+            "group": [
+                {
+                    "id": 4,
+                    "title": "Diversification",
+                    "popper": {
+                        "show": false,
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
+                    }
+                },
+                {
+                    "id": 5,
+                    "title": "Burn"
+                },
+                {
+                    "id": 6,
+                    "title": "Development Manco Capac"
+                }
+            ]
+        }
+    ]
+}

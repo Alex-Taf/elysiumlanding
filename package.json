@@ -1,0 +1,40 @@
+{
+  "name": "elysium",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@dafcoe/vue-collapsible-panel": "^0.2.0",
+    "@formkit/auto-animate": "^1.0.0-beta.3",
+    "@kyvg/vue3-notification": "^2.4.1",
+    "maska": "^1.5.0",
+    "vue": "^3.2.37",
+    "vue-country-flag-next": "^2.3.2",
+    "vue-i18n": "9",
+    "vue-router": "4",
+    "vue-select": "^4.0.0-beta.5",
+    "vue3-carousel": "^0.1.48",
+    "vue3-popper": "^1.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "apexcharts": "^3.36.0",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vue-tsc": "^0.40.4",
+    "vue3-apexcharts": "^1.4.1"
+  }
+}
