@@ -13,3 +13,12 @@ export interface ISocialItem {
     className: string,
     link: string
 }
+
+export interface ITokenomicsItem {
+    id: number;
+    title: string;
+    popper?: {
+        show: boolean;
+        text: string;
+    } | undefined;
+}

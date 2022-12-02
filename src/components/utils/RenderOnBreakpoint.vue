@@ -1,5 +1,12 @@
 <script setup lang="ts">
+    import { ref } from 'vue'
     import { useDeviceWidth } from '../../utils'
+    
+    const cw = ref(useDeviceWidth().getWidth())
+
+    window.addEventListener('resize', () => {
+        cw.value = useDeviceWidth().getWidth()
+    })
 
     const props = defineProps<{
         px?: number,
@@ -9,15 +16,15 @@
     
     const condition = (): boolean => {
         if (props.px) {
-            return useDeviceWidth().lessThan(props.px)
+            return useDeviceWidth().lessThan(cw.value, props.px)
         }
 
         if (props.pxMin && props.pxMax) {
-            return useDeviceWidth().between(props.pxMin, props.pxMax)
+            return useDeviceWidth().between(cw.value, props.pxMin, props.pxMax)
         }
 
         return false
-    } 
+    }
 </script>
     
 <template>

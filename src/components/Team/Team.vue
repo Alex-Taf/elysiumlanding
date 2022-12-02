@@ -9,7 +9,7 @@
 </script>
 
 <template>
-    <section class="flex justify-center py-[72px] px-[28px] bg-skin-default">
+    <section class="flex justify-center py-[72px] px-[28px] bg-skin-default" id="team">
         <section class="flex flex-wrap justify-center gap-x-16 gap-y-16 max-w-container">
             <template v-for="person in state.persons" :key="person.id">
                 <TeamMemberCard

@@ -38,7 +38,9 @@
         </section>
         <section class="py-4 px-11 w-full shadow-md">
             <section class="flex justify-between items-center max-w-container m-auto">
-                <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
+                <router-link to="/">
+                    <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
+                </router-link>
                 <RenderOnBreakpoint :px="1280">
                     <menu-button @is-open="getMenuStatement" />
                 </RenderOnBreakpoint>

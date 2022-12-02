@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { defineExpose, reactive, ref, watchEffect } from "vue"
+    import { onMounted, reactive, ref } from "vue"
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
 
@@ -7,26 +7,25 @@
 
     defineExpose({ productsCarousel })
 
+    onMounted(() => {
+        productsCarousel.value.updateSlideWidth()
+    })
+
     const state = reactive({
         currentSlide: 0
     })
 
     function setSlide(num: number): void {
         state.currentSlide = num
-        productsCarousel.value.slideTo(num)
     }
-
-    watchEffect(() => {
-        if (productsCarousel.value.data) state.currentSlide = productsCarousel.value.data.currentSlide.value
-    })
 </script>
 
 <template>
-    <section class="flex justify-center xl:px-[48px] sm:px-[16px] mb-[72px] pb-[72px] pt-[48px] bg-skin-default">
-        <div class="relative xl:h-[578px] sm:h-full xl:max-w-container bg-black rounded-xl">
-            <Carousel ref="productsCarousel" :items-to-show="1">
+    <section class="flex justify-center xl:px-[48px] sm:px-[16px] mb-[72px] pb-[72px] pt-[48px] bg-skin-default" id="products">
+        <div class="relative xl:h-[578px] sm:h-[794px] xl:max-w-container bg-black rounded-xl">
+            <Carousel id="productsCarousel" ref="productsCarousel" :items-to-show="1" v-model="state.currentSlide">
                 <Slide :key="'slide'">
-                    <div class="flex xl:flex-row sm:flex-col justify-between w-full mb-[100px] py-20 xl:pl-[74px] sm:pl-5 sm:pt-10">
+                    <div class="flex xl:flex-row sm:flex-col justify-between w-full xl:h-[516px] pt-[200px] xl:pl-[74px] sm:pl-5 sm:pt-10">
                         <section class="flex flex-col items-start xl:justify-start sm:justify-between sm:gap-y-6">
                             <span class="text-skin-title bg-white text-[17px] rounded-[16px] py-[5px] px-[12px] xl:mb-4 w-fit">Productos</span>
                             <h3 class="text-white sm:text-[34px] xl:mb-4">PeekTime Web</h3>
@@ -35,13 +34,13 @@
                             </span>
                             <a class="text-white text-xl" href="#">Ver Detalles <span class="font-bold">></span></a>
                         </section>
-                        <section class="sm:mt-20 self-end">
+                        <section class="sm:mt-10 self-end">
                             <img src="../../assets/web.png">
                         </section>
                     </div>
                 </Slide>
                 <Slide :key="'slide'">
-                    <div class="flex xl:flex-row sm:flex-col justify-between w-full mb-[100px] sm:h-[700px] xl:pl-[74px] sm:pl-5 sm:pt-10">
+                    <div class="flex xl:flex-row sm:flex-col justify-between w-full xl:h-[516px] sm:h-[700px] pt-[200px] xl:pl-[74px] sm:pl-5 sm:pt-10">
                         <section class="flex flex-col items-start">
                             <span class="text-skin-title bg-white text-[17px] rounded-[16px] py-[5px] px-[12px] w-fit mb-12">Productos</span>
                             <h3 class="text-white sm:text-[34px] xl:mb-4">PeekTime App</h3>
@@ -59,7 +58,7 @@
                     </div>
                 </Slide>
             </Carousel>
-            <div class="flex gap-x-2 xl:pl-[74px] sm:pl-5 sm:pb-5 z-10">
+            <div class="flex gap-x-2 xl:pl-[74px] sm:pl-5 sm:pb-5 sm:mt-8 xl:mt-1 z-10">
                 <button class="w-[11px] h-[11px] rounded-full transition-all"
                         :class="{ 'w-[31px] bg-white': state.currentSlide === 0, 'bg-gray-400': state.currentSlide !== 0 }"
                         @click="setSlide(0)">
@@ -73,8 +72,12 @@
     </section>
 </template>
 
-<style>
-    .carousel, .carousel__viewport, .carousel__inner {
+<style scoped>
+    #productsCarousel :deep(.carousel__viewport) {
+        @apply xl:h-[538px]
+    }
+
+    #productsCarousel :deep(.carousel__track) {
         @apply xl:h-[538px]
     }
 </style>

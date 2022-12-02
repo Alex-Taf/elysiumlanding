@@ -23,12 +23,12 @@
 </script>
 
 <template>
-    <section class="flex flex-col items-center justify-between py-[12px] h-[360px] bg-white">
+    <section class="flex flex-col items-center justify-between py-[12px] h-[360px] bg-white" id="listing">
         <span class="bg-black text-white text-[17px] py-[5px] px-[12px] rounded-[16px]">Listing</span>
         <h3>Falta texto aqui</h3>
         <Carousel ref="listingCarousel" :items-to-show="1.55" :items-to-scroll="1" :snap-align="'start'">
             <Slide :key="'slide'">
-                <img src="../../../assets/cardanoscan.png" class="h-[40px]" />
+                <img src="../../../assets/polygonscan.png" class="h-[40px]" />
             </Slide>
             <Slide :key="'slide'">
                 <img src="../../../assets/coinmarketcap.png" class="h-[40px]" />

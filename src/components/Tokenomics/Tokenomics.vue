@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <section class="xl:flex xl:justify-center xl:py-[72px] xl:px-[48px] sm:py-[48px] sm:px-[16px] bg-skin-default">
+    <section class="xl:flex xl:justify-center xl:py-[72px] xl:px-[48px] sm:py-[48px] sm:px-[16px] bg-skin-default" id="tokenomics">
         <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
             <TokenomicsDesktop />
         </RenderOnBreakpoint>

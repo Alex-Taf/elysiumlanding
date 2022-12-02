@@ -1,12 +1,13 @@
 import { IUseDeviceWidth, ICopyToClipboard } from "./index.interface"
 
+// cw - document.documentElement.clientWidth - device screen app blank width
 export const useDeviceWidth: IUseDeviceWidth = () => ({
     getWidth: () => document.documentElement.clientWidth,
-    isEqual: (px) => px === document.documentElement.clientWidth,
-    lessThan: (px) => document.documentElement.clientWidth <= px,
-    moreThan: (px) => document.documentElement.clientWidth >= px,
-    between: (pxMin, pxMax) => 
-        document.documentElement.clientWidth >= pxMin && document.documentElement.clientWidth <= pxMax   
+    isEqual: (cw, px) => px === cw,
+    lessThan: (cw, px) => cw <= px,
+    moreThan: (cw, px) => cw >= px,
+    between: (cw, pxMin, pxMax) => 
+        cw >= pxMin && cw <= pxMax   
 })
 
 export const copyToClipboard: ICopyToClipboard = (text) => {

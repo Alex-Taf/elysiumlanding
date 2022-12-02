@@ -2,6 +2,9 @@
     import { reactive, ref, watchEffect } from "vue"
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
+
+    import Modal from '../Modal/Modal.vue'
+    import TokenomicsCarousel from '../TokenomicsCarousel/TokenomicsCarousel.vue'
     
     import Icon1 from "../../icons/Icon1.vue"
     import Icon2 from "../../icons/Icon2.vue"
@@ -13,11 +16,12 @@
     import tokenomics from "../../../static/tokenomics.json"
 
     const options1 = {
+        id: 'chart1',
         legend: {
             show: false
         },
-        colors: ['#39568A', '#483D8B', '#800080'],
-        labels: ['Reflections', 'Liquidity generation', 'Charity Fund'],
+        colors: ['#208089', '#800080', '#353C45'],
+        labels: ['Reflections', 'Charity Fund', 'Development Manco Capac'],
         dataLabels: {
             enabled: true,
             style: {
@@ -27,8 +31,52 @@
                 return "0,1%"
             }
         },
+        tooltip: {
+            style: {
+                fontSize: '12px'
+            },
+            custom: function({series, seriesIndex, dataPointIndex, w}) {
+                const styles = `
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: white;
+                    color: black;
+                    font-size: 14px;
+                `
+
+                const getImageBySeriesName = (seriesName: string): string | undefined => {
+                    switch (seriesName) {
+                        case 'Reflections':
+                            return '/reflections.png';
+                            break;
+                        case 'Development Manco Capac':
+                            return '/dev.png'
+                            break;
+                        case 'Charity Fund':
+                            return '/charity.png'
+                            break;
+                        case 'Diversification':
+                            return '/divers.png'
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                return `<div style="${styles}">
+                            <img style="width: 22px; height: 22px;"
+                                src="${getImageBySeriesName(w.globals.seriesNames[seriesIndex])}"
+                            />
+                            ${w.globals.seriesNames[seriesIndex]}
+                        </div>`
+            }
+        },
         plotOptions: {
             pie: {
+                startAngle: -80,
+                endAngle: 280,
                 donut: {
                     size: "55px",
                     labels: {
@@ -60,22 +108,67 @@
     const series1 = [0.1, 0.1, 0.1]
 
     const options2 = {
+        id: 'chart2',
         legend: {
             show: false
         },
-        colors: ['#39568A', '#483D8B', '#353C45', '#208089', '#C71585'],
-        labels: ['Reflections', 'Liquidity generation', 'Development Manco Capac', 'Diversification', 'Burn'],
+        colors: ['#208089', '#483D8B', '#353C45'],
+        labels: ['Reflections', 'Diversification', 'Development Manco Capac'],
         dataLabels: {
             enabled: true,
             style: {
                 fontSize: "27px"
             },
             formatter: function (val: unknown, opts: any) {
-                return `${opts.w.config.series[opts.seriesIndex]}%`
+                return `${opts.seriesIndex !== 2 ? 3 : opts.w.config.series[opts.seriesIndex]}%`
+            }
+        },
+        tooltip: {
+            style: {
+                fontSize: '12px'
+            },
+            custom: function({series, seriesIndex, dataPointIndex, w}) {
+                const styles = `
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: white;
+                    color: black;
+                    font-size: 14px;
+                `
+
+                const getImageBySeriesName = (seriesName: string): string | undefined => {
+                    switch (seriesName) {
+                        case 'Reflections':
+                            return '/reflections.png';
+                            break;
+                        case 'Development Manco Capac':
+                            return '/dev.png'
+                            break;
+                        case 'Charity Fund':
+                            return '/charity.png'
+                            break;
+                        case 'Diversification':
+                            return '/divers.png'
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                return `<div style="${styles}">
+                            <img style="width: 22px; height: 22px;"
+                                src="${getImageBySeriesName(w.globals.seriesNames[seriesIndex])}"
+                            />
+                            ${w.globals.seriesNames[seriesIndex]}
+                        </div>`
             }
         },
         plotOptions: {
             pie: {
+                startAngle: -80,
+                endAngle: 280,
                 donut: {
                     size: "55px",
                     labels: {
@@ -88,7 +181,7 @@
                         total: {
                             show: true,
                             showAlways: true,
-                            label: 'TAX -13%',
+                            label: 'TAX -7%',
                             fontSize: '20px',
                             formatter: function () {
                                 return `For every buy and sale`
@@ -104,7 +197,7 @@
         }
     }
 
-    const series2 = [5, 1, 1, 4, 2]
+    const series2 = [1, 1, 1]
 
     const tokenomicsCarousel = ref(HTMLElement)
 
@@ -117,8 +210,28 @@
         Icon6
     ]
 
-    const state = reactive({tokenomics, currentSlide: 0})
+    const state = reactive({
+        modalOpen: false,
+        slideNum: 0,
+        currentSlide: 0,
+        tokenomics,
+        modalTokenomics: [
+            ...tokenomics.items[0].group,
+            ...tokenomics.items[1].group,
+        ],
+    })
 
+    // Modal
+    const openModal = (slideNum: number): void => {
+        state.modalOpen = true
+        state.slideNum = slideNum
+    }
+
+    const closeModal = () => {
+        state.modalOpen = false
+    }
+
+    // Slider
     function setSlide(num: number): void {
         state.currentSlide = num
         tokenomicsCarousel.value.slideTo(num)
@@ -130,6 +243,9 @@
 </script>
 
 <template>
+    <Modal :is-open="state.modalOpen" @close-modal="closeModal">
+        <TokenomicsCarousel :modal-tokenomics="state.modalTokenomics" :slide-num="state.slideNum" />
+    </Modal>
     <div class="relative">
         <section class="flex flex-col items-center gap-y-10 xl:h-[700px] sm:h-[520px] w-full py-[40px] bg-gray-900 rounded-xl sm:px-[16px]">
             <h4 class="text-white">Tokenomics</h4>
@@ -144,14 +260,18 @@
                             <template v-for="item in group">
                                 <template v-if="item && item.popper">
                                     <Popper :content="item.popper.text" :show="item.popper.show">
-                                        <li class="tokenomics-item" @mouseover="item.popper.show = true" @mouseleave="item.popper.show = false">
+                                        <li class="tokenomics-item"
+                                            @mouseover="item.popper.show = true"
+                                            @mouseleave="item.popper.show = false"
+                                            @click="openModal(item.id - 1)"
+                                        >
                                             <component :is="componentsArray[item.id - 1]" />
                                             <span class="font-bold xl:text-[27px] sm:text-[xl] text-white select-none">{{ item.title }}</span>
                                         </li>
                                     </Popper>
                                 </template>
                                 <template v-else>
-                                    <li class="tokenomics-item">
+                                    <li class="tokenomics-item" @click="openModal(item.id - 1)">
                                         <component :is="componentsArray[item.id - 1]" />
                                         <span class="font-bold xl:text-[27px] sm:text-[xl] text-white select-none">{{ item.title }}</span>
                                     </li>
@@ -192,7 +312,7 @@
                 </button>
             </div>
         </section>
-        <section class="flex xl:flex-row sm:flex-col justify-center gap-x-5 w-full">
+        <section class="flex xl:flex-row sm:flex-col justify-center gap-x-5 w-full" id="token-sale-metrics">
             <div class="flex justify-center items-center xl:w-[570px] sm:min-w-[348px] sm:w-full h-[500px] bg-white shadow-lg rounded-xl sm:mt-[18px]">
                 <apexchart width="448" type="donut" :options="options1" :series="series1"></apexchart>
             </div>

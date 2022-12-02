@@ -12,6 +12,8 @@
     "@dafcoe/vue-collapsible-panel": "^0.2.0",
     "@formkit/auto-animate": "^1.0.0-beta.3",
     "@kyvg/vue3-notification": "^2.4.1",
+    "@vuelidate/core": "^2.0.0",
+    "@vuelidate/validators": "^2.0.0",
     "maska": "^1.5.0",
     "vue": "^3.2.37",
     "vue-country-flag-next": "^2.3.2",
