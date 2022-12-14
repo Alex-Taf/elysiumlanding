@@ -3,7 +3,7 @@
     import { ISocialItem } from "../../../interfaces/index"
 
     const props = defineProps<{
-        items: ISocialItem[],
+        items: Array<ISocialItem>,
         type: string
     }>()
 

@@ -11,7 +11,13 @@
     const emit = defineEmits(['update:modelValue', 'change'])
 
     const updateInputValue = (e: Event) => {
-        if (e && e.target) emit('update:modelValue', e.target?.value)
+        const target = e.target as HTMLInputElement
+
+        if (target.hasOwnProperty('id')) {
+            const targetValue = target.value
+
+            if (targetValue) emit('update:modelValue', targetValue)
+        }
     }
 
     const changeInputValue = (e: Event) => {

@@ -15,6 +15,8 @@
 
     import tokenomics from "../../../static/tokenomics.json"
 
+    import { ITokenomicsItem } from '../../../interfaces/index'
+
     const options1 = {
         id: 'chart1',
         legend: {
@@ -199,7 +201,7 @@
 
     const series2 = [1, 1, 1]
 
-    const tokenomicsCarousel = ref(HTMLElement)
+    const tokenomicsCarousel = ref()
 
     const componentsArray = [
         Icon1,
@@ -214,11 +216,11 @@
         modalOpen: false,
         slideNum: 0,
         currentSlide: 0,
-        tokenomics,
+        tokenomics: tokenomics as any,
         modalTokenomics: [
             ...tokenomics.items[0].group,
             ...tokenomics.items[1].group,
-        ],
+        ] as Array<ITokenomicsItem>,
     })
 
     // Modal
@@ -238,7 +240,7 @@
     }
 
     watchEffect(() => {
-        if (tokenomicsCarousel.value.data) state.currentSlide = tokenomicsCarousel.value.data.currentSlide.value
+        if (tokenomicsCarousel && tokenomicsCarousel.value.data) state.currentSlide = tokenomicsCarousel.value.data.currentSlide.value
     })
 </script>
 

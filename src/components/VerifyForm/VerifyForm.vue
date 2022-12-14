@@ -11,26 +11,15 @@
     import InputSelect from '../elements/InputSelect/InputSelect.vue'
     import Button from '../elements/Button/Button.vue'
 
+    import Phones from "../../static/phones.json"
+
     const state = reactive({
         nameAndSurname: '',
         email: '',
         birthdate: '',
         adress: '',
         symbolicSum: '',
-        phoneOptions: [
-            {
-                countryCode: "rus",
-                countryName: "Russia",
-                countryMask: '+7 (###) ###-##-##',
-                countryMaskPlaceholder: "+7 (___) ___ - __ - __"
-            },
-            {
-                countryCode: "usa",
-                countryName: "USA",
-                countryMask: "+1 (###) ###-####",
-                countryMaskPlaceholder: "+1 (___) ___-____"
-            }
-        ],
+        phoneOptions: Phones.phones,
         phoneSelected: {
             countryCode: "rus",
             countryName: "Russia",

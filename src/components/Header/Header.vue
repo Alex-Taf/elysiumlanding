@@ -18,14 +18,17 @@
 
     const getMenuStatement = (e: Event) => {
         state.menuOpen = Boolean(e)
-
-        console.log(state.overflowY)
         
         if (Boolean(e)) {
-            state.overflowY = 'scroll'
+            document.documentElement.style.overflowY = 'hidden'
         } else {
-            state.overflowY = 'hidden'
+            document.documentElement.style.overflowY = 'scroll'
         }
+    }
+
+    const closeMenu = (e: Event) => {
+        document.documentElement.style.overflowY = 'scroll'
+        state.menuOpen = Boolean(e)
     }
 </script>
 
@@ -42,7 +45,7 @@
                     <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
                 </router-link>
                 <RenderOnBreakpoint :px="1280">
-                    <menu-button @is-open="getMenuStatement" />
+                    <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
                 </RenderOnBreakpoint>
                 <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
                     <DesktopMenu :items="menu.items" />
@@ -50,13 +53,7 @@
             </section>
         </section>
         <RenderOnBreakpoint :px="1280">
-            <MobileMenu :menu-open="state.menuOpen" :items="menu.items" :socials="socials.items" />
+            <MobileMenu :menu-open="state.menuOpen" :items="menu.items" @close="closeMenu" />
         </RenderOnBreakpoint>
     </header>
 </template>
-
-<style>
-    body, #app {
-        overflow-y: v-bind("state.overflowY");
-    }
-</style>

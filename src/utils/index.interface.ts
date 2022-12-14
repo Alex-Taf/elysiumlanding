@@ -1,6 +1,6 @@
 export interface IUseDeviceWidth {
     (): {
-        getWidth?: () => number,
+        getWidth: () => number,
         isEqual: (cw: number, px: number) => boolean,
         lessThan: (cw: number, px: number) => boolean,
         moreThan: (cw: number, px: number) => boolean,

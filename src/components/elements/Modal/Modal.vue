@@ -9,8 +9,14 @@
     const emit = defineEmits(['closeModal']) 
 
     const closeModal = (e: Event) => {
-        if (e.target.id && e.target.id === 'modalBg' || e.target.id === 'close') {
-            emit('closeModal', props.isOpen)
+        const target = e.target as HTMLElement
+
+        if (target.hasOwnProperty('id')) {
+            const id = target.id
+
+            if (id === 'modalBg' || id === 'close') {
+                emit('closeModal', props.isOpen)
+            }
         }
     }
 </script>

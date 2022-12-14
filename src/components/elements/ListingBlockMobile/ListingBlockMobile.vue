@@ -3,7 +3,7 @@
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
 
-    const listingCarousel = ref(HTMLElement)
+    const listingCarousel = ref()
 
     defineExpose({ listingCarousel })
 
@@ -17,8 +17,7 @@
     }
 
     watchEffect(() => {
-        console.log(listingCarousel.value)
-        if (listingCarousel.value.data) state.currentSlide = listingCarousel.value.data.currentSlide.value
+        if (listingCarousel && listingCarousel.value?.data) state.currentSlide = listingCarousel.value.data.currentSlide.value
     })
 </script>
 

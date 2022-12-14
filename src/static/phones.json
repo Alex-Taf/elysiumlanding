@@ -1,0 +1,388 @@
+{
+    "phones": [
+        {
+            "countryCode": "af",
+            "countryName": "Afghanistan",
+            "countryMask": "+93-##-###-####",
+            "countryMaskPlaceholder": "+93 - __ - ___ - ____"
+        },
+        {
+            "countryCode": "ax",
+            "countryName": "Åland Islands",
+            "countryMask": "+358 (###) ###-##-##",
+            "countryMaskPlaceholder": "+358 (___) ___-__-__"
+        },
+        {
+            "countryCode": "al",
+            "countryName": "Albania",
+            "countryMask": "+355 (###) ###-###",
+            "countryMaskPlaceholder": "+355 (___) ___-___"
+        },
+        {
+            "countryCode": "dz",
+            "countryName": "Algeria",
+            "countryMask": "+213-##-###-####",
+            "countryMaskPlaceholder": "+213-__-___-____"
+        },
+        {
+            "countryCode": "as",
+            "countryName": "American Samoa",
+            "countryMask": "+1 (684) ###-####",
+            "countryMaskPlaceholder": "+1 (684) ___-____"
+        },
+        {
+            "countryCode": "ad",
+            "countryName": "Andorra",
+            "countryMask": "+376-###-###",
+            "countryMaskPlaceholder": "+376-___-___"
+        },
+        {
+            "countryCode": "ao",
+            "countryName": "Angola",
+            "countryMask": "+244 (###) ###-###",
+            "countryMaskPlaceholder": "+244 (___) ___-___"
+        },
+        {
+            "countryCode": "ar",
+            "countryName": "Argentina",
+            "countryMask": "+54 (###) ###-####",
+            "countryMaskPlaceholder": "+54 (___) ___-____"
+        },
+        {
+            "countryCode": "am",
+            "countryName": "Armenia",
+            "countryMask": "+374-##-###-###",
+            "countryMaskPlaceholder": "+374-__-___-___"
+        },
+        {
+            "countryCode": "aq",
+            "countryName": "Antarctica",
+            "countryMask": "+672-1##-###",
+            "countryMaskPlaceholder": "+672-1__-___"
+        },
+        {
+            "countryCode": "aw",
+            "countryName": "Aruba",
+            "countryMask": "+297-###-####",
+            "countryMaskPlaceholder": "+297-___-____"
+        },
+        {
+            "countryCode": "au",
+            "countryName": "Australia",
+            "countryMask": "+61-#-####-####",
+            "countryMaskPlaceholder": "+61-_-____-____"
+        },
+        {
+            "countryCode": "at",
+            "countryName": "Austria",
+            "countryMask": "+43 (###) ###-####",
+            "countryMaskPlaceholder": "+43 (___) ___-____"
+        },
+        {
+            "countryCode": "az",
+            "countryName": "Azerbaijan",
+            "countryMask": "+994-##-###-##-##",
+            "countryMaskPlaceholder": "+994-__-___-__-__"
+        },
+        {
+            "countryCode": "bs",
+            "countryName": "Bahamas",
+            "countryMask": "+1 (242) ###-####",
+            "countryMaskPlaceholder": "+1 (242) ___-____"
+        },
+        {
+            "countryCode": "bh",
+            "countryName": "Bahrain",
+            "countryMask": "+973-####-####",
+            "countryMaskPlaceholder": "+973-____-____"
+        },
+        {
+            "countryCode": "bd",
+            "countryName": "Bangladesh",
+            "countryMask": "+880-##-###-###",
+            "countryMaskPlaceholder": "+880-__-___-___"
+        },
+        {
+            "countryCode": "bb",
+            "countryName": "Barbados",
+            "countryMask": "+1 (246) ###-####",
+            "countryMaskPlaceholder": "+1 (246) ___-____"
+        },
+        {
+            "countryCode": "by",
+            "countryName": "Belarus",
+            "countryMask": "+375 (##) ###-##-##",
+            "countryMaskPlaceholder": "+375 (__) ___-__-__"
+        },
+        {
+            "countryCode": "be",
+            "countryName": "Belgium",
+            "countryMask": "+32 (###) ###-###",
+            "countryMaskPlaceholder": "+32 (___) ___-___"
+        },
+        {
+            "countryCode": "bz",
+            "countryName": "Belize",
+            "countryMask": "+501-###-####",
+            "countryMaskPlaceholder": "+501-___-____"
+        },
+        {
+            "countryCode": "bj",
+            "countryName": "Benin",
+            "countryMask": "+229-##-##-####",
+            "countryMaskPlaceholder": "+229-__-__-____"
+        },
+        {
+            "countryCode": "bm",
+            "countryName": "Bermuda",
+            "countryMask": "+1 (441) ###-####",
+            "countryMaskPlaceholder": "+1 (441) ___-____"
+        },
+        {
+            "countryCode": "bt",
+            "countryName": "Bhutan",
+            "countryMask": "+975-17-###-###",
+            "countryMaskPlaceholder": "+975-17-___-___"
+        },
+        {
+            "countryCode": "bt",
+            "countryName": "Bhutan",
+            "countryMask": "+975-#-###-###",
+            "countryMaskPlaceholder": "+975-_-___-___"
+        },
+        {
+            "countryCode": "bo",
+            "countryName": "Bolivia",
+            "countryMask": "+591-#-###-####",
+            "countryMaskPlaceholder": "+591-_-___-____"
+        },
+        {
+            "countryCode": "ba",
+            "countryName": "Bosnia and Herzegovina",
+            "countryMask": "+387-##-#####",
+            "countryMaskPlaceholder": "+387-__-_____"
+        },
+        {
+            "countryCode": "ba",
+            "countryName": "Bosnia and Herzegovina",
+            "countryMask": "+387-##-####",
+            "countryMaskPlaceholder": "+387-__-____"
+        },
+        {
+            "countryCode": "bw",
+            "countryName": "Botswana",
+            "countryMask": "+267-##-###-###",
+            "countryMaskPlaceholder": "+267-__-___-___"
+        },
+        {
+            "countryCode": "br",
+            "countryName": "Brazil",
+            "countryMask": "+55 (##) ####-####",
+            "countryMaskPlaceholder": "+55 (__) ____-____"
+        },
+        {
+            "countryCode": "br",
+            "countryName": "Brazil",
+            "countryMask": "+55 (##) 7###-####",
+            "countryMaskPlaceholder": "+55 (__) 7___-____"
+        },
+        {
+            "countryCode": "br",
+            "countryName": "Brazil",
+            "countryMask": "+55 (##) 9####-####",
+            "countryMaskPlaceholder": "+55 (__) 9____-____"
+        },
+        {
+            "countryCode": "vg",
+            "countryName": "Virgin Islands (British)",
+            "countryMask": "+1 (284) ###-####",
+            "countryMaskPlaceholder": "+1 (284) ___-____"
+        },
+        {
+            "countryCode": "io",
+            "countryName": "British Indian Ocean Territory",
+            "countryMask": "+246-###-####",
+            "countryMaskPlaceholder": "+246-___-____"
+        },
+        {
+            "countryCode": "bn",
+            "countryName": "Brunei Darussalam",
+            "countryMask": "+673-###-####",
+            "countryMaskPlaceholder": "+673-___-____"
+        },
+        {
+            "countryCode": "bf",
+            "countryName": "Burkina Faso",
+            "countryMask": "+226-##-##-####",
+            "countryMaskPlaceholder": "+226-__-__-____"
+        },
+        {
+            "countryCode": "bi",
+            "countryName": "Burundi",
+            "countryMask": "+257-##-##-####",
+            "countryMaskPlaceholder": "+257-__-__-____"
+        },
+        {
+            "countryCode": "kh",
+            "countryName": "Cambodia",
+            "countryMask": "+855-##-###-###",
+            "countryMaskPlaceholder": "+855-##-###-###"
+        },
+        {
+            "countryCode": "cm",
+            "countryName": "Cameroon",
+            "countryMask": "+237-####-####",
+            "countryMaskPlaceholder": "+237-____-____"
+        },
+        {
+            "countryCode": "ca",
+            "countryName": "Canada",
+            "countryMask": "+1 (###) ###-####",
+            "countryMaskPlaceholder": "+1 (___) ___-____"
+        },
+        {
+            "countryCode": "cv",
+            "countryName": "Cabo Verde",
+            "countryMask": "+238 (###) ##-##",
+            "countryMaskPlaceholder": "+238 (___) __-__"
+        },
+        {
+            "countryCode": "ky",
+            "countryName": "Cayman Islands",
+            "countryMask": "+1 (345) ###-####",
+            "countryMaskPlaceholder": "+1 (345) ___-____"
+        },
+        {
+            "countryCode": "cf",
+            "countryName": "Central African Republic",
+            "countryMask": "+236-##-##-####",
+            "countryMaskPlaceholder": "+236-__-__-____"
+        },
+        {
+            "countryCode": "td",
+            "countryName": "Chad",
+            "countryMask": "+235-##-##-##-##",
+            "countryMaskPlaceholder": "+235-__-__-__-__"
+        },
+        {
+            "countryCode": "cl",
+            "countryName": "Chile",
+            "countryMask": "+56-_-____-____",
+            "countryMaskPlaceholder": "+56-_-____-____"
+        },
+        {
+            "countryCode": "cn",
+            "countryName": "China",
+            "countryMask": "+86 (###) ####-####",
+            "countryMaskPlaceholder": "+86 (___) ____-____"
+        },
+        {
+            "countryCode": "cn",
+            "countryName": "China",
+            "countryMask": "+86 (###) ####-###",
+            "countryMaskPlaceholder": "+86 (___) ____-___"
+        },
+        {
+            "countryCode": "cn",
+            "countryName": "China",
+            "countryMask": "+86-##-#####-#####",
+            "countryMaskPlaceholder": "+86-__-____-____"
+        },
+        {
+            "countryCode": "hk",
+            "countryName": "Hong Kong",
+            "countryMask": "+852-####-####",
+            "countryMaskPlaceholder": "+852-____-____"
+        },
+        {
+            "countryCode": "mo",
+            "countryName": "Macao",
+            "countryMask": "+853-####-####",
+            "countryMaskPlaceholder": "+853-____-____"
+        },
+        {
+            "countryCode": "co",
+            "countryName": "Colombia",
+            "countryMask": "+57 (###) ###-####",
+            "countryMaskPlaceholder": "+57 (___) ___-____"
+        },
+        {
+            "countryCode": "km",
+            "countryName": "Comoros",
+            "countryMask": "+269-##-#####",
+            "countryMaskPlaceholder": "+269-__-_____"
+        },
+        {
+            "countryCode": "cg",
+            "countryName": "Congo",
+            "countryMask": "+242-##-###-####",
+            "countryMaskPlaceholder": "+242-__-___-____"
+        },
+        {
+            "countryCode": "cd",
+            "countryName": "Congo, Democratic Republic of the",
+            "countryMask": "+243 (###) ###-###",
+            "countryMaskPlaceholder": "+243 (___) ___-___"
+        },
+        {
+            "countryCode": "ck",
+            "countryName": "Cook Islands",
+            "countryMask": "+682-##-###",
+            "countryMaskPlaceholder": "+682-__-___"
+        },
+        {
+            "countryCode": "cr",
+            "countryName": "Costa Rica",
+            "countryMask": "+506-####-####",
+            "countryMaskPlaceholder": "+506-____-____"
+        },
+        {
+            "countryCode": "ci",
+            "countryName": "Côte d'Ivoire",
+            "countryMask": "+225-##-###-###",
+            "countryMaskPlaceholder": "+225-__-___-___"
+        },
+        {
+            "countryCode": "hr",
+            "countryName": "Croatia",
+            "countryMask": "+385-##-###-###",
+            "countryMaskPlaceholder": "+385-__-___-___"
+        },
+        {
+            "countryCode": "cu",
+            "countryName": "Cuba",
+            "countryMask": "+53-#-###-####",
+            "countryMaskPlaceholder": "+53-_-___-____"
+        },
+        {
+            "countryCode": "cw",
+            "countryName": "Curaçao",
+            "countryMask": "+599-###-####",
+            "countryMaskPlaceholder": "+599-___-____"
+        },
+        {
+            "countryCode": "cy",
+            "countryName": "Cyprus",
+            "countryMask": "+357-##-###-###",
+            "countryMaskPlaceholder": "+357-__-___-___"
+        },
+        {
+            "countryCode": "cz",
+            "countryName": "Czechia",
+            "countryMask": "+420 (###) ###-###",
+            "countryMaskPlaceholder": "+420 (___) ___-___"
+        },
+        {
+            "countryCode": "rus",
+            "countryName": "Russia",
+            "countryMask": "+7 (###) ###-##-##",
+            "countryMaskPlaceholder": "+7 (___) ___ - __ - __"
+        },
+        {
+            "countryCode": "usa",
+            "countryName": "USA",
+            "countryMask": "+1 (###) ###-####",
+            "countryMaskPlaceholder": "+1 (___) ___-____"
+        }
+    ]
+}

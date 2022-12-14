@@ -1,6 +1,5 @@
 export interface IMenuButton {
-    open: boolean,
+    toggle: boolean,
     dClose: string,
-    dOpen: string,
-    active: string
+    dOpen: string
 }

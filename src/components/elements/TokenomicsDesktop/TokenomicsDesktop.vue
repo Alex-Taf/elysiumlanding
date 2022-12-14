@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { reactive } from 'vue'
+    import { reactive, watchEffect } from 'vue'
 
     import Modal from '../Modal/Modal.vue'
     import TokenomicsCarousel from '../TokenomicsCarousel/TokenomicsCarousel.vue'
@@ -12,6 +12,8 @@
     import Icon6 from '../../icons/Icon6.vue'
 
     import tokenomics from '../../../static/tokenomics.json'
+
+    import { ITokenomicsItem, ITokenomicsItemGroup } from '../../../interfaces/index'
 
     const options1 = {
         id: 'chart1',
@@ -202,11 +204,11 @@
     const state = reactive({
         modalOpen: false,
         slideNum: 0,
-        tokenomics,
+        tokenomics: tokenomics as any,
         modalTokenomics: [
             ...tokenomics.items[0].group,
             ...tokenomics.items[1].group,
-        ],
+        ] as Array<ITokenomicsItem>,
     })
 
     // Modal
@@ -218,6 +220,10 @@
     const closeModal = () => {
         state.modalOpen = false
     }
+
+    watchEffect(() => {
+        console.log(state.modalTokenomics[0])
+    })
 </script>
 
 <template>
@@ -243,7 +249,7 @@
                     v-auto-animate
                 >
                     <template v-for="item in group.group">
-                        <template v-if="item && item.popper">
+                        <template v-if="item.popper">
                             <Popper
                                 :content="item.popper.text"
                                 :show="item.popper.show"

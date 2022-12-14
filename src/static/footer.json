@@ -2,27 +2,27 @@
     "pages": [
         {
             "title": "Token",
-            "link": "#"
+            "link": "/#about-token"
         },
         {
             "title": "Products",
-            "link": "#"
+            "link": "/#products"
         },
         {
             "title": "Listing",
-            "link": "#"
+            "link": "/#team"
         },
         {
             "title": "Team",
-            "link": "#"
+            "link": "/#listing"
         },
         {
             "title": "Whitepaper",
-            "link": "#"
+            "link": "/#whitepaper"
         },
         {
             "title": "Como comprar?",
-            "link": "#"
+            "link": "/verify"
         }
     ],
     "service": [

@@ -7,3 +7,4 @@ declare module '*.vue' {
 }
 
 declare module 'vue-select'
+declare module '@dafcoe/vue-collapsible-panel'

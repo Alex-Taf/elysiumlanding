@@ -15,8 +15,9 @@
     const checkDetailsState = (e: Event) => {
         // ANTIPATTERN ????
         const details = document.querySelector('#menu-details')
+        const target = e.target as HTMLElement
 
-        if(!details.contains(e.target)){
+        if(!details.contains(target)){
             details.removeAttribute('open')
         }
     }

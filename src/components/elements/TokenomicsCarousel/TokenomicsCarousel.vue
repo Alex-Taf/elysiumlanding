@@ -24,7 +24,7 @@
 
     const currentSlide = ref(0)
     const slidesCount = ref(0)
-    const modalCarousel = ref(HTMLElement)
+    const modalCarousel = ref()
 
     defineExpose({ modalCarousel })
 

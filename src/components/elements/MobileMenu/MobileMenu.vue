@@ -1,12 +1,25 @@
 <script setup lang="ts">
-    import { ISocialItem, IMenuItem } from "../../../interfaces/index"
+    import { watchEffect } from "vue"
+    import { IMenuItem } from "../../../interfaces/index"
+    import socials from "../../../static/social.json"
     import Socials from "../Socials/Socials.vue"
 
     const props = defineProps<{
         menuOpen: boolean,
-        items: IMenuItem[],
-        socials: ISocialItem[]
+        items: IMenuItem[]
     }>()
+
+    //const socialsArr = socials.items
+
+    watchEffect(() => {
+        console.log(socials.items)
+    })
+
+    const emit = defineEmits(['close'])
+
+    const closeMenu = () => {
+        emit('close', false)
+    } 
 </script>
 
 <template>
@@ -16,7 +29,7 @@
                 <template v-for="menuItem in props.items" :key="menuItem">
                     <li class="text-[#A8ABAF] flex items-center text-xl px-11 py-4 font-bold list-none"
                         :class="{ 'bg-[#D8D8D8]': menuItem.subitems?.length }">
-                        <a v-if="menuItem.link" :href="menuItem.link">{{ menuItem.title }}</a>
+                        <a v-if="menuItem.link" :href="menuItem.link" @click="closeMenu">{{ menuItem.title }}</a>
                         <details v-auto-animate v-else>
                             <summary class="list-none cursor-pointer">
                                 <div class="flex items-center">
@@ -35,14 +48,14 @@
                             </summary>
                             <nav class="flex flex-col">
                                 <template v-for="subitem in menuItem.subitems" :key="subitem">
-                                    <a class="m-4" :href="subitem.link">{{ subitem.title }}</a>
+                                    <a class="m-4" :href="subitem.link" @click="closeMenu">{{ subitem.title }}</a>
                                 </template>
                             </nav>
                         </details>
                     </li>
                 </template>
             </nav>
-            <Socials :items="props.socials" />
+            <Socials :items="socials.items" :type="'header'" class="z-40 mb-12" />
         </section>
 </template>
 

@@ -5,33 +5,33 @@
             "subitems": [
                 {
                     "title": "About token",
-                    "link": "#about-token"
+                    "link": "/#about-token"
                 },
                 {
                     "title": "Tokenomics",
-                    "link": "#tokenomics"
+                    "link": "/#tokenomics"
                 },
                 {
                     "title": "Token sale metrics",
-                    "link": "#token-sale-metrics"
+                    "link": "/#token-sale-metrics"
                 }
             ]
         },
         {
             "title": "Productos",
-            "link": "#products"
+            "link": "/#products"
         },
         {
             "title": "Team",
-            "link": "#team"
+            "link": "/#team"
         },
         {
             "title": "Listing",
-            "link": "#listing"
+            "link": "/#listing"
         },
         {
             "title": "Whitepaper",
-            "link": "#whitepaper"
+            "link": "/#whitepaper"
         },
         {
             "title": "Como comprar?",

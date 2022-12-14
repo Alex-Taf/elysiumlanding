@@ -3,7 +3,7 @@
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
 
-    const productsCarousel = ref(HTMLElement)
+    const productsCarousel = ref()
 
     defineExpose({ productsCarousel })
 

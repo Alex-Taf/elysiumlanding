@@ -14,11 +14,17 @@ export interface ISocialItem {
     link: string
 }
 
+export interface IPopper {
+    show: boolean;
+    text: string;
+}
+
 export interface ITokenomicsItem {
     id: number;
     title: string;
-    popper?: {
-        show: boolean;
-        text: string;
-    } | undefined;
+    popper?: IPopper;
+}
+
+export interface ITokenomicsItemGroup {
+    group: Array<ITokenomicsItem>
 }
