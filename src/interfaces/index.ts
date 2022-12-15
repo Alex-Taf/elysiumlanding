@@ -24,7 +24,3 @@ export interface ITokenomicsItem {
     title: string;
     popper?: IPopper;
 }
-
-export interface ITokenomicsItemGroup {
-    group: Array<ITokenomicsItem>
-}

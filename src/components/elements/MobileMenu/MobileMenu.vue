@@ -1,5 +1,4 @@
 <script setup lang="ts">
-    import { watchEffect } from "vue"
     import { IMenuItem } from "../../../interfaces/index"
     import socials from "../../../static/social.json"
     import Socials from "../Socials/Socials.vue"
@@ -8,12 +7,6 @@
         menuOpen: boolean,
         items: IMenuItem[]
     }>()
-
-    //const socialsArr = socials.items
-
-    watchEffect(() => {
-        console.log(socials.items)
-    })
 
     const emit = defineEmits(['close'])
 

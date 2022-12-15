@@ -16,8 +16,9 @@
     import tokenomics from "../../../static/tokenomics.json"
 
     import { ITokenomicsItem } from '../../../interfaces/index'
+    import { useChart } from '../../../hooks'
 
-    const options1 = {
+    const options1 = useChart({
         id: 'chart1',
         legend: {
             show: false
@@ -29,87 +30,18 @@
             style: {
                 fontSize: "27px"
             },
-            formatter: function () {
-                return "0,1%"
+            formatter: {
+                customString: "0,1%"
             }
         },
-        tooltip: {
-            style: {
-                fontSize: '12px'
-            },
-            custom: function({series, seriesIndex, dataPointIndex, w}) {
-                const styles = `
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    padding: 10px;
-                    background-color: white;
-                    color: black;
-                    font-size: 14px;
-                `
-
-                const getImageBySeriesName = (seriesName: string): string | undefined => {
-                    switch (seriesName) {
-                        case 'Reflections':
-                            return '/reflections.png';
-                            break;
-                        case 'Development Manco Capac':
-                            return '/dev.png'
-                            break;
-                        case 'Charity Fund':
-                            return '/charity.png'
-                            break;
-                        case 'Diversification':
-                            return '/divers.png'
-                            break;
-                        default:
-                            break;
-                    }
-                }
-
-                return `<div style="${styles}">
-                            <img style="width: 22px; height: 22px;"
-                                src="${getImageBySeriesName(w.globals.seriesNames[seriesIndex])}"
-                            />
-                            ${w.globals.seriesNames[seriesIndex]}
-                        </div>`
-            }
-        },
-        plotOptions: {
-            pie: {
-                startAngle: -80,
-                endAngle: 280,
-                donut: {
-                    size: "55px",
-                    labels: {
-                        show: true,
-                        fontSize: "24px",
-                        value: {
-                            show: true,
-                            fontSize: '12px'
-                        },
-                        total: {
-                            show: true,
-                            showAlways: true,
-                            label: 'TAX -0,3%',
-                            fontSize: '20px',
-                            formatter: function () {
-                                return `Transaction from wallet to wallet`
-                            }
-                        },
-                        name: {
-                            show: true,
-                            fontSize: '42px'
-                        }
-                    }
-                }
-            }
+        donut: {
+            label: 'TAX -0,3%',
+            labelsFontSize: '12px',
+            formatterString: `Transaction from wallet to wallet`,
         }
-    }
+    })
 
-    const series1 = [0.1, 0.1, 0.1]
-
-    const options2 = {
+    const options2 = useChart({
         id: 'chart2',
         legend: {
             show: false
@@ -121,84 +53,18 @@
             style: {
                 fontSize: "27px"
             },
-            formatter: function (val: unknown, opts: any) {
-                return `${opts.seriesIndex !== 2 ? 3 : opts.w.config.series[opts.seriesIndex]}%`
+            formatter: {
+                defaultString: true
             }
         },
-        tooltip: {
-            style: {
-                fontSize: '12px'
-            },
-            custom: function({series, seriesIndex, dataPointIndex, w}) {
-                const styles = `
-                    display: flex;
-                    gap: 10px;
-                    align-items: center;
-                    padding: 10px;
-                    background-color: white;
-                    color: black;
-                    font-size: 14px;
-                `
-
-                const getImageBySeriesName = (seriesName: string): string | undefined => {
-                    switch (seriesName) {
-                        case 'Reflections':
-                            return '/reflections.png';
-                            break;
-                        case 'Development Manco Capac':
-                            return '/dev.png'
-                            break;
-                        case 'Charity Fund':
-                            return '/charity.png'
-                            break;
-                        case 'Diversification':
-                            return '/divers.png'
-                            break;
-                        default:
-                            break;
-                    }
-                }
-
-                return `<div style="${styles}">
-                            <img style="width: 22px; height: 22px;"
-                                src="${getImageBySeriesName(w.globals.seriesNames[seriesIndex])}"
-                            />
-                            ${w.globals.seriesNames[seriesIndex]}
-                        </div>`
-            }
-        },
-        plotOptions: {
-            pie: {
-                startAngle: -80,
-                endAngle: 280,
-                donut: {
-                    size: "55px",
-                    labels: {
-                        show: true,
-                        fontSize: "24px",
-                        value: {
-                            show: true,
-                            fontSize: '14px'
-                        },
-                        total: {
-                            show: true,
-                            showAlways: true,
-                            label: 'TAX -7%',
-                            fontSize: '20px',
-                            formatter: function () {
-                                return `For every buy and sale`
-                            }
-                        },
-                        name: {
-                            show: true,
-                            fontSize: '42px'
-                        }
-                    }
-                }
-            }
+        donut: {
+            label: 'TAX -7%',
+            labelsFontSize: '12px',
+            formatterString: `For every buy and sale`,
         }
-    }
+    })
 
+    const series1 = [0.1, 0.1, 0.1]
     const series2 = [1, 1, 1]
 
     const tokenomicsCarousel = ref()
@@ -240,7 +106,7 @@
     }
 
     watchEffect(() => {
-        if (tokenomicsCarousel && tokenomicsCarousel.value.data) state.currentSlide = tokenomicsCarousel.value.data.currentSlide.value
+        if (tokenomicsCarousel && tokenomicsCarousel.value?.data) state.currentSlide = tokenomicsCarousel.value.data.currentSlide.value
     })
 </script>
 

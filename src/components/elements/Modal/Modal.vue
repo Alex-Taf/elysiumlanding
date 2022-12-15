@@ -1,5 +1,4 @@
 <script setup lang="ts">
-    import { defineEmits } from "vue"
     import ChevronLeft from "../../icons/ChevronLeft.vue"
 
     const props = defineProps<{
@@ -11,12 +10,10 @@
     const closeModal = (e: Event) => {
         const target = e.target as HTMLElement
 
-        if (target.hasOwnProperty('id')) {
-            const id = target.id
+        const id = target.id
 
-            if (id === 'modalBg' || id === 'close') {
-                emit('closeModal', props.isOpen)
-            }
+        if (id === 'modalBg' || id === 'close') {
+            emit('closeModal', props.isOpen)
         }
     }
 </script>
