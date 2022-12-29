@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "code": "en",
+            "flag": "gb",
+            "title": "English"
+        },
+        {
+            "code": "es",
+            "flag": "es",
+            "title": "Español"
+        },
+        {
+            "code": "ru",
+            "flag": "ru",
+            "title": "Русский"
+        }
+    ]
+}

@@ -15,4 +15,8 @@
     #app {
         overflow: hidden;
     }
+
+    .vs__dropdown-toggle {
+        @apply border-none
+    }
 </style>

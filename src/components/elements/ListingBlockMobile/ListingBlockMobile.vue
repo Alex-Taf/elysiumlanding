@@ -3,6 +3,11 @@
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
 
+    import { messages } from './ListingBlockMobile.i18n'
+    import { useI18n } from 'vue-i18n'
+
+    const { t } = useI18n({ messages, useScope: 'global' })
+
     const listingCarousel = ref()
 
     defineExpose({ listingCarousel })
@@ -23,8 +28,8 @@
 
 <template>
     <section class="flex flex-col items-center justify-between py-[12px] h-[360px] bg-white" id="listing">
-        <span class="bg-black text-white text-[17px] py-[5px] px-[12px] rounded-[16px]">Listing</span>
-        <h3>Falta texto aqui</h3>
+        <span class="bg-black text-white text-[17px] py-[5px] px-[12px] rounded-[16px]">{{ t('listing') }}</span>
+        <h3>{{ t('text') }}</h3>
         <Carousel ref="listingCarousel" :items-to-show="1.55" :items-to-scroll="1" :snap-align="'start'">
             <Slide :key="'slide'">
                 <img src="../../../assets/polygonscan.png" class="h-[40px]" />

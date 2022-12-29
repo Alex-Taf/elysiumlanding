@@ -5,7 +5,8 @@
         placeholder: string,
         name?: string,
         state?: string,
-        mask?: any
+        mask?: any,
+        required?: boolean
     }>()
 
     const emit = defineEmits(['update:modelValue', 'change'])
@@ -27,6 +28,7 @@
 
 <template>
     <span>{{ props.label }}</span>
+    <span v-if="props.required" class="text-red-500 ml-2">*</span>
     <div class="flex items-center xl:w-[470px] sm:w-[296px] h-[48px] border rounded-md mt-[12px]"
         :class="{ 'border-red-500': props.state === 'error' }"
     >

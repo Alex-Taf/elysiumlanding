@@ -52,9 +52,3 @@
         />
     </div>
 </template>
-
-<style>
-    .vs__dropdown-toggle {
-        border: 0;
-    }
-</style>

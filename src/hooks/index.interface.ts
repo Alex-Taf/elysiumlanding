@@ -4,6 +4,7 @@ export interface IUseChartOptions {
         show: boolean
     },
     colors: Array<string>,
+    images?: Array<string>,
     labels: Array<string>,
     dataLabels: {
         enabled: boolean,

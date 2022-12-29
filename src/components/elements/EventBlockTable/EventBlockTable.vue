@@ -1,10 +1,11 @@
 <script setup lang="ts">
-    import { reactive } from "vue"
+    import { computed } from "vue"
+    import { useI18n } from "vue-i18n"
     import events from "../../../static/events.json"
 
-    const state = reactive({
-        items: events.items
-    })
+    const { locale } = useI18n({ useScope: 'global' })
+
+    const items = computed(() => events[String(locale.value)].items)
 </script>
 
 <template>
@@ -26,7 +27,7 @@
         </div>
         <!-- Table Body -->
         <div class="flex flex-col bg-white w-full min-w-[279px]">
-            <div v-for="row in state.items.rows" class="flex">
+            <div v-for="row in items.rows" class="flex">
                 <div class="flex justify-center items-center border-2 border-t-0 p-4 w-[279px]">
                     <span class="text-[17px] w-[239px]" v-html="row.title"></span>
                 </div>
@@ -34,28 +35,6 @@
                     <span class="text-[17px] text-center" v-html="col.title"></span>
                 </div>
             </div>
-            <!-- <div class="flex">
-                <div class="flex justify-center items-center border-2 border-t-0 p-4 w-[279px]">
-                    <span class="text-[17px] w-[239px]">
-                        Минимальный объем обмена stablecoin (USDT, USDC, BUSD) на токены ELYS
-                    </span>
-                </div>
-                <div class="flex justify-center items-center w-full border-2 border-l-0 border-t-0 p-4">
-                    <span class="text-[17px]">
-                        10 000 USDT
-                    </span>
-                </div>
-                <div class="flex justify-center items-center w-full border-2 border-l-0 border-t-0 p-4">
-                    <span class="text-[17px]">
-                        3 000 USDT
-                    </span>
-                </div>
-                <div class="flex justify-center items-center w-full border-2 border-l-0 border-t-0 p-4">
-                    <span class="text-[17px]">
-                        1 000 USDT
-                    </span>
-                </div>
-            </div> -->
         </div>
     </div>
 </template>

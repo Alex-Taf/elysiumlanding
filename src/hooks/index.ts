@@ -37,29 +37,9 @@ export const useChart: IUseChart = (options) => {
                     color: black;
                     font-size: 14px;
                 `
-
-                const getImageBySeriesName = (seriesName: string): string | undefined => {
-                    switch (seriesName) {
-                        case 'Reflections':
-                            return '/reflections.png';
-                            break;
-                        case 'Development Manco Capac':
-                            return '/dev.png'
-                            break;
-                        case 'Charity Fund':
-                            return '/charity.png'
-                            break;
-                        case 'Diversification':
-                            return '/divers.png'
-                            break;
-                        default:
-                            break;
-                    }
-                }
-
                 return `<div style="${styles}">
                             <img style="width: 22px; height: 22px;"
-                                src="${getImageBySeriesName(w.globals.seriesNames[seriesIndex])}"
+                                src="${options.images[seriesIndex]}"
                             />
                             ${w.globals.seriesNames[seriesIndex]}
                         </div>`

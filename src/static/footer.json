@@ -1,49 +1,149 @@
 {
-    "pages": [
-        {
-            "title": "Token",
-            "link": "/#about-token"
-        },
-        {
-            "title": "Products",
-            "link": "/#products"
-        },
-        {
-            "title": "Listing",
-            "link": "/#team"
-        },
-        {
-            "title": "Team",
-            "link": "/#listing"
-        },
-        {
-            "title": "Whitepaper",
-            "link": "/#whitepaper"
-        },
-        {
-            "title": "Como comprar?",
-            "link": "/verify"
-        }
-    ],
-    "service": [
-        {
-            "title": "Terms of Use",
-            "link": "#"
-        },
-        {
-            "title": "Privacy Policy",
-            "link": "#"
-        },
-        {
-            "title": "Cookies Policy",
-            "link": "#"
-        },{
-            "title": "Disclaimer",
-            "link": "#"
-        },
-        {
-            "title": "FAQ",
-            "link": "#"
-        }
-    ]
+    "en": {
+        "pages": [
+            {
+                "title": "Token",
+                "link": "/#about-token"
+            },
+            {
+                "title": "Products",
+                "link": "/#products"
+            },
+            {
+                "title": "Listing",
+                "link": "/#team"
+            },
+            {
+                "title": "Team",
+                "link": "/#listing"
+            },
+            {
+                "title": "Whitepaper",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "How to buy?",
+                "link": "/verify"
+            }
+        ],
+        "service": [
+            {
+                "title": "Terms of Use",
+                "link": "#"
+            },
+            {
+                "title": "Privacy Policy",
+                "link": "#"
+            },
+            {
+                "title": "Cookies Policy",
+                "link": "#"
+            },{
+                "title": "Disclaimer",
+                "link": "#"
+            },
+            {
+                "title": "FAQ",
+                "link": "#"
+            }
+        ]
+    },
+    "es": {
+        "pages": [
+            {
+                "title": "Token",
+                "link": "/#about-token"
+            },
+            {
+                "title": "Productos",
+                "link": "/#products"
+            },
+            {
+                "title": "Listado",
+                "link": "/#listing"
+            },
+            {
+                "title": "Equipo",
+                "link": "/#team"
+            },
+            {
+                "title": "Informe técnico",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "Como comprar?",
+                "link": "/verify"
+            }
+        ],
+        "service": [
+            {
+                "title": "Condiciones de Uso",
+                "link": "#"
+            },
+            {
+                "title": "Política de Privacidad",
+                "link": "#"
+            },
+            {
+                "title": "Política de Cookies",
+                "link": "#"
+            },{
+                "title": "Descargo",
+                "link": "#"
+            },
+            {
+                "title": "FAQ",
+                "link": "#"
+            }
+        ]
+    },
+    "ru": {
+        "pages": [
+            {
+                "title": "Токен",
+                "link": "/#about-token"
+            },
+            {
+                "title": "Продукты",
+                "link": "/#products"
+            },
+            {
+                "title": "Спонсоры",
+                "link": "/#listing"
+            },
+            {
+                "title": "Команда",
+                "link": "/#team"
+            },
+            {
+                "title": "Документация",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "Как купить?",
+                "link": "/verify"
+            }
+        ],
+        "service": [
+            {
+                "title": "Правила пользования",
+                "link": "#"
+            },
+            {
+                "title": "Политика приватности",
+                "link": "#"
+            },
+            {
+                "title": "Политика Cookies",
+                "link": "#"
+            },{
+                "title": "Дисклеймер",
+                "link": "#"
+            },
+            {
+                "title": "FAQ",
+                "link": "#"
+            }
+        ]
+    }
 }

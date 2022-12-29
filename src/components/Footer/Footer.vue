@@ -1,27 +1,35 @@
 <script setup lang="ts">
+    import { computed } from "vue"
     import Socials from "../elements/Socials/Socials.vue"
 
     import footer from "../../static/footer.json"
     import socials from "../../static/social.json"
+
+    import { messages } from './Footer.i18n'
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n({ messages, useScope: 'global' })
+
+    const footerSet = computed(() => footer[String(locale.value)])
 </script>
 
 <template>
     <footer class="flex justify-center bg-white py-[48px] xl:px-[162px] sm:px-[20px]">
         <section class="flex xl:flex-row w-full xl:max-w-container sm:flex-col-reverse justify-between sm:gap-y-12">
             <ul class="flex flex-col gap-y-6">
-                <h5>Pages</h5>
-                <li v-for="page in footer.pages">
+                <h5>{{ t('pages') }}</h5>
+                <li v-for="page in footerSet.pages">
                     <a class="text-skin-text" :href="page.link">{{ page.title }}</a>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
-                <h5>Service</h5>
-                <li v-for="page in footer.service">
+                <h5>{{ t('services') }}</h5>
+                <li v-for="page in footerSet.service">
                     <a class="text-skin-text" :href="page.link">{{ page.title }}</a>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
-                <h5>Contact</h5>
+                <h5>{{ t('contact') }}</h5>
                 <li class="flex items-center">
                     <img src="../../assets/mail.svg" />
                     <span class="text-skin-text ml-3">ContactoElisiym@gmail.com</span>
@@ -32,7 +40,7 @@
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
-                <h5>Social media</h5>
+                <h5>{{ t('socialMedia') }}</h5>
                 <Socials :items="socials.items" :type="'footer'" class="pl-0" />
             </ul>
         </section>

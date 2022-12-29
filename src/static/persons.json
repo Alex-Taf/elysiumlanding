@@ -1,126 +1,380 @@
 {
-    "items": [
-        {
-            "id": 1,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person1.jpg",
-            "name": "Esther Howard",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "twitter",
-                    "link": "#"
-                },
-                {
-                    "social": "instagram",
-                    "link": "#"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person2.jpg",
-            "name": "Esther Howard",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "twitter",
-                    "link": "#"
-                },
-                {
-                    "social": "instagram",
-                    "link": "#"
-                },
-                {
-                    "social": "tiktok",
-                    "link": "#"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person3.jpg",
-            "name": "Brooklyn Simons",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "reddit",
-                    "link": "#"
-                },
-                {
-                    "social": "telegram",
-                    "link": "#"
-                },
-                {
-                    "social": "youtube",
-                    "link": "#"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person4.jpg",
-            "name": "Esther Howard",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "instagram",
-                    "link": "#"
-                },
-                {
-                    "social": "tiktok",
-                    "link": "#"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person5.jpg",
-            "name": "Esther Howard",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "instagram",
-                    "link": "#"
-                },
-                {
-                    "social": "tiktok",
-                    "link": "#"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
-            "photo": "/Person6.jpg",
-            "name": "Esther Howard",
-            "post": "Ingeniero de sistemas",
-            "socialLinks": [
-                {
-                    "social": "twitter",
-                    "link": "#"
-                },
-                {
-                    "social": "reddit",
-                    "link": "#"
-                },
-                {
-                    "social": "telegram",
-                    "link": "#"
-                },
-                {
-                    "social": "youtube",
-                    "link": "#"
-                },
-                {
-                    "social": "tiktok",
-                    "link": "#"
-                }
-            ]
-        }
-    ]
+    "en": {
+        "items": [
+            {
+                "id": 1,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person1.jpg",
+                "name": "Esther Howard",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person2.jpg",
+                "name": "Esther Howard",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person3.jpg",
+                "name": "Brooklyn Simons",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person4.jpg",
+                "name": "Esther Howard",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person5.jpg",
+                "name": "Esther Howard",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "desc": "ELYS tokens are utility tokens. These are digital tokens issued and used to access certain functions of PeekTime platform products and services, as well as other digital non-financial blockchain products and applications that will be developed as part of the development of the Manco Capac ecosystem.",
+                "photo": "/Person6.jpg",
+                "name": "Esther Howard",
+                "post": "System Engineer",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "es": {
+        "items": [
+            {
+                "id": 1,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person1.jpg",
+                "name": "Esther Howard",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person2.jpg",
+                "name": "Esther Howard",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person3.jpg",
+                "name": "Brooklyn Simons",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person4.jpg",
+                "name": "Esther Howard",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person5.jpg",
+                "name": "Esther Howard",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "desc": "Los tokens ELYS son tokens de utilidad. Estos son tokens digitales emitidos y utilizados para acceder a ciertas funciones de los productos y servicios de la plataforma PeekTime, así como a otros productos y aplicaciones digitales no financieras de blockchain que se desarrollarán como parte del desarrollo Del ecosistema MANCO Capac.",
+                "photo": "/Person6.jpg",
+                "name": "Esther Howard",
+                "post": "Ingeniero de sistemas",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    },
+    "ru": {
+        "items": [
+            {
+                "id": 1,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person1.jpg",
+                "name": "Esther Howard",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person2.jpg",
+                "name": "Esther Howard",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person3.jpg",
+                "name": "Brooklyn Simons",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person4.jpg",
+                "name": "Esther Howard",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person5.jpg",
+                "name": "Esther Howard",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "instagram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "desc": "Токены ELYS являются полезными (utility) токенами. Это цифровые жетоны, выпущенные и используемые для доступа к определенным функциям продуктов и сервисов платформы PeekTime, а также к другим цифровым нефинансовым блокчейн-продуктам и приложениям, которые будут разрабатываться в рамках развития экосистемы Manco Capac.",
+                "photo": "/Person6.jpg",
+                "name": "Esther Howard",
+                "post": "Системный инженер",
+                "socialLinks": [
+                    {
+                        "social": "twitter",
+                        "link": "#"
+                    },
+                    {
+                        "social": "reddit",
+                        "link": "#"
+                    },
+                    {
+                        "social": "telegram",
+                        "link": "#"
+                    },
+                    {
+                        "social": "youtube",
+                        "link": "#"
+                    },
+                    {
+                        "social": "tiktok",
+                        "link": "#"
+                    }
+                ]
+            }
+        ]
+    }
 }

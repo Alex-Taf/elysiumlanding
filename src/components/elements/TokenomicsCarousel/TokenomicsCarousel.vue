@@ -2,6 +2,8 @@
     import { ref, watch, watchEffect } from 'vue'
     import { ITokenomicsItem } from "../../../interfaces"
     import { Carousel, Slide } from 'vue3-carousel'
+    import { messages } from './TokenomicsCarousel.i18n'
+    import { useI18n } from 'vue-i18n'
 
     import Button from '../Button/Button.vue'
 
@@ -14,6 +16,8 @@
     import Icon4 from '../../icons/Icon4.vue'
     import Icon5 from '../../icons/Icon5.vue'
     import Icon6 from '../../icons/Icon6.vue'
+
+    const { t } = useI18n({ messages, useScope: 'global' })
 
     const props = defineProps<{
         modalTokenomics: Array<ITokenomicsItem>,
@@ -109,11 +113,11 @@
                 class="flex items-center gap-x-2 cursor-pointer select-none text-xl"
                 @click="prev()"
             >
-                <ChevronLeft fill="black" /> Anterior
+                <ChevronLeft fill="black" /> {{ t('previous') }}
             </span>
             <Button class="w-[161px]" @click="next()">
                 <span class="flex items-center gap-x-2 text-white text-xl"
-                    >Siguiente <ChevronRight fill="white"
+                    >{{ t('next') }} <ChevronRight fill="white"
                 /></span>
             </Button>
         </div>

@@ -1,116 +1,350 @@
 {
-    "items": {
-        "rows": [
-            {
-                "id": 1,
-                "title": "Количество токенов <span style='font-weight: bold'>ELYS</span>, выставленных на Pre-Sale",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "1 200 000 000 <span style='font-weight: bold'>ELYS</span>" 
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "title": "Минимальный объем обмена stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span> на токены <span style='font-weight: bold'>ELYS</span>",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "10 000 <span style='font-weight: bold'>USDT</span>" 
-                    },
-                    {
-                        "id": 2,
-                        "title": "3 000 <span style='font-weight: bold'>USDT</span>" 
-                    },
-                    {
-                        "id": 3,
-                        "title": "1 000 <span style='font-weight: bold'>USDT</span>" 
-                    }
-                ]
-            },
-            {
-                "id": 3,
-                "title": "Эквивалентость 1 токена <span style='font-weight: bold'>ELYS</span> к stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span>",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "0,0005 <span style='font-weight: bold'>USDT</span>" 
-                    },
-                    {
-                        "id": 2,
-                        "title": "0,0007 <span style='font-weight: bold'>USDT</span>" 
-                    },
-                    {
-                        "id": 3,
-                        "title": "0,001 <span style='font-weight: bold'>USDT</span>" 
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "title": "Объем предложения токенов <span style='font-weight: bold'>ELYS</span>",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "680 000 000 <span style='font-weight: bold'>ELYS</span>" 
-                    },
-                    {
-                        "id": 2,
-                        "title": "300 000 000 <span style='font-weight: bold'>ELYS</span>" 
-                    },
-                    {
-                        "id": 3,
-                        "title": "220 000 000 <span style='font-weight: bold'>ELYS</span>" 
-                    }
-                ]
-            },
-            {
-                "id": 5,
-                "title": "Длительность",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "До полного выкупа" 
-                    },
-                    {
-                        "id": 2,
-                        "title": "1 месяц. Остаточнные токены перейдут в <span style='font-weight: bold'>Round N°3</span>" 
-                    },
-                    {
-                        "id": 3,
-                        "title": "До полного выкупа" 
-                    }
-                ]
-            },
-            {
-                "id": 6,
-                "title": "Участники",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "Институциональные фонды" 
-                    },
-                    {
-                        "id": 2,
-                        "title": "Квалифицированные крипто-пользователи" 
-                    },
-                    {
-                        "id": 3,
-                        "title": "Квалифицированные крипто-пользователи, участники, прошедшие аттестацию по образовательной программе блокчейн-технологий <span style='font-weight: bold'>Manco Capac</span>" 
-                    }
-                ]
-            },
-            {
-                "id": 7,
-                "title": "Vesting schedule and comments",
-                "cols": [
-                    {
-                        "id": 1,
-                        "title": "Участники Pre-Sale получат 25% токенов ELYS сразу при проведении операции обмена. Остаточный объем своих токенов участники будут получать – 15% каждый квартал, от даты приобретения токенов." 
-                    }
-                ]
-            }
-        ]
+    "en": {
+        "items": {
+            "rows": [
+                {
+                    "id": 1,
+                    "title": "Number of tokens <span style='font-weight: bold'>ELYS</span>, put up for Pre-Sale",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "1 200 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Minimum exchange volume stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span> for tokens <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "10 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "3 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "1 000 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "The equivalent of 1 token <span style='font-weight: bold'>ELYS</span> to stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "0,0005 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "0,0007 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "0,001 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Token Supply Volume <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "680 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "300 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "220 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Duration",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Until full redemption" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "1 month. The remaining tokens will be transferred to <span style='font-weight: bold'>Round N°3</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "Until full redemption" 
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Participants",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Institutional funds" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "Qualified Crypto Users" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "Qualified crypto users, participants who have passed certification in the educational program of blockchain technologies <span style='font-weight: bold'>Manco Capac</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Vesting schedule and comments",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Pre-Sale participants will receive 25% of ELYS tokens immediately during the exchange operation. Participants will receive the remaining volume of their tokens – 15% every quarter, from the date of purchase of tokens." 
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "es": {
+        "items": {
+            "rows": [
+                {
+                    "id": 1,
+                    "title": "Número de tokens <span style='font-weight: bold'>ELYS</span>, exhibidos en Pre-Sale",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "1 200 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Volumen mínimo de intercambio stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span> de tokens <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "10 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "3 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "1 000 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Equivalencia de 1 token <span style='font-weight: bold'>ELYS</span> a la stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "0,0005 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "0,0007 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "0,001 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Cantidad de oferta de tokens <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "680 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "300 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "220 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Duración",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Hasta el rescate completo" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "1 mes. Los tokens residuales pasarán a <span style='font-weight: bold'>Round N°3</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "Hasta el rescate completo" 
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Agentes",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Fondos institucionales" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "Usuarios criptográficos calificados" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "Usuarios criptográficos calificados, participantes que han pasado la certificación en el programa educativo de tecnología blockchain <span style='font-weight: bold'>Manco Capac</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "Calendario y comentarios de adquisición de derechos",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Los participantes de Pre-venta recibirán el 25% de los tokens ELYS inmediatamente durante la operación de intercambio. El volumen residual de sus tokens los participantes recibirán – 15% cada trimestre, a partir de la fecha de compra de los tokens." 
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "ru": {
+        "items": {
+            "rows": [
+                {
+                    "id": 1,
+                    "title": "Количество токенов <span style='font-weight: bold'>ELYS</span>, выставленных на Pre-Sale",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "1 200 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Минимальный объем обмена stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span> на токены <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "10 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "3 000 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "1 000 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Эквивалентость 1 токена <span style='font-weight: bold'>ELYS</span> к stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "0,0005 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "0,0007 <span style='font-weight: bold'>USDT</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "0,001 <span style='font-weight: bold'>USDT</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": "Объем предложения токенов <span style='font-weight: bold'>ELYS</span>",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "680 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "300 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "220 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "title": "Длительность",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "До полного выкупа" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "1 месяц. Остаточнные токены перейдут в <span style='font-weight: bold'>Round N°3</span>" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "До полного выкупа" 
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "title": "Участники",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Институциональные фонды" 
+                        },
+                        {
+                            "id": 2,
+                            "title": "Квалифицированные крипто-пользователи" 
+                        },
+                        {
+                            "id": 3,
+                            "title": "Квалифицированные крипто-пользователи, участники, прошедшие аттестацию по образовательной программе блокчейн-технологий <span style='font-weight: bold'>Manco Capac</span>" 
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "title": "График наделения полномочиями и комментарии",
+                    "cols": [
+                        {
+                            "id": 1,
+                            "title": "Участники Pre-Sale получат 25% токенов ELYS сразу при проведении операции обмена. Остаточный объем своих токенов участники будут получать – 15% каждый квартал, от даты приобретения токенов." 
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

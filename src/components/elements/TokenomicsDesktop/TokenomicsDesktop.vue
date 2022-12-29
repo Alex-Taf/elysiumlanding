@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { reactive } from 'vue'
+    import { reactive, computed, watchEffect } from 'vue'
 
     import Modal from '../Modal/Modal.vue'
     import TokenomicsCarousel from '../TokenomicsCarousel/TokenomicsCarousel.vue'
@@ -16,13 +16,21 @@
     import { ITokenomicsItem } from '../../../interfaces/index'
     import { useChart } from '../../../hooks'
 
-    const options1 = useChart({
+    import { messages } from './TokenomicsDesktop.i18n'
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n({ messages, useScope: 'global' })
+
+    const tokenomicsSet = computed(() => tokenomics[String(locale.value)])
+
+    const options1 = computed(() => useChart({
         id: 'chart1',
         legend: {
             show: false
         },
         colors: ['#208089', '#800080', '#353C45'],
-        labels: ['Reflections', 'Charity Fund', 'Development Manco Capac'],
+        images: ['/reflections.png', '/charity.png', '/dev.png'],
+        labels: [t('chart1.labels.reflections'), t('chart1.labels.charity'), t('chart1.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
@@ -33,19 +41,20 @@
             }
         },
         donut: {
-            label: 'TAX -0,3%',
+            label: `${t('chart1.donut.tax')} -0,3%`,
             labelsFontSize: '14px',
-            formatterString: `Transaction from wallet to wallet`,
+            formatterString: t('chart1.donut.label'),
         }
-    })
+    }))
 
-    const options2 = useChart({
+    const options2 = computed(() => useChart({
         id: 'chart2',
         legend: {
             show: false
         },
         colors: ['#208089', '#483D8B', '#353C45'],
-        labels: ['Reflections', 'Diversification', 'Development Manco Capac'],
+        images: ['/reflections.png', '/divers.png', '/dev.png'],
+        labels: [t('chart2.labels.reflections'), t('chart2.labels.divers'), t('chart2.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
@@ -56,11 +65,11 @@
             }
         },
         donut: {
-            label: 'TAX -7%',
+            label: `${t('chart2.donut.tax')} -7%`,
             labelsFontSize: '14px',
-            formatterString: `For every buy and sale`,
+            formatterString: t('chart2.donut.label'),
         }
-    })
+    }))
 
     const series1 = [0.1, 0.1, 0.1]
     const series2 = [1, 1, 1]
@@ -70,10 +79,10 @@
     const state = reactive({
         modalOpen: false,
         slideNum: 0,
-        tokenomics: tokenomics as any,
+        tokenomics: tokenomicsSet.value as any,
         modalTokenomics: [
-            ...tokenomics.items[0].group,
-            ...tokenomics.items[1].group,
+            ...tokenomicsSet.value.items[0].group,
+            ...tokenomicsSet.value.items[1].group,
         ] as Array<ITokenomicsItem>,
     })
 
@@ -96,17 +105,13 @@
         <section
             class="flex flex-col items-center gap-y-10 max-w-[1440px] w-full min-w-[1280px] h-[700px] pt-[80px] bg-gray-900 rounded-xl"
         >
-            <h2 class="text-white">Tokenomics</h2>
-            <span class="text-center text-white text-xl mb-5">
-                <p>Эмиссия токена ELYSIUM составляет 9 000 000 000 ELYS.</p>
-                <p>
-                    Токен ELYSIUM имеет 2 механизма генерирующие пассивный доход
-                    для всех держателей токена:
-                </p>
+            <h2 class="text-white">{{ t('tokenomics') }}</h2>
+            <span class="whitespace-pre-wrap text-center text-white text-xl mb-5">
+                <p class="break-words">{{ t('emission') }}</p>
             </span>
             <div class="flex gap-x-32">
                 <ul
-                    v-for="group in state.tokenomics.items"
+                    v-for="group in tokenomicsSet.items"
                     class="flex flex-col gap-y-6"
                     v-auto-animate
                 >

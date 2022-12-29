@@ -12,7 +12,7 @@ import 'vue-select/dist/vue-select.css'
 import App from './App.vue'
 
 const i18n = createI18n({
-    locale: 'en',
+    locale: localStorage.getItem('locale') || 'en',
     fallbackLocale: 'en',
     allowComposition: true,
     globalInjection: true,

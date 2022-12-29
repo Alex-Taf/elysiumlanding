@@ -1,41 +1,121 @@
 {
-    "items": [
-        {
-            "title": "Token",
-            "subitems": [
-                {
-                    "title": "About token",
-                    "link": "/#about-token"
-                },
-                {
-                    "title": "Tokenomics",
-                    "link": "/#tokenomics"
-                },
-                {
-                    "title": "Token sale metrics",
-                    "link": "/#token-sale-metrics"
-                }
-            ]
-        },
-        {
-            "title": "Productos",
-            "link": "/#products"
-        },
-        {
-            "title": "Team",
-            "link": "/#team"
-        },
-        {
-            "title": "Listing",
-            "link": "/#listing"
-        },
-        {
-            "title": "Whitepaper",
-            "link": "/#whitepaper"
-        },
-        {
-            "title": "Como comprar?",
-            "link": "/verify"
-        }
-    ]
+    "items": {
+        "en": [
+            {
+                "title": "Token",
+                "subitems": [
+                    {
+                        "title": "About token",
+                        "link": "/#about-token"
+                    },
+                    {
+                        "title": "Tokenomics",
+                        "link": "/#tokenomics"
+                    },
+                    {
+                        "title": "Token sale metrics",
+                        "link": "/#token-sale-metrics"
+                    }
+                ]
+            },
+            {
+                "title": "Products",
+                "link": "/#products"
+            },
+            {
+                "title": "Team",
+                "link": "/#team"
+            },
+            {
+                "title": "Listing",
+                "link": "/#listing"
+            },
+            {
+                "title": "Whitepaper",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "How to buy?",
+                "link": "/verify"
+            }
+        ],
+        "es": [
+            {
+                "title": "Token",
+                "subitems": [
+                    {
+                        "title": "Acerca de token",
+                        "link": "/#about-token"
+                    },
+                    {
+                        "title": "Tokenomics",
+                        "link": "/#tokenomics"
+                    },
+                    {
+                        "title": "Métricas de venta de tokens",
+                        "link": "/#token-sale-metrics"
+                    }
+                ]
+            },
+            {
+                "title": "Productos",
+                "link": "/#products"
+            },
+            {
+                "title": "Equipo",
+                "link": "/#team"
+            },
+            {
+                "title": "Listado",
+                "link": "/#listing"
+            },
+            {
+                "title": "Informe técnico",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "Como comprar?",
+                "link": "/verify"
+            }
+        ],
+        "ru": [
+            {
+                "title": "Токен",
+                "subitems": [
+                    {
+                        "title": "О токене",
+                        "link": "/#about-token"
+                    },
+                    {
+                        "title": "Токеномика",
+                        "link": "/#tokenomics"
+                    },
+                    {
+                        "title": "Показатели продажи токенов",
+                        "link": "/#token-sale-metrics"
+                    }
+                ]
+            },
+            {
+                "title": "Продукты",
+                "link": "/#products"
+            },
+            {
+                "title": "О команде",
+                "link": "/#team"
+            },
+            {
+                "title": "Спонсоры",
+                "link": "/#listing"
+            },
+            {
+                "title": "Документация",
+                "link": "/#whitepaper"
+            },
+            {
+                "title": "Как купить?",
+                "link": "/verify"
+            }
+        ]
+    }
 }

@@ -1,18 +1,19 @@
 <script setup lang="ts">
-    import { reactive } from "vue"
+    import { computed } from "vue"
     import { VueCollapsiblePanelGroup, VueCollapsiblePanel } from '@dafcoe/vue-collapsible-panel'
     import '@dafcoe/vue-collapsible-panel/dist/vue-collapsible-panel.css'
 
     import events from "../../../static/events.json"
 
-    const state = reactive({
-        items: events.items
-    })
+    import { useI18n } from "vue-i18n"
+    const { locale } = useI18n({ useScope: 'global' })
+
+    const items = computed(() => events[String(locale.value)].items)
 </script>
 
 <template>
     <section class="flex flex-col gap-y-4">
-        <div v-for="row in state.items.rows" class="min-w-[328px] border-4 rounded-[10px] py-5">
+        <div v-for="row in items.rows" class="min-w-[328px] border-4 rounded-[10px] py-5">
             <vue-collapsible-panel-group :expanded="true" base-color="#DBDBDB">
                 <vue-collapsible-panel>
                     <template #title>

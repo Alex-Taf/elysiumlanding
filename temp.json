@@ -1,0 +1,1152 @@
+[
+  {
+    "countryCode": "ac",
+    "countryMask": "+247-####",
+    "countryMaskPlaceholder": "+247-____"
+  },
+  {
+    "countryCode": "ad",
+    "countryMask": "+376-###-###",
+    "countryMaskPlaceholder": "+376-___-___"
+  },
+  {
+    "countryCode": "ae",
+    "countryMask": "+971-#-###-####",
+    "countryMaskPlaceholder": "+971-_-___-____"
+  },
+  {
+    "countryCode": "af",
+    "countryMask": "+93-##-###-####",
+    "countryMaskPlaceholder": "+93-__-___-____"
+  },
+  {
+    "countryCode": "ag",
+    "countryMask": "+1 (268) ###-####",
+    "countryMaskPlaceholder": "+1 (268) ___-____"
+  },
+  {
+    "countryCode": "ai",
+    "countryMask": "+1 (264) ###-####",
+    "countryMaskPlaceholder": "+1 (264) ___-____"
+  },
+  {
+    "countryCode": "al",
+    "countryMask": "+355 (###) ###-###",
+    "countryMaskPlaceholder": "+355 (___) ___-___"
+  },
+  {
+    "countryCode": "am",
+    "countryMask": "+374-##-###-###",
+    "countryMaskPlaceholder": "+374-__-___-___"
+  },
+  {
+    "countryCode": "an",
+    "countryMask": "+599-9###-####",
+    "countryMaskPlaceholder": "+599-9___-____"
+  },
+  {
+    "countryCode": "ao",
+    "countryMask": "+244 (###) ###-###",
+    "countryMaskPlaceholder": "+244 (___) ___-___"
+  },
+  {
+    "countryCode": "aq",
+    "countryMask": "+672-1##-###",
+    "countryMaskPlaceholder": "+672-1__-___"
+  },
+  {
+    "countryCode": "ar",
+    "countryMask": "+54 (###) ###-####",
+    "countryMaskPlaceholder": "+54 (___) ___-____"
+  },
+  {
+    "countryCode": "as",
+    "countryMask": "+1 (684) ###-####",
+    "countryMaskPlaceholder": "+1 (684) ___-____"
+  },
+  {
+    "countryCode": "at",
+    "countryMask": "+43 (###) ###-####",
+    "countryMaskPlaceholder": "+43 (___) ___-____"
+  },
+  {
+    "countryCode": "au",
+    "countryMask": "+61-#-####-####",
+    "countryMaskPlaceholder": "+61-_-____-____"
+  },
+  {
+    "countryCode": "aw",
+    "countryMask": "+297-###-####",
+    "countryMaskPlaceholder": "+297-___-____"
+  },
+  {
+    "countryCode": "az",
+    "countryMask": "+994-##-###-##-##",
+    "countryMaskPlaceholder": "+994-__-___-__-__"
+  },
+  {
+    "countryCode": "ba",
+    "countryMask": "+387-##-####",
+    "countryMaskPlaceholder": "+387-__-____"
+  },
+  {
+    "countryCode": "bb",
+    "countryMask": "+1 (246) ###-####",
+    "countryMaskPlaceholder": "+1 (246) ___-____"
+  },
+  {
+    "countryCode": "bd",
+    "countryMask": "+880-##-###-###",
+    "countryMaskPlaceholder": "+880-__-___-___"
+  },
+  {
+    "countryCode": "be",
+    "countryMask": "+32 (###) ###-###",
+    "countryMaskPlaceholder": "+32 (___) ___-___"
+  },
+  {
+    "countryCode": "bf",
+    "countryMask": "+226-##-##-####",
+    "countryMaskPlaceholder": "+226-__-__-____"
+  },
+  {
+    "countryCode": "bg",
+    "countryMask": "+359 (###) ###-###",
+    "countryMaskPlaceholder": "+359 (___) ___-___"
+  },
+  {
+    "countryCode": "bh",
+    "countryMask": "+973-####-####",
+    "countryMaskPlaceholder": "+973-____-____"
+  },
+  {
+    "countryCode": "bi",
+    "countryMask": "+257-##-##-####",
+    "countryMaskPlaceholder": "+257-__-__-____"
+  },
+  {
+    "countryCode": "bj",
+    "countryMask": "+229-##-##-####",
+    "countryMaskPlaceholder": "+229-__-__-____"
+  },
+  {
+    "countryCode": "bm",
+    "countryMask": "+1 (441) ###-####",
+    "countryMaskPlaceholder": "+1 (441) ___-____"
+  },
+  {
+    "countryCode": "bn",
+    "countryMask": "+673-###-####",
+    "countryMaskPlaceholder": "+673-___-____"
+  },
+  {
+    "countryCode": "bo",
+    "countryMask": "+591-#-###-####",
+    "countryMaskPlaceholder": "+591-_-___-____"
+  },
+  {
+    "countryCode": "br",
+    "countryMask": "+55 (##) 9####-####",
+    "countryMaskPlaceholder": "+55 (__) 9____-____"
+  },
+  {
+    "countryCode": "bs",
+    "countryMask": "+1 (242) ###-####",
+    "countryMaskPlaceholder": "+1 (242) ___-____"
+  },
+  {
+    "countryCode": "bt",
+    "countryMask": "+975-#-###-###",
+    "countryMaskPlaceholder": "+975-_-___-___"
+  },
+  {
+    "countryCode": "bw",
+    "countryMask": "+267-##-###-###",
+    "countryMaskPlaceholder": "+267-__-___-___"
+  },
+  {
+    "countryCode": "by",
+    "countryMask": "+375 (##) ###-##-##",
+    "countryMaskPlaceholder": "+375 (__) ___-__-__"
+  },
+  {
+    "countryCode": "bz",
+    "countryMask": "+501-###-####",
+    "countryMaskPlaceholder": "+501-___-____"
+  },
+  {
+    "countryCode": "ca",
+    "countryMask": "+1 (###) ###-####",
+    "countryMaskPlaceholder": "+1 (___) ___-____"
+  },
+  {
+    "countryCode": "cd",
+    "countryMask": "+243 (###) ###-###",
+    "countryMaskPlaceholder": "+243 (___) ___-___"
+  },
+  {
+    "countryCode": "cf",
+    "countryMask": "+236-##-##-####",
+    "countryMaskPlaceholder": "+236-__-__-____"
+  },
+  {
+    "countryCode": "cg",
+    "countryMask": "+242-##-###-####",
+    "countryMaskPlaceholder": "+242-__-___-____"
+  },
+  {
+    "countryCode": "ch",
+    "countryMask": "+41-##-###-####",
+    "countryMaskPlaceholder": "+41-__-___-____"
+  },
+  {
+    "countryCode": "ci",
+    "countryMask": "+225-##-###-###",
+    "countryMaskPlaceholder": "+225-__-___-___"
+  },
+  {
+    "countryCode": "ck",
+    "countryMask": "+682-##-###",
+    "countryMaskPlaceholder": "+682-__-___"
+  },
+  {
+    "countryCode": "cl",
+    "countryMask": "+56-#-####-####",
+    "countryMaskPlaceholder": "+56-_-____-____"
+  },
+  {
+    "countryCode": "cm",
+    "countryMask": "+237-####-####",
+    "countryMaskPlaceholder": "+237-____-____"
+  },
+  {
+    "countryCode": "cn",
+    "countryMask": "+86-##-#####-#####",
+    "countryMaskPlaceholder": "+86-__-_____-_____"
+  },
+  {
+    "countryCode": "co",
+    "countryMask": "+57 (###) ###-####",
+    "countryMaskPlaceholder": "+57 (___) ___-____"
+  },
+  {
+    "countryCode": "cr",
+    "countryMask": "+506-####-####",
+    "countryMaskPlaceholder": "+506-____-____"
+  },
+  {
+    "countryCode": "cu",
+    "countryMask": "+53-#-###-####",
+    "countryMaskPlaceholder": "+53-_-___-____"
+  },
+  {
+    "countryCode": "cv",
+    "countryMask": "+238 (###) ##-##",
+    "countryMaskPlaceholder": "+238 (___) __-__"
+  },
+  {
+    "countryCode": "cw",
+    "countryMask": "+599-###-####",
+    "countryMaskPlaceholder": "+599-___-____"
+  },
+  {
+    "countryCode": "cy",
+    "countryMask": "+357-##-###-###",
+    "countryMaskPlaceholder": "+357-__-___-___"
+  },
+  {
+    "countryCode": "cz",
+    "countryMask": "+420 (###) ###-###",
+    "countryMaskPlaceholder": "+420 (___) ___-___"
+  },
+  {
+    "countryCode": "de",
+    "countryMask": "+49-###-###",
+    "countryMaskPlaceholder": "+49-___-___"
+  },
+  {
+    "countryCode": "dj",
+    "countryMask": "+253-##-##-##-##",
+    "countryMaskPlaceholder": "+253-__-__-__-__"
+  },
+  {
+    "countryCode": "dk",
+    "countryMask": "+45-##-##-##-##",
+    "countryMaskPlaceholder": "+45-__-__-__-__"
+  },
+  {
+    "countryCode": "dm",
+    "countryMask": "+1 (767) ###-####",
+    "countryMaskPlaceholder": "+1 (767) ___-____"
+  },
+  {
+    "countryCode": "do",
+    "countryMask": "+1 (849) ###-####",
+    "countryMaskPlaceholder": "+1 (849) ___-____"
+  },
+  {
+    "countryCode": "dz",
+    "countryMask": "+213-##-###-####",
+    "countryMaskPlaceholder": "+213-__-___-____"
+  },
+  {
+    "countryCode": "ec",
+    "countryMask": "+593-#-###-####",
+    "countryMaskPlaceholder": "+593-_-___-____"
+  },
+  {
+    "countryCode": "ee",
+    "countryMask": "+372-###-####",
+    "countryMaskPlaceholder": "+372-___-____"
+  },
+  {
+    "countryCode": "eg",
+    "countryMask": "+20 (###) ###-####",
+    "countryMaskPlaceholder": "+20 (___) ___-____"
+  },
+  {
+    "countryCode": "er",
+    "countryMask": "+291-#-###-###",
+    "countryMaskPlaceholder": "+291-_-___-___"
+  },
+  {
+    "countryCode": "es",
+    "countryMask": "+34 (###) ###-###",
+    "countryMaskPlaceholder": "+34 (___) ___-___"
+  },
+  {
+    "countryCode": "et",
+    "countryMask": "+251-##-###-####",
+    "countryMaskPlaceholder": "+251-__-___-____"
+  },
+  {
+    "countryCode": "fi",
+    "countryMask": "+358 (###) ###-##-##",
+    "countryMaskPlaceholder": "+358 (___) ___-__-__"
+  },
+  {
+    "countryCode": "fj",
+    "countryMask": "+679-##-#####",
+    "countryMaskPlaceholder": "+679-__-_____"
+  },
+  {
+    "countryCode": "fk",
+    "countryMask": "+500-#####",
+    "countryMaskPlaceholder": "+500-_____"
+  },
+  {
+    "countryCode": "fm",
+    "countryMask": "+691-###-####",
+    "countryMaskPlaceholder": "+691-___-____"
+  },
+  {
+    "countryCode": "fo",
+    "countryMask": "+298-###-###",
+    "countryMaskPlaceholder": "+298-___-___"
+  },
+  {
+    "countryCode": "fr",
+    "countryMask": "+590 (###) ###-###",
+    "countryMaskPlaceholder": "+590 (___) ___-___"
+  },
+  {
+    "countryCode": "ga",
+    "countryMask": "+241-#-##-##-##",
+    "countryMaskPlaceholder": "+241-_-__-__-__"
+  },
+  {
+    "countryCode": "gd",
+    "countryMask": "+1 (473) ###-####",
+    "countryMaskPlaceholder": "+1 (473) ___-____"
+  },
+  {
+    "countryCode": "ge",
+    "countryMask": "+995 (###) ###-###",
+    "countryMaskPlaceholder": "+995 (___) ___-___"
+  },
+  {
+    "countryCode": "gf",
+    "countryMask": "+594-#####-####",
+    "countryMaskPlaceholder": "+594-_____-____"
+  },
+  {
+    "countryCode": "gh",
+    "countryMask": "+233 (###) ###-###",
+    "countryMaskPlaceholder": "+233 (___) ___-___"
+  },
+  {
+    "countryCode": "gi",
+    "countryMask": "+350-###-#####",
+    "countryMaskPlaceholder": "+350-___-_____"
+  },
+  {
+    "countryCode": "gl",
+    "countryMask": "+299-##-##-##",
+    "countryMaskPlaceholder": "+299-__-__-__"
+  },
+  {
+    "countryCode": "gm",
+    "countryMask": "+220 (###) ##-##",
+    "countryMaskPlaceholder": "+220 (___) __-__"
+  },
+  {
+    "countryCode": "gn",
+    "countryMask": "+224-##-###-###",
+    "countryMaskPlaceholder": "+224-__-___-___"
+  },
+  {
+    "countryCode": "gq",
+    "countryMask": "+240-##-###-####",
+    "countryMaskPlaceholder": "+240-__-___-____"
+  },
+  {
+    "countryCode": "gr",
+    "countryMask": "+30 (###) ###-####",
+    "countryMaskPlaceholder": "+30 (___) ___-____"
+  },
+  {
+    "countryCode": "gt",
+    "countryMask": "+502-#-###-####",
+    "countryMaskPlaceholder": "+502-_-___-____"
+  },
+  {
+    "countryCode": "gu",
+    "countryMask": "+1 (671) ###-####",
+    "countryMaskPlaceholder": "+1 (671) ___-____"
+  },
+  {
+    "countryCode": "gw",
+    "countryMask": "+245-#-######",
+    "countryMaskPlaceholder": "+245-_-______"
+  },
+  {
+    "countryCode": "gy",
+    "countryMask": "+592-###-####",
+    "countryMaskPlaceholder": "+592-___-____"
+  },
+  {
+    "countryCode": "hk",
+    "countryMask": "+852-####-####",
+    "countryMaskPlaceholder": "+852-____-____"
+  },
+  {
+    "countryCode": "hn",
+    "countryMask": "+504-####-####",
+    "countryMaskPlaceholder": "+504-____-____"
+  },
+  {
+    "countryCode": "hr",
+    "countryMask": "+385-##-###-###",
+    "countryMaskPlaceholder": "+385-__-___-___"
+  },
+  {
+    "countryCode": "ht",
+    "countryMask": "+509-##-##-####",
+    "countryMaskPlaceholder": "+509-__-__-____"
+  },
+  {
+    "countryCode": "hu",
+    "countryMask": "+36 (###) ###-###",
+    "countryMaskPlaceholder": "+36 (___) ___-___"
+  },
+  {
+    "countryCode": "id",
+    "countryMask": "+62 (8##) ###-##-###",
+    "countryMaskPlaceholder": "+62 (8__) ___-__-___"
+  },
+  {
+    "countryCode": "ie",
+    "countryMask": "+353 (###) ###-###",
+    "countryMaskPlaceholder": "+353 (___) ___-___"
+  },
+  {
+    "countryCode": "il",
+    "countryMask": "+972-#-###-####",
+    "countryMaskPlaceholder": "+972-_-___-____"
+  },
+  {
+    "countryCode": "in",
+    "countryMask": "+91 (####) ###-###",
+    "countryMaskPlaceholder": "+91 (____) ___-___"
+  },
+  {
+    "countryCode": "io",
+    "countryMask": "+246-###-####",
+    "countryMaskPlaceholder": "+246-___-____"
+  },
+  {
+    "countryCode": "iq",
+    "countryMask": "+964 (###) ###-####",
+    "countryMaskPlaceholder": "+964 (___) ___-____"
+  },
+  {
+    "countryCode": "ir",
+    "countryMask": "+98 (###) ###-####",
+    "countryMaskPlaceholder": "+98 (___) ___-____"
+  },
+  {
+    "countryCode": "is",
+    "countryMask": "+354-###-####",
+    "countryMaskPlaceholder": "+354-___-____"
+  },
+  {
+    "countryCode": "it",
+    "countryMask": "+39 (###) ####-###",
+    "countryMaskPlaceholder": "+39 (___) ____-___"
+  },
+  {
+    "countryCode": "jm",
+    "countryMask": "+1 (876) ###-####",
+    "countryMaskPlaceholder": "+1 (876) ___-____"
+  },
+  {
+    "countryCode": "jo",
+    "countryMask": "+962-#-####-####",
+    "countryMaskPlaceholder": "+962-_-____-____"
+  },
+  {
+    "countryCode": "jp",
+    "countryMask": "+81 (###) ###-###",
+    "countryMaskPlaceholder": "+81 (___) ___-___"
+  },
+  {
+    "countryCode": "ke",
+    "countryMask": "+254-###-######",
+    "countryMaskPlaceholder": "+254-___-______"
+  },
+  {
+    "countryCode": "kg",
+    "countryMask": "+996 (###) ###-###",
+    "countryMaskPlaceholder": "+996 (___) ___-___"
+  },
+  {
+    "countryCode": "kh",
+    "countryMask": "+855-##-###-###",
+    "countryMaskPlaceholder": "+855-__-___-___"
+  },
+  {
+    "countryCode": "ki",
+    "countryMask": "+686-##-###",
+    "countryMaskPlaceholder": "+686-__-___"
+  },
+  {
+    "countryCode": "km",
+    "countryMask": "+269-##-#####",
+    "countryMaskPlaceholder": "+269-__-_____"
+  },
+  {
+    "countryCode": "kn",
+    "countryMask": "+1 (869) ###-####",
+    "countryMaskPlaceholder": "+1 (869) ___-____"
+  },
+  {
+    "countryCode": "kp",
+    "countryMask": "+850-####-#############",
+    "countryMaskPlaceholder": "+850-____-_____________"
+  },
+  {
+    "countryCode": "kr",
+    "countryMask": "+82-##-###-####",
+    "countryMaskPlaceholder": "+82-__-___-____"
+  },
+  {
+    "countryCode": "kw",
+    "countryMask": "+965-####-####",
+    "countryMaskPlaceholder": "+965-____-____"
+  },
+  {
+    "countryCode": "ky",
+    "countryMask": "+1 (345) ###-####",
+    "countryMaskPlaceholder": "+1 (345) ___-____"
+  },
+  {
+    "countryCode": "kz",
+    "countryMask": "+7 (7##) ###-##-##",
+    "countryMaskPlaceholder": "+7 (7__) ___-__-__"
+  },
+  {
+    "countryCode": "la",
+    "countryMask": "+856-##-###-###",
+    "countryMaskPlaceholder": "+856-__-___-___"
+  },
+  {
+    "countryCode": "lb",
+    "countryMask": "+961-#-###-###",
+    "countryMaskPlaceholder": "+961-_-___-___"
+  },
+  {
+    "countryCode": "lc",
+    "countryMask": "+1 (758) ###-####",
+    "countryMaskPlaceholder": "+1 (758) ___-____"
+  },
+  {
+    "countryCode": "li",
+    "countryMask": "+423 (###) ###-####",
+    "countryMaskPlaceholder": "+423 (___) ___-____"
+  },
+  {
+    "countryCode": "lk",
+    "countryMask": "+94-##-###-####",
+    "countryMaskPlaceholder": "+94-__-___-____"
+  },
+  {
+    "countryCode": "lr",
+    "countryMask": "+231-##-###-###",
+    "countryMaskPlaceholder": "+231-__-___-___"
+  },
+  {
+    "countryCode": "ls",
+    "countryMask": "+266-#-###-####",
+    "countryMaskPlaceholder": "+266-_-___-____"
+  },
+  {
+    "countryCode": "lt",
+    "countryMask": "+370 (###) ##-###",
+    "countryMaskPlaceholder": "+370 (___) __-___"
+  },
+  {
+    "countryCode": "lu",
+    "countryMask": "+352 (###) ###-###",
+    "countryMaskPlaceholder": "+352 (___) ___-___"
+  },
+  {
+    "countryCode": "lv",
+    "countryMask": "+371-##-###-###",
+    "countryMaskPlaceholder": "+371-__-___-___"
+  },
+  {
+    "countryCode": "ly",
+    "countryMask": "+218-21-###-####",
+    "countryMaskPlaceholder": "+218-21-___-____"
+  },
+  {
+    "countryCode": "ma",
+    "countryMask": "+212-##-####-###",
+    "countryMaskPlaceholder": "+212-__-____-___"
+  },
+  {
+    "countryCode": "mc",
+    "countryMask": "+377-##-###-###",
+    "countryMaskPlaceholder": "+377-__-___-___"
+  },
+  {
+    "countryCode": "md",
+    "countryMask": "+373-####-####",
+    "countryMaskPlaceholder": "+373-____-____"
+  },
+  {
+    "countryCode": "me",
+    "countryMask": "+382-##-###-###",
+    "countryMaskPlaceholder": "+382-__-___-___"
+  },
+  {
+    "countryCode": "mg",
+    "countryMask": "+261-##-##-#####",
+    "countryMaskPlaceholder": "+261-__-__-_____"
+  },
+  {
+    "countryCode": "mh",
+    "countryMask": "+692-###-####",
+    "countryMaskPlaceholder": "+692-___-____"
+  },
+  {
+    "countryCode": "mk",
+    "countryMask": "+389-##-###-###",
+    "countryMaskPlaceholder": "+389-__-___-___"
+  },
+  {
+    "countryCode": "ml",
+    "countryMask": "+223-##-##-####",
+    "countryMaskPlaceholder": "+223-__-__-____"
+  },
+  {
+    "countryCode": "mm",
+    "countryMask": "+95-###-###",
+    "countryMaskPlaceholder": "+95-___-___"
+  },
+  {
+    "countryCode": "mn",
+    "countryMask": "+976-##-##-####",
+    "countryMaskPlaceholder": "+976-__-__-____"
+  },
+  {
+    "countryCode": "mo",
+    "countryMask": "+853-####-####",
+    "countryMaskPlaceholder": "+853-____-____"
+  },
+  {
+    "countryCode": "mp",
+    "countryMask": "+1 (670) ###-####",
+    "countryMaskPlaceholder": "+1 (670) ___-____"
+  },
+  {
+    "countryCode": "mq",
+    "countryMask": "+596 (###) ##-##-##",
+    "countryMaskPlaceholder": "+596 (___) __-__-__"
+  },
+  {
+    "countryCode": "mr",
+    "countryMask": "+222-##-##-####",
+    "countryMaskPlaceholder": "+222-__-__-____"
+  },
+  {
+    "countryCode": "ms",
+    "countryMask": "+1 (664) ###-####",
+    "countryMaskPlaceholder": "+1 (664) ___-____"
+  },
+  {
+    "countryCode": "mt",
+    "countryMask": "+356-####-####",
+    "countryMaskPlaceholder": "+356-____-____"
+  },
+  {
+    "countryCode": "mu",
+    "countryMask": "+230-###-####",
+    "countryMaskPlaceholder": "+230-___-____"
+  },
+  {
+    "countryCode": "mv",
+    "countryMask": "+960-###-####",
+    "countryMaskPlaceholder": "+960-___-____"
+  },
+  {
+    "countryCode": "mw",
+    "countryMask": "+265-#-####-####",
+    "countryMaskPlaceholder": "+265-_-____-____"
+  },
+  {
+    "countryCode": "mx",
+    "countryMask": "+52-##-##-####",
+    "countryMaskPlaceholder": "+52-__-__-____"
+  },
+  {
+    "countryCode": "my",
+    "countryMask": "+60-#-###-###",
+    "countryMaskPlaceholder": "+60-_-___-___"
+  },
+  {
+    "countryCode": "mz",
+    "countryMask": "+258-##-###-###",
+    "countryMaskPlaceholder": "+258-__-___-___"
+  },
+  {
+    "countryCode": "na",
+    "countryMask": "+264-##-###-####",
+    "countryMaskPlaceholder": "+264-__-___-____"
+  },
+  {
+    "countryCode": "nc",
+    "countryMask": "+687-##-####",
+    "countryMaskPlaceholder": "+687-__-____"
+  },
+  {
+    "countryCode": "ne",
+    "countryMask": "+227-##-##-####",
+    "countryMaskPlaceholder": "+227-__-__-____"
+  },
+  {
+    "countryCode": "nf",
+    "countryMask": "+672-3##-###",
+    "countryMaskPlaceholder": "+672-3__-___"
+  },
+  {
+    "countryCode": "ng",
+    "countryMask": "+234 (###) ###-####",
+    "countryMaskPlaceholder": "+234 (___) ___-____"
+  },
+  {
+    "countryCode": "ni",
+    "countryMask": "+505-####-####",
+    "countryMaskPlaceholder": "+505-____-____"
+  },
+  {
+    "countryCode": "nl",
+    "countryMask": "+31-##-###-####",
+    "countryMaskPlaceholder": "+31-__-___-____"
+  },
+  {
+    "countryCode": "no",
+    "countryMask": "+47 (###) ##-###",
+    "countryMaskPlaceholder": "+47 (___) __-___"
+  },
+  {
+    "countryCode": "np",
+    "countryMask": "+977-##-###-###",
+    "countryMaskPlaceholder": "+977-__-___-___"
+  },
+  {
+    "countryCode": "nr",
+    "countryMask": "+674-###-####",
+    "countryMaskPlaceholder": "+674-___-____"
+  },
+  {
+    "countryCode": "nu",
+    "countryMask": "+683-####",
+    "countryMaskPlaceholder": "+683-____"
+  },
+  {
+    "countryCode": "nz",
+    "countryMask": "+64 (###) ###-####",
+    "countryMaskPlaceholder": "+64 (___) ___-____"
+  },
+  {
+    "countryCode": "om",
+    "countryMask": "+968-##-###-###",
+    "countryMaskPlaceholder": "+968-__-___-___"
+  },
+  {
+    "countryCode": "pa",
+    "countryMask": "+507-###-####",
+    "countryMaskPlaceholder": "+507-___-____"
+  },
+  {
+    "countryCode": "pe",
+    "countryMask": "+51 (###) ###-###",
+    "countryMaskPlaceholder": "+51 (___) ___-___"
+  },
+  {
+    "countryCode": "pf",
+    "countryMask": "+689-##-##-##",
+    "countryMaskPlaceholder": "+689-__-__-__"
+  },
+  {
+    "countryCode": "pg",
+    "countryMask": "+675 (###) ##-###",
+    "countryMaskPlaceholder": "+675 (___) __-___"
+  },
+  {
+    "countryCode": "ph",
+    "countryMask": "+63 (###) ###-####",
+    "countryMaskPlaceholder": "+63 (___) ___-____"
+  },
+  {
+    "countryCode": "pk",
+    "countryMask": "+92 (###) ###-####",
+    "countryMaskPlaceholder": "+92 (___) ___-____"
+  },
+  {
+    "countryCode": "pl",
+    "countryMask": "+48 (###) ###-###",
+    "countryMaskPlaceholder": "+48 (___) ___-___"
+  },
+  {
+    "countryCode": "ps",
+    "countryMask": "+970-##-###-####",
+    "countryMaskPlaceholder": "+970-__-___-____"
+  },
+  {
+    "countryCode": "pt",
+    "countryMask": "+351-##-###-####",
+    "countryMaskPlaceholder": "+351-__-___-____"
+  },
+  {
+    "countryCode": "pw",
+    "countryMask": "+680-###-####",
+    "countryMaskPlaceholder": "+680-___-____"
+  },
+  {
+    "countryCode": "py",
+    "countryMask": "+595 (###) ###-###",
+    "countryMaskPlaceholder": "+595 (___) ___-___"
+  },
+  {
+    "countryCode": "qa",
+    "countryMask": "+974-####-####",
+    "countryMaskPlaceholder": "+974-____-____"
+  },
+  {
+    "countryCode": "re",
+    "countryMask": "+262-#####-####",
+    "countryMaskPlaceholder": "+262-_____-____"
+  },
+  {
+    "countryCode": "ro",
+    "countryMask": "+40-##-###-####",
+    "countryMaskPlaceholder": "+40-__-___-____"
+  },
+  {
+    "countryCode": "rs",
+    "countryMask": "+381-##-###-####",
+    "countryMaskPlaceholder": "+381-__-___-____"
+  },
+  {
+    "countryCode": "ru",
+    "countryMask": "+7 (###) ###-##-##",
+    "countryMaskPlaceholder": "+7 (___) ___-__-__"
+  },
+  {
+    "countryCode": "rw",
+    "countryMask": "+250 (###) ###-###",
+    "countryMaskPlaceholder": "+250 (___) ___-___"
+  },
+  {
+    "countryCode": "sa",
+    "countryMask": "+966-#-###-####",
+    "countryMaskPlaceholder": "+966-_-___-____"
+  },
+  {
+    "countryCode": "sb",
+    "countryMask": "+677-#####",
+    "countryMaskPlaceholder": "+677-_____"
+  },
+  {
+    "countryCode": "sc",
+    "countryMask": "+248-#-###-###",
+    "countryMaskPlaceholder": "+248-_-___-___"
+  },
+  {
+    "countryCode": "sd",
+    "countryMask": "+249-##-###-####",
+    "countryMaskPlaceholder": "+249-__-___-____"
+  },
+  {
+    "countryCode": "se",
+    "countryMask": "+46-##-###-####",
+    "countryMaskPlaceholder": "+46-__-___-____"
+  },
+  {
+    "countryCode": "sg",
+    "countryMask": "+65-####-####",
+    "countryMaskPlaceholder": "+65-____-____"
+  },
+  {
+    "countryCode": "sh",
+    "countryMask": "+290-####",
+    "countryMaskPlaceholder": "+290-____"
+  },
+  {
+    "countryCode": "si",
+    "countryMask": "+386-##-###-###",
+    "countryMaskPlaceholder": "+386-__-___-___"
+  },
+  {
+    "countryCode": "sk",
+    "countryMask": "+421 (###) ###-###",
+    "countryMaskPlaceholder": "+421 (___) ___-___"
+  },
+  {
+    "countryCode": "sl",
+    "countryMask": "+232-##-######",
+    "countryMaskPlaceholder": "+232-__-______"
+  },
+  {
+    "countryCode": "sm",
+    "countryMask": "+378-####-######",
+    "countryMaskPlaceholder": "+378-____-______"
+  },
+  {
+    "countryCode": "sn",
+    "countryMask": "+221-##-###-####",
+    "countryMaskPlaceholder": "+221-__-___-____"
+  },
+  {
+    "countryCode": "so",
+    "countryMask": "+252-#-###-###",
+    "countryMaskPlaceholder": "+252-_-___-___"
+  },
+  {
+    "countryCode": "sr",
+    "countryMask": "+597-###-###",
+    "countryMaskPlaceholder": "+597-___-___"
+  },
+  {
+    "countryCode": "ss",
+    "countryMask": "+211-##-###-####",
+    "countryMaskPlaceholder": "+211-__-___-____"
+  },
+  {
+    "countryCode": "st",
+    "countryMask": "+239-##-#####",
+    "countryMaskPlaceholder": "+239-__-_____"
+  },
+  {
+    "countryCode": "sv",
+    "countryMask": "+503-##-##-####",
+    "countryMaskPlaceholder": "+503-__-__-____"
+  },
+  {
+    "countryCode": "sx",
+    "countryMask": "+1 (721) ###-####",
+    "countryMaskPlaceholder": "+1 (721) ___-____"
+  },
+  {
+    "countryCode": "sy",
+    "countryMask": "+963-##-####-###",
+    "countryMaskPlaceholder": "+963-__-____-___"
+  },
+  {
+    "countryCode": "sz",
+    "countryMask": "+268-##-##-####",
+    "countryMaskPlaceholder": "+268-__-__-____"
+  },
+  {
+    "countryCode": "tc",
+    "countryMask": "+1 (649) ###-####",
+    "countryMaskPlaceholder": "+1 (649) ___-____"
+  },
+  {
+    "countryCode": "td",
+    "countryMask": "+235-##-##-##-##",
+    "countryMaskPlaceholder": "+235-__-__-__-__"
+  },
+  {
+    "countryCode": "tg",
+    "countryMask": "+228-##-###-###",
+    "countryMaskPlaceholder": "+228-__-___-___"
+  },
+  {
+    "countryCode": "th",
+    "countryMask": "+66-##-###-###",
+    "countryMaskPlaceholder": "+66-__-___-___"
+  },
+  {
+    "countryCode": "tj",
+    "countryMask": "+992-##-###-####",
+    "countryMaskPlaceholder": "+992-__-___-____"
+  },
+  {
+    "countryCode": "tk",
+    "countryMask": "+690-####",
+    "countryMaskPlaceholder": "+690-____"
+  },
+  {
+    "countryCode": "tl",
+    "countryMask": "+670-78#-#####",
+    "countryMaskPlaceholder": "+670-78_-_____"
+  },
+  {
+    "countryCode": "tm",
+    "countryMask": "+993-#-###-####",
+    "countryMaskPlaceholder": "+993-_-___-____"
+  },
+  {
+    "countryCode": "tn",
+    "countryMask": "+216-##-###-###",
+    "countryMaskPlaceholder": "+216-__-___-___"
+  },
+  {
+    "countryCode": "to",
+    "countryMask": "+676-#####",
+    "countryMaskPlaceholder": "+676-_____"
+  },
+  {
+    "countryCode": "tr",
+    "countryMask": "+90 (###) ###-####",
+    "countryMaskPlaceholder": "+90 (___) ___-____"
+  },
+  {
+    "countryCode": "tt",
+    "countryMask": "+1 (868) ###-####",
+    "countryMaskPlaceholder": "+1 (868) ___-____"
+  },
+  {
+    "countryCode": "tv",
+    "countryMask": "+688-2####",
+    "countryMaskPlaceholder": "+688-2____"
+  },
+  {
+    "countryCode": "tw",
+    "countryMask": "+886-####-####",
+    "countryMaskPlaceholder": "+886-____-____"
+  },
+  {
+    "countryCode": "tz",
+    "countryMask": "+255-##-###-####",
+    "countryMaskPlaceholder": "+255-__-___-____"
+  },
+  {
+    "countryCode": "ua",
+    "countryMask": "+380 (##) ###-##-##",
+    "countryMaskPlaceholder": "+380 (__) ___-__-__"
+  },
+  {
+    "countryCode": "ug",
+    "countryMask": "+256 (###) ###-###",
+    "countryMaskPlaceholder": "+256 (___) ___-___"
+  },
+  {
+    "countryCode": "uk",
+    "countryMask": "+44-##-####-####",
+    "countryMaskPlaceholder": "+44-__-____-____"
+  },
+  {
+    "countryCode": "us",
+    "countryMask": "+1 (###) ###-####",
+    "countryMaskPlaceholder": "+1 (___) ___-____"
+  },
+  {
+    "countryCode": "uy",
+    "countryMask": "+598-#-###-##-##",
+    "countryMaskPlaceholder": "+598-_-___-__-__"
+  },
+  {
+    "countryCode": "uz",
+    "countryMask": "+998-##-###-####",
+    "countryMaskPlaceholder": "+998-__-___-____"
+  },
+  {
+    "countryCode": "va",
+    "countryMask": "+39-6-698-#####",
+    "countryMaskPlaceholder": "+39-6-698-_____"
+  },
+  {
+    "countryCode": "vc",
+    "countryMask": "+1 (784) ###-####",
+    "countryMaskPlaceholder": "+1 (784) ___-____"
+  },
+  {
+    "countryCode": "ve",
+    "countryMask": "+58 (###) ###-####",
+    "countryMaskPlaceholder": "+58 (___) ___-____"
+  },
+  {
+    "countryCode": "vg",
+    "countryMask": "+1 (284) ###-####",
+    "countryMaskPlaceholder": "+1 (284) ___-____"
+  },
+  {
+    "countryCode": "vi",
+    "countryMask": "+1 (340) ###-####",
+    "countryMaskPlaceholder": "+1 (340) ___-____"
+  },
+  {
+    "countryCode": "vn",
+    "countryMask": "+84 (###) ####-###",
+    "countryMaskPlaceholder": "+84 (___) ____-___"
+  },
+  {
+    "countryCode": "vu",
+    "countryMask": "+678-#####",
+    "countryMaskPlaceholder": "+678-_____"
+  },
+  {
+    "countryCode": "wf",
+    "countryMask": "+681-##-####",
+    "countryMaskPlaceholder": "+681-__-____"
+  },
+  {
+    "countryCode": "ws",
+    "countryMask": "+685-##-####",
+    "countryMaskPlaceholder": "+685-__-____"
+  },
+  {
+    "countryCode": "ye",
+    "countryMask": "+967-##-###-###",
+    "countryMaskPlaceholder": "+967-__-___-___"
+  },
+  {
+    "countryCode": "za",
+    "countryMask": "+27-##-###-####",
+    "countryMaskPlaceholder": "+27-__-___-____"
+  },
+  {
+    "countryCode": "zm",
+    "countryMask": "+260-##-###-####",
+    "countryMaskPlaceholder": "+260-__-___-____"
+  },
+  {
+    "countryCode": "zw",
+    "countryMask": "+263-#-######",
+    "countryMaskPlaceholder": "+263-_-______"
+  }
+]

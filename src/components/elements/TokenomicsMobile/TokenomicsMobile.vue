@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { reactive, ref, watchEffect } from "vue"
+    import { reactive, computed, ref, watchEffect } from "vue"
     import { Carousel, Slide } from 'vue3-carousel'
     import 'vue3-carousel/dist/carousel.css'
 
@@ -18,13 +18,21 @@
     import { ITokenomicsItem } from '../../../interfaces/index'
     import { useChart } from '../../../hooks'
 
-    const options1 = useChart({
+    import { messages } from './TokenomicsMobile.i18n'
+    import { useI18n } from 'vue-i18n'
+
+    const { t, locale } = useI18n({ messages, useScope: 'global' })
+
+    const tokenomicsSet = computed(() => tokenomics[String(locale.value)])
+
+    const options1 = computed(() => useChart({
         id: 'chart1',
         legend: {
             show: false
         },
         colors: ['#208089', '#800080', '#353C45'],
-        labels: ['Reflections', 'Charity Fund', 'Development Manco Capac'],
+        images: ['/reflections.png', '/charity.png', '/dev.png'],
+        labels: [t('chart1.labels.reflections'), t('chart1.labels.charity'), t('chart1.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
@@ -35,19 +43,20 @@
             }
         },
         donut: {
-            label: 'TAX -0,3%',
+            label: `${t('chart1.donut.tax')} -0,3%`,
             labelsFontSize: '12px',
-            formatterString: `Transaction from wallet to wallet`,
+            formatterString: t('chart1.donut.label'),
         }
-    })
+    }))
 
-    const options2 = useChart({
+    const options2 = computed(() => useChart({
         id: 'chart2',
         legend: {
             show: false
         },
         colors: ['#208089', '#483D8B', '#353C45'],
-        labels: ['Reflections', 'Diversification', 'Development Manco Capac'],
+        images: ['/reflections.png', '/divers.png', '/dev.png'],
+        labels: [t('chart2.labels.reflections'), t('chart2.labels.divers'), t('chart2.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
@@ -58,11 +67,11 @@
             }
         },
         donut: {
-            label: 'TAX -7%',
+            label: `${t('chart2.donut.tax')} -7%`,
             labelsFontSize: '12px',
-            formatterString: `For every buy and sale`,
+            formatterString: t('chart2.donut.label'),
         }
-    })
+    }))
 
     const series1 = [0.1, 0.1, 0.1]
     const series2 = [1, 1, 1]
@@ -78,15 +87,15 @@
         Icon6
     ]
 
+    const modalTokenomics = computed(() => [
+            ...tokenomicsSet.value.items[0].group,
+            ...tokenomicsSet.value.items[1].group,
+        ] as Array<ITokenomicsItem>)
+
     const state = reactive({
         modalOpen: false,
         slideNum: 0,
-        currentSlide: 0,
-        tokenomics: tokenomics as any,
-        modalTokenomics: [
-            ...tokenomics.items[0].group,
-            ...tokenomics.items[1].group,
-        ] as Array<ITokenomicsItem>,
+        currentSlide: 0
     })
 
     // Modal
@@ -112,19 +121,18 @@
 
 <template>
     <Modal :is-open="state.modalOpen" @close-modal="closeModal">
-        <TokenomicsCarousel :modal-tokenomics="state.modalTokenomics" :slide-num="state.slideNum" />
+        <TokenomicsCarousel :modal-tokenomics="modalTokenomics" :slide-num="state.slideNum" />
     </Modal>
     <div class="relative">
         <section class="flex flex-col items-center gap-y-10 xl:h-[700px] sm:h-[520px] w-full py-[40px] bg-gray-900 rounded-xl sm:px-[16px]">
-            <h4 class="text-white">Tokenomics</h4>
-            <span class="text-center text-white text-[17px] leading-5 mb-5">
-                <p>Эмиссия токена ELYSIUM составляет 9 000 000 000 ELYS.
-                Токен ELYSIUM имеет 2 механизма генерирующие пассивный доход для всех держателей токена:</p>
+            <h4 class="text-white">{{ t('tokenomics') }}</h4>
+            <span class="whitespace-pre-wrap text-center text-white text-[17px] mb-5">
+                <p class="break-words">{{ t('emission') }}</p>
             </span>
             <div class="flex gap-x-32">
                 <Carousel ref="tokenomicsCarousel">
                     <Slide :key="'slide'">
-                        <ul v-for="group in state.tokenomics.items[0]" class="flex flex-col gap-y-6" v-auto-animate>
+                        <ul v-for="group in tokenomicsSet.items[0]" :key="group" class="flex flex-col gap-y-6" v-auto-animate>
                             <template v-for="item in group">
                                 <template v-if="item && item.popper">
                                     <Popper :content="item.popper.text" :show="item.popper.show">
@@ -148,7 +156,7 @@
                         </ul>
                     </Slide>
                     <Slide :key="'slide'">
-                        <ul v-for="group in state.tokenomics.items[1]" class="flex flex-col gap-y-6" v-auto-animate>
+                        <ul v-for="group in tokenomicsSet.items[1]" :key="group" class="flex flex-col gap-y-6" v-auto-animate>
                             <template v-for="item in group">
                                 <template v-if="item && item.popper">
                                     <Popper :content="item.popper.text" :show="item.popper.show">

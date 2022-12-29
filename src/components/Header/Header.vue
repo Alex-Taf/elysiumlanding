@@ -1,15 +1,22 @@
 <script setup lang="ts">
     // Utils
-    import { reactive } from "vue"
+    import { reactive, computed, watchEffect } from "vue"
     // Components
     import RenderOnBreakpoint from "../utils/RenderOnBreakpoint.vue"
     import Socials from "../elements/Socials/Socials.vue"
     import DesktopMenu from "../elements/DesktopMenu/DesktopMenu.vue"
     import MenuButton from "../elements/MenuButton/MenuButton.vue"
     import MobileMenu from "../elements/MobileMenu/MobileMenu.vue"
+    import LangSwitcher from "../elements/LangSwitcher/LangSwitcher.vue"
     // DATA
     import socials from "../../static/social.json"
     import menu from "../../static/menu.json"
+
+    import { useI18n } from 'vue-i18n'
+
+    const { locale } = useI18n({ useScope: 'global' })
+
+    const menuSet = computed(() => menu.items[String(locale.value)])
 
     const state = reactive({
         menuOpen: false,
@@ -35,7 +42,8 @@
 <template>
     <header class="flex flex-col justify-center w-full">
         <section class="sm:hidden xl:block h-[44px] w-full border-b-2 border-[#DFE0E1]">
-            <section class="flex items-center justify-end h-[44px] w-full max-w-container m-auto">
+            <section class="flex items-center justify-between h-[44px] w-full max-w-container m-auto">
+                <LangSwitcher />
                 <Socials :items="socials.items" :type="'header'" />
             </section>
         </section>
@@ -48,12 +56,12 @@
                     <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
                 </RenderOnBreakpoint>
                 <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
-                    <DesktopMenu :items="menu.items" />
+                    <DesktopMenu :items="menuSet" />
                 </RenderOnBreakpoint>
             </section>
         </section>
         <RenderOnBreakpoint :px="1280">
-            <MobileMenu :menu-open="state.menuOpen" :items="menu.items" @close="closeMenu" />
+            <MobileMenu :menu-open="state.menuOpen" :items="menuSet" @close="closeMenu" />
         </RenderOnBreakpoint>
     </header>
 </template>
