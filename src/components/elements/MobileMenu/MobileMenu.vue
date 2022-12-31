@@ -48,7 +48,7 @@
                     </li>
                 </template>
             </nav>
-            <Socials :items="socials.items" :type="'header'" class="z-40 mb-12" />
+            <Socials :items="socials.header.items" :type="'header'" class="z-40 mb-12" />
         </section>
 </template>
 

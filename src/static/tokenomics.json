@@ -14,14 +14,6 @@
                     {
                         "id": 2,
                         "title": "Charty Fund"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Liquidity generation",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
                     }
                 ]
             },
@@ -34,10 +26,6 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 5,
-                        "title": "Burn"
                     },
                     {
                         "id": 6,
@@ -62,14 +50,6 @@
                     {
                         "id": 2,
                         "title": "Fondo de Gráficos"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Generación de liquidez",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
                     }
                 ]
             },
@@ -82,10 +62,6 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 5,
-                        "title": "Quemar"
                     },
                     {
                         "id": 6,
@@ -110,14 +86,6 @@
                     {
                         "id": 2,
                         "title": "Уставной фонд"
-                    },
-                    {
-                        "id": 3,
-                        "title": "Генерирование ликвидности",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
                     }
                 ]
             },
@@ -130,10 +98,6 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 5,
-                        "title": "Burn"
                     },
                     {
                         "id": 6,

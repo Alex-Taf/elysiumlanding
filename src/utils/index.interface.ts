@@ -11,3 +11,7 @@ export interface IUseDeviceWidth {
 export interface ICopyToClipboard {
     (text: string): void
 }
+
+export interface IGetUserLocale {
+    (options: { form: string }): string
+}

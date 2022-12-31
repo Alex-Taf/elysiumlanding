@@ -1,46 +1,100 @@
 {
-    "items": [
-        {
-            "id": 1,
-            "alt": "Twitter",
-            "className": "header-social header-social--twitter",
-            "link": ""
-        },
-        {
-            "id": 2,
-            "alt": "Telegram",
-            "className": "header-social header-social--telegram",
-            "link": ""
-        },
-        {
-            "id": 3,
-            "alt": "Reddit",
-            "className": "header-social header-social--reddit",
-            "link": ""
-        },
-        {
-            "id": 4,
-            "alt": "Facebook",
-            "className": "header-social header-social--facebook",
-            "link": ""
-        },
-        {
-            "id": 5,
-            "alt": "YouTube",
-            "className": "header-social header-social--youtube",
-            "link": ""
-        },
-        {
-            "id": 6,
-            "alt": "TikTok",
-            "className": "header-social header-social--tiktok",
-            "link": ""
-        },
-        {
-            "id": 7,
-            "alt": "Instagram",
-            "className": "header-social header-social--inst",
-            "link": ""
-        }
-    ]
+    "header": {
+        "items": [
+            {
+                "id": 1,
+                "alt": "Twitter",
+                "className": "header-social header-social--twitter",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "alt": "Telegram",
+                "className": "header-social header-social--telegram",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "alt": "Reddit",
+                "className": "header-social header-social--reddit",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "alt": "Facebook",
+                "className": "header-social header-social--facebook",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "alt": "YouTube",
+                "className": "header-social header-social--youtube",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "alt": "TikTok",
+                "className": "header-social header-social--tiktok",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "alt": "Instagram",
+                "className": "header-social header-social--inst",
+                "link": ""
+            }
+        ]
+    },
+    "footer": {
+        "items": [
+            {
+                "id": 1,
+                "alt": "Twitter",
+                "className": "header-social header-social--twitter",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "alt": "Telegram",
+                "className": "header-social header-social--telegram",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "alt": "Reddit",
+                "className": "header-social header-social--reddit",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "alt": "Facebook",
+                "className": "header-social header-social--facebook",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "alt": "YouTube",
+                "className": "header-social header-social--youtube",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "alt": "TikTok",
+                "className": "header-social header-social--tiktok",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "alt": "Instagram",
+                "className": "header-social header-social--inst",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "alt": "Instagram",
+                "className": "header-social header-social--linkedin",
+                "link": ""
+            }
+        ]
+    }
 }

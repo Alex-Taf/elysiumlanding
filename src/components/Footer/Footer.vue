@@ -9,7 +9,6 @@
     import { useI18n } from 'vue-i18n'
 
     const { t, locale } = useI18n({ messages, useScope: 'global' })
-
     const footerSet = computed(() => footer[String(locale.value)])
 </script>
 
@@ -31,6 +30,10 @@
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('contact') }}</h5>
                 <li class="flex items-center">
+                    <img src="../../assets/phone.svg" />
+                    <span class="text-skin-text ml-3">(603) 555-0123</span>
+                </li>
+                <li class="flex items-center">
                     <img src="../../assets/mail.svg" />
                     <span class="text-skin-text ml-3">ContactoElisiym@gmail.com</span>
                 </li>
@@ -41,7 +44,7 @@
             </ul>
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('socialMedia') }}</h5>
-                <Socials :items="socials.items" :type="'footer'" class="pl-0" />
+                <Socials :items="socials.footer.items" :type="'footer'" class="pl-0" />
             </ul>
         </section>
     </footer>

@@ -106,52 +106,60 @@
 </template>
 
 <style scoped>
-details .detailer-icon--close {
-    display: block;
-}
-
-details .detailer-icon--open {
-    display: none;
-}
-
-details[open] .detailer-title {
-    @apply text-skin-title;
-}
-
-details[open] .detailer-icon--open {
-    display: block;
-}
-
-details[open] .detailer-icon--close {
-    display: none;
-}
-
-details[open] summary ~ * {
-    transform-origin: top;
-    animation: sweep 0.3s ease-in-out;
-}
-
-@keyframes sweep {
-    0% {
-        transform: scaleY(0);
+    details > summary {
+        list-style-type: none;
     }
-    50% {
-        transform: scaleY(0.5);
-    }
-    100% {
-        transform: scaleY(1);
-    }
-}
 
-@keyframes unsweep {
-    0% {
-        transform: scaleY(1);
+    details[open] > summary {
+        list-style-type: none;
     }
-    50% {
-        transform: scaleY(0.5);
+
+    details .detailer-icon--close {
+        display: block;
     }
-    100% {
-        transform: scaleY(0);
+
+    details .detailer-icon--open {
+        display: none;
     }
-}
+
+    details[open] .detailer-title {
+        @apply text-skin-title;
+    }
+
+    details[open] .detailer-icon--open {
+        display: block;
+    }
+
+    details[open] .detailer-icon--close {
+        display: none;
+    }
+
+    details[open] summary ~ * {
+        transform-origin: top;
+        animation: sweep 0.3s ease-in-out;
+    }
+
+    @keyframes sweep {
+        0% {
+            transform: scaleY(0);
+        }
+        50% {
+            transform: scaleY(0.5);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+
+    @keyframes unsweep {
+        0% {
+            transform: scaleY(1);
+        }
+        50% {
+            transform: scaleY(0.5);
+        }
+        100% {
+            transform: scaleY(0);
+        }
+    }
 </style>

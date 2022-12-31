@@ -64,4 +64,8 @@
     .header-social--inst {
         background-position: calc(var(--sprite-px-value) * 6);
     }
+
+    .header-social--linkedin {
+        background-position: calc(var(--sprite-px-value) * 7);
+    }
 </style>

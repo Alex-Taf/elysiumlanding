@@ -9,10 +9,11 @@ import router from "./router"
 import './style.css'
 import vSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css'
+import { getUserLocale } from "./utils/index"
 import App from './App.vue'
 
 const i18n = createI18n({
-    locale: localStorage.getItem('locale') || 'en',
+    locale: localStorage.getItem('locale') || getUserLocale({ form: 'short' }),
     fallbackLocale: 'en',
     allowComposition: true,
     globalInjection: true,
