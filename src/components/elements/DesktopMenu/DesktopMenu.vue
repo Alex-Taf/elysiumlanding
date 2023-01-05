@@ -114,6 +114,10 @@
         list-style-type: none;
     }
 
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+
     details .detailer-icon--close {
         display: block;
     }
