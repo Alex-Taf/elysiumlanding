@@ -5,7 +5,7 @@
     import { useI18n } from "vue-i18n"
     import { messages } from "./Hero.i18n"
     import ReadonlyInput from "../elements/ReadonlyInput/ReadonlyInput.vue"
-    import Button from "../elements/Button/Button.vue"
+    import EButton from "../elements/Button/EButton.vue"
 
     const { t } = useI18n({ messages, useScope: 'global' })
 
@@ -37,9 +37,9 @@
             <span class="text-[17px] font-bold">Elysium Contract</span>
             <section class="flex gap-x-2">
                 <ReadonlyInput :value="state.token" />
-                <Button @click="copy(state.token)">
+                <EButton @click="copy(state.token)">
                     <img src="../../assets/copy.svg">
-                </Button>
+                </EButton>
             </section>
         </section>
         <img src="../../assets/Oficial.png">

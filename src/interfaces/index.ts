@@ -24,3 +24,8 @@ export interface ITokenomicsItem {
     title: string;
     popper?: IPopper;
 }
+
+export interface IEmailStatusObject {
+    statusCode: number | string,
+    text: string
+}

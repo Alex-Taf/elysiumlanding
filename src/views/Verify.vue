@@ -6,6 +6,7 @@
 
 <template>
     <div class="flex flex-col">
+        <notifications position="bottom center" />
         <Header />
         <VerifyForm />
         <Footer />

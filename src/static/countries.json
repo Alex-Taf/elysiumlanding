@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "id": 0,
+            "name": "Colombia",
+            "value": "CO"
+        },
+        {
+            "id": 1,
+            "name": "Russia",
+            "value": "RU"
+        }
+    ]
+}

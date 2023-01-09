@@ -1,9 +1,12 @@
 <script setup lang="ts">
     import { reactive } from 'vue'
     import { useVuelidate } from '@vuelidate/core'
-    import { email, required, numeric } from '@vuelidate/validators'
+    import { email, required, numeric, minLength } from '@vuelidate/validators'
     import { messages } from './VerifyForm.i18n'
     import { useI18n } from 'vue-i18n'
+    import { notify } from "@kyvg/vue3-notification"
+    import { getStatusText } from '../../utils'
+    import { FormVerify } from '../../http/API'
 
     import InputNumberPhone from '../elements/InputNumberPhone/InputNumberPhone.vue'
     import InputText from '../elements/InputText/InputText.vue'
@@ -11,9 +14,10 @@
     import InputTextInvalidMessage from '../elements/InputText/InputTextInvalidMessage.vue'
     import SelectExc from '../elements/SelectExc/SelectExc.vue'
     import InputSelect from '../elements/InputSelect/InputSelect.vue'
-    import Button from '../elements/Button/Button.vue'
+    import EButton from '../elements/Button/EButton.vue'
 
     import Phones from "../../static/phones.json"
+    import Countries from "../../static/countries.json"
 
     const { t } = useI18n({ messages, useScope: 'global' })
 
@@ -21,14 +25,26 @@
         nameAndSurname: '',
         email: '',
         birthdate: '',
-        adress: '',
+        address: '',
+        countryOptions: Countries.items,
+        country: {
+            id: 1,
+            name: "Russia",
+            value: "RU"
+        },
         symbolicSum: '',
         phoneOptions: Phones.phones,
         phoneSelected: {
             countryCode: "rus",
             countryName: "Russia",
             countryMask: '+7 (###) ###-##-##',
-            countryMaskPlaceholder: "+7 (___) ___ - __ - __"
+            countryMaskPlaceholder: "+7 (___) ___ - __ - __",
+            value: ''
+        },
+        exchange: {
+            id: 1,
+            name: 'Binance',
+            value: '/exc/binance.png'
         }
     })
 
@@ -48,14 +64,47 @@
     }
 
     const validateRules = {
-        nameAndSurname: { required },
+        nameAndSurname: { required, minLength: minLength(2) },
         email: { email, required },
-        birthdate: { required },
-        adress: { required },
+        birthdate: { required, minLength: minLength(10) },
+        address: { required },
         symbolicSum: { required, numeric }
     }
 
     const v$ = useVuelidate(validateRules, state)
+
+    const submit = () => {
+        const message = {
+            nameAndSurname: state.nameAndSurname,
+            email: state.email,
+            country: state.country.name,
+            symbolicSum: state.symbolicSum,
+            birthDate: state.birthdate,
+            phone: state.phoneSelected.value,
+            address: state.address,
+            exchange: state.exchange.name
+        }
+
+        v$.value.$validate()
+
+        if (v$.value.$error) {
+            return
+        }
+
+        const verify = new FormVerify()
+
+        const send = verify.send(message)
+
+        send
+        .then((response) => notify({
+            type: 'success',
+            title: getStatusText(response.status),
+        }))
+        .catch((error) => notify({
+            type: 'error',
+            title: getStatusText(error.code),
+        }))
+    }
 </script>
 
 <template>
@@ -76,16 +125,21 @@
                         <InputText
                             v-model="state.nameAndSurname"
                             @change="v$.nameAndSurname.$touch"
-                            :state="v$.nameAndSurname.$invalid && v$.nameAndSurname.$dirty ? 'error' : ''"
+                            :state="v$.nameAndSurname.$error && v$.nameAndSurname.$dirty ? 'error' : ''"
                             :required="true"
                             :label="t('form.name.label')"
                             :placeholder="t('form.name.placeholder')"
                         />
                         <InputTextInvalidDialog>
                             <InputTextInvalidMessage
-                                v-if="v$.nameAndSurname.$invalid && v$.nameAndSurname.$dirty && state.nameAndSurname === ''"
+                                v-if="v$.nameAndSurname.$error && v$.nameAndSurname.$dirty"
                             >
                                 {{ t('form.name.errors.required') }}
+                            </InputTextInvalidMessage>
+                            <InputTextInvalidMessage
+                                v-if="v$.nameAndSurname.$error && v$.nameAndSurname.$dirty"
+                            >
+                                {{ t('form.name.errors.minLength') }}
                             </InputTextInvalidMessage>
                         </InputTextInvalidDialog>
                     </div>
@@ -93,48 +147,49 @@
                         <InputText
                             v-model="state.email"
                             @change="v$.email.$touch"
-                            :state="v$.email.$invalid && v$.email.$dirty ? 'error' : ''"
+                            :state="v$.email.$error && v$.email.$dirty ? 'error' : ''"
                             :required="true"
                             name="email"
                             :label="t('form.email.label')"
-                            :placeholder="t('form.email.placeholder')"
+                            placeholder="Example@mail.com"
                         />
                         <InputTextInvalidDialog>
                             <InputTextInvalidMessage
-                                v-if="v$.email.$invalid && v$.email.$dirty"
+                                v-if="v$.email.$error && v$.email.$dirty"
                             >
                                 {{ t('form.email.errors.email') }}
                             </InputTextInvalidMessage>
                             <InputTextInvalidMessage
-                                v-if="v$.email.$invalid && v$.email.$dirty && state.email === ''"
+                                v-if="v$.email.$error && v$.email.$dirty && state.email === ''"
                             >
                             {{ t('form.email.errors.required') }}
                             </InputTextInvalidMessage>
                         </InputTextInvalidDialog>
                     </div>
                     <div class="mb-10">
-                        <InputSelect :label="t('form.country.label')"
-                                    :options="[{name: 'Colombia', value: 'CO'}, {name: 'Russia', value: 'RU'}]"
-                                    :defaultValue="{name: 'Colombia', value: 'CO'}"
+                        <InputSelect
+                            v-model="state.country" 
+                            :label="t('form.country.label')"
+                            :options="state.countryOptions"
                         />
                     </div>
                     <div class="mb-10">
                         <InputText
                             v-model="state.symbolicSum"
                             @change="v$.symbolicSum.$touch"
-                            :state="v$.symbolicSum.$invalid && v$.symbolicSum.$dirty ? 'error' : ''"
+                            :state="v$.symbolicSum.$error && v$.symbolicSum.$dirty ? 'error' : ''"
                             :required="true"
                             :label="t('form.numberOfTokens.label')"
                             :placeholder="t('form.numberOfTokens.placeholder')"
                         />
                         <InputTextInvalidDialog>
                             <InputTextInvalidMessage
-                                v-if="v$.symbolicSum.$invalid && v$.symbolicSum.$dirty"
+                                v-if="v$.symbolicSum.$error && v$.symbolicSum.$dirty"
                             >
                                 {{ t('form.numberOfTokens.errors.numeric') }}
                             </InputTextInvalidMessage>
                             <InputTextInvalidMessage
-                                v-if="v$.symbolicSum.$invalid && v$.symbolicSum.$dirty && state.symbolicSum === ''"
+                                v-if="v$.symbolicSum.$error && v$.symbolicSum.$dirty && state.symbolicSum === ''"
                             >
                                 {{ t('form.numberOfTokens.errors.required') }}
                             </InputTextInvalidMessage>
@@ -147,14 +202,14 @@
                             v-model="state.birthdate"
                             :mask="maskDatePattern"
                             @change="v$.birthdate.$touch"
-                            :state="v$.birthdate.$invalid && v$.birthdate.$dirty ? 'error' : ''"
+                            :state="v$.birthdate.$error && v$.birthdate.$dirty ? 'error' : ''"
                             :required="true"
                             :label="t('form.birthDate.label')"
                             :placeholder="t('form.birthDate.placeholder')"
                         />
                         <InputTextInvalidDialog>
                             <InputTextInvalidMessage
-                                v-if="v$.birthdate.$invalid && v$.birthdate.$dirty && state.birthdate === ''"
+                                v-if="v$.birthdate.$error && v$.birthdate.$dirty && state.birthdate === ''"
                             >
                                 {{ t('form.birthDate.errors.required') }}
                             </InputTextInvalidMessage>
@@ -169,25 +224,25 @@
                     </div>
                     <div class="mb-10">
                         <InputText
-                            v-model="state.adress"
-                            @change="v$.adress.$touch"
-                            :state="state.adress === '' && v$.adress.$dirty ? 'error' : ''"
+                            v-model="state.address"
+                            @change="v$.address.$touch"
+                            :state="state.address === '' && v$.address.$dirty && v$.address.$error ? 'error' : ''"
                             :required="true"
                             :label="t('form.address.label')"
                             :placeholder="t('form.address.placeholder')"
                         />
                         <InputTextInvalidDialog>
-                            <InputTextInvalidMessage v-if="state.adress === '' && v$.adress.$dirty">
-                                {{ t('form.adress.errors.required') }}
+                            <InputTextInvalidMessage v-if="state.address === '' && v$.address.$dirty && v$.address.$error">
+                                {{ t('form.address.errors.required') }}
                             </InputTextInvalidMessage>
                         </InputTextInvalidDialog>
                     </div>
                     <div class="mb-10">
-                        <SelectExc :label="t('form.establecoin.label')" />
+                        <SelectExc v-model="state.exchange" :label="t('form.establecoin.label')" />
                     </div>
                 </aside>
             </section>
-            <Button class="xl:flex xl:self-end xl:w-[215px] h-[52px] text-base">{{ t('send') }}</Button>
+            <EButton class="xl:flex xl:self-end xl:w-[215px] h-[52px] text-base" @click="submit">{{ t('send') }}</EButton>
         </div>
     </section>
 </template>

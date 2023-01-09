@@ -15,3 +15,7 @@ export interface ICopyToClipboard {
 export interface IGetUserLocale {
     (options: { form: string }): string
 }
+
+export interface IGetStatusText {
+    (statusCode: number): string
+}

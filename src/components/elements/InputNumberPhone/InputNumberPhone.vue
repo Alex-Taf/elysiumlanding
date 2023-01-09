@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { IPhoneMaskInfo, IGetOprtionLabel, IFilterate } from "./inputNumberPhone.interface"
+    import { IPhoneMaskInfo, IGetOptionLabel, IFilterate } from "./inputNumberPhone.interface"
     import CountryFlag from 'vue-country-flag-next'
 
     const props = defineProps<{
@@ -12,12 +12,27 @@
         return (label || '').toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) > -1
     }
 
-    const getOptionLabel: IGetOprtionLabel = (option) => option.countryName
+    const getOptionLabel: IGetOptionLabel = (option) => option.countryName
 
     const emit = defineEmits(['update:modelValue'])
 
     const updateSelectValue = (value: IPhoneMaskInfo) => {
+        value.value = '' // init new value field
         emit('update:modelValue', value)
+    }
+
+    const updateInputValue = (e: Event) => {
+        const input = e.target as HTMLInputElement
+
+        const newVal = {
+            countryCode: props.modelValue.countryCode,
+            countryName: props.modelValue.countryName,
+            countryMask: props.modelValue.countryMask,
+            countryMaskPlaceholder: props.modelValue.countryMaskPlaceholder,
+            value: input.value
+        }
+
+        emit('update:modelValue', newVal)
     }
 </script>
 
@@ -47,6 +62,7 @@
         <input
             type="text"
             class="border-none w-full"
+            @change="updateInputValue"
             :placeholder="modelValue.countryMaskPlaceholder"
             v-maska="modelValue.countryMask"
         />

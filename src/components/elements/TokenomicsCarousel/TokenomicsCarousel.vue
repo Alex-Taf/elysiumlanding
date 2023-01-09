@@ -5,7 +5,7 @@
     import { messages } from './TokenomicsCarousel.i18n'
     import { useI18n } from 'vue-i18n'
 
-    import Button from '../Button/Button.vue'
+    import EButton from '../Button/EButton.vue'
 
     import ChevronLeft from '../../icons/ChevronLeft.vue'
     import ChevronRight from '../../icons/ChevronRight.vue'
@@ -115,11 +115,11 @@
             >
                 <ChevronLeft fill="black" /> {{ t('previous') }}
             </span>
-            <Button class="w-[161px]" @click="next()">
+            <EButton class="w-[161px]" @click="next()">
                 <span class="flex items-center gap-x-2 text-white text-xl"
                     >{{ t('next') }} <ChevronRight fill="white"
                 /></span>
-            </Button>
+            </EButton>
         </div>
     </div>
 </template>

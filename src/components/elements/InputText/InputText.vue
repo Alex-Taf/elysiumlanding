@@ -9,20 +9,21 @@
         required?: boolean
     }>()
 
-    const emit = defineEmits(['update:modelValue', 'change'])
+    const emit = defineEmits(['update:modelValue', 'change', 'focus'])
 
     const updateInputValue = (e: Event) => {
         const target = e.target as HTMLInputElement
 
-        if (target.hasOwnProperty('id')) {
-            const targetValue = target.value
-
-            if (targetValue) emit('update:modelValue', targetValue)
-        }
+        const targetValue = target.value
+        if (targetValue) emit('update:modelValue', targetValue)
     }
 
     const changeInputValue = (e: Event) => {
         if (e) emit('change', e)
+    }
+
+    const focusInputValue = (e: Event) => {
+        if (e) emit('focus', e)
     }
 </script>
 
@@ -33,10 +34,11 @@
         :class="{ 'border-red-500': props.state === 'error' }"
     >
         <input type="text" class="border-none w-full focus:border-transparent focus:ring-0 focus:outline-none"
-                :placeholder="props.placeholder" :name="props.name" :value="modelValue"
+                :placeholder="props.placeholder" :name="props.name" :value="props.modelValue"
                 v-maska="props.mask"
                 @input="updateInputValue"
-                @keyup="changeInputValue"
+                @keydown="changeInputValue"
+                @focus="focusInputValue"
         />
     </div>
 </template>

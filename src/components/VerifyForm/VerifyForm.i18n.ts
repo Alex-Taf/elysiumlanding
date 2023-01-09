@@ -8,12 +8,12 @@ export const messages = {
                 label: 'Name and Surname',
                 placeholder: 'Enter your name',
                 errors: {
-                    required: 'Value is required'
+                    required: 'Value is required',
+                    minLength: 'Minimal length is 2 symbols'
                 }
             },
             email: {
                 label: 'Email',
-                placeholder: 'Example@mail.com',
                 errors: {
                     required: 'Value is required',
                     email: 'Field is not email'
@@ -34,7 +34,14 @@ export const messages = {
                 label: 'Birth date',
                 placeholder: 'Enter your date of birth',
                 errors: {
-                    required: 'Field is required'
+                    required: 'Value is required'
+                }
+            },
+            address: {
+                label: 'Address',
+                placeholder: 'Enter your location',
+                errors: {
+                    required: 'Value is required'
                 }
             },
             phone: {
@@ -54,12 +61,12 @@ export const messages = {
                 label: 'Nombre y apellido',
                 placeholder: 'Ingresa tu nombre',
                 errors: {
-                    required: 'Se requiere un valor'
+                    required: 'Se requiere un valor',
+                    minLength: 'La longitud mínima es de 2 símbolos'
                 }
             },
             email: {
                 label: 'Email',
-                placeholder: 'Example@mail.com',
                 errors: {
                     required: 'Se requiere un valor',
                     email: 'Correo electrónico no válido'
@@ -107,12 +114,12 @@ export const messages = {
                 label: 'Имя и Фамилия',
                 placeholder: 'Введите своё имя',
                 errors: {
-                    required: 'Поле обязательно для заполнения'
+                    required: 'Поле обязательно для заполнения',
+                    minLength: 'Минимальная длина составляет 2 символа'
                 }
             },
             email: {
                 label: 'Почта',
-                placeholder: 'Example@mail.com',
                 errors: {
                     required: 'Поле обязательно для заполнения',
                     email: 'Некорректный email'

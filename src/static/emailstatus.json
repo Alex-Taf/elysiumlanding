@@ -1,0 +1,32 @@
+{
+    "en": [
+        {
+            "statusCode": 200,
+            "text": "The form has been sent successfully!"
+        },
+        {
+            "statusCode": "ERR_NETWORK",
+            "text": "Network error. Try again later."
+        }
+    ],
+    "es": [
+        {
+            "statusCode": 200,
+            "text": "¡El formulario se envió con éxito!"
+        },
+        {
+            "statusCode": "ERR_NETWORK",
+            "text": "Error de conexión. Vuelva a intentarlo más tarde."
+        }
+    ],
+    "ru": [
+        {
+            "statusCode": 200,
+            "text": "Форма успешно отправлена!"
+        },
+        {
+            "statusCode": "ERR_NETWORK",
+            "text": "Ошибка соединения. Попробуйте отправить форму позже."
+        }
+    ]
+}
