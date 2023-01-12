@@ -1,10 +1,12 @@
 <script setup lang="ts">
     import { reactive } from 'vue'
-
+    import { IFilterate } from "../../../interfaces/index"
+    
     const props = defineProps<{
         label: string,
         options: Array<any>,
-        modelValue: any
+        modelValue: any,
+        filterable?: true
     }>()
 
     const options = reactive(props.options)
@@ -13,6 +15,10 @@
 
     const updateSelectValue = (value: any) => {
         emit('update:modelValue', value)
+    }
+
+    const filtrate: IFilterate = (option, label, search) => {
+        return (label || '').toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) > -1
     }
 </script>
 
@@ -23,6 +29,8 @@
             v-model="props.modelValue"
             :options="options"
             @option:selected="updateSelectValue"
+            :filterable="props.filterable"
+            :filterBy="filtrate"
         >
             <template v-slot:selected-option="selected">
                 {{ selected.name }}

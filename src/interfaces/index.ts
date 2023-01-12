@@ -29,3 +29,7 @@ export interface IEmailStatusObject {
     statusCode: number | string,
     text: string
 }
+
+export interface IFilterate {
+    (option: Record<string, string>, label: string, search: string): boolean
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
-    import { IPhoneMaskInfo, IGetOptionLabel, IFilterate } from "./inputNumberPhone.interface"
+    import { IPhoneMaskInfo, IGetOptionLabel } from "./inputNumberPhone.interface"
+    import { IFilterate } from "../../../interfaces/index"
     import CountryFlag from 'vue-country-flag-next'
 
     const props = defineProps<{
