@@ -1,6 +1,7 @@
 <script setup lang="ts">
-    import { IPhoneMaskInfo, IGetOptionLabel } from "./inputNumberPhone.interface"
-    import { IFilterate } from "../../../interfaces/index"
+    import { ref, onMounted } from 'vue'
+    import { IPhoneMaskInfo } from "./inputNumberPhone.interface"
+    import { IFilterate, IGetOptionLabel } from "../../../interfaces/index"
     import CountryFlag from 'vue-country-flag-next'
 
     const props = defineProps<{
@@ -8,6 +9,10 @@
         options: Array<IPhoneMaskInfo>,
         modelValue: IPhoneMaskInfo
     }>()
+
+    const select = ref(null)
+
+    defineExpose({ select })
 
     const filtrate: IFilterate = (option, label, search) => {
         return (label || '').toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) > -1
@@ -35,20 +40,29 @@
 
         emit('update:modelValue', newVal)
     }
+
+    onMounted(() => {
+        // init default select value
+        // default values not init, when :value binds modelValue in v-select lib
+        // ISSUE
+        select._value.$data._value = props.modelValue
+    })
 </script>
 
 <template>
     <span>{{ props.label }}</span>
     <div class="flex items-center xl:w-[470px] sm:w-[296px] h-[48px] border rounded-md mt-[12px]">
         <v-select
+            ref="select"
             class="w-[100px]"
-            v-model="props.modelValue"
+            :value="props.modelValue"
             @option:selected="updateSelectValue"
-            @change="updateSelectValue"
             :options="props.options"
             :get-option-label="getOptionLabel"
             :filterable="true"
             :filterBy="filtrate"
+            :clearable="false"
+            autocomplete="on"
         >
             <template #selected-option="option: IPhoneMaskInfo" slot-scope="option">
                 <span class="mt-5">

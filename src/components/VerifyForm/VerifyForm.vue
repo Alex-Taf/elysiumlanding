@@ -18,6 +18,7 @@
 
     import Phones from "../../static/phones.json"
     import Countries from "../../static/countries.json"
+    import Exchange from "../../static/exchange.json"
 
     const { t } = useI18n({ messages, useScope: 'global' })
 
@@ -28,19 +29,20 @@
         address: '',
         countryOptions: Countries.items,
         country: {
-            id: 1,
-            name: "Russia",
-            value: "RU"
+            id: 184,
+            name: "Russian Federation",
+            value: "ru"
         },
         symbolicSum: '',
         phoneOptions: Phones.phones,
         phoneSelected: {
             countryCode: "rus",
-            countryName: "Russia",
+            countryName: "Russian Federation",
             countryMask: '+7 (###) ###-##-##',
             countryMaskPlaceholder: "+7 (___) ___ - __ - __",
             value: ''
         },
+        exchangeArray: Exchange.items,
         exchange: {
             id: 1,
             name: 'Binance',
@@ -171,6 +173,7 @@
                             v-model="state.country" 
                             :label="t('form.country.label')"
                             :options="state.countryOptions"
+                            :filterable="true"
                         />
                     </div>
                     <div class="mb-10">
@@ -238,7 +241,11 @@
                         </InputTextInvalidDialog>
                     </div>
                     <div class="mb-10">
-                        <SelectExc v-model="state.exchange" :label="t('form.establecoin.label')" />
+                        <SelectExc
+                            v-model="state.exchange"
+                            :label="t('form.establecoin.label')"
+                            :options="state.exchangeArray"
+                        />
                     </div>
                 </aside>
             </section>

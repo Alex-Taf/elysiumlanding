@@ -1,19 +1,11 @@
 <script setup lang="ts">
-    import { reactive } from 'vue'
     import { ISelectExcValue } from './SelectExc.interface'
 
     const props = defineProps<{
         label: string,
+        options: Array<ISelectExcValue>,
         modelValue: ISelectExcValue
     }>()
-
-    const options = reactive([
-        {
-            id: 1,
-            name: 'Binance',
-            value: '/exc/binance.png'
-        }
-    ])
 
     const emit = defineEmits(['update:modelValue'])
 
@@ -29,6 +21,7 @@
             v-model="props.modelValue"
             :options="options"
             @option:selected="updateSelectValue"
+            :clearable="false"
         >
             <template v-slot:selected-option="selected">
                 <img :src='selected.value'/>
