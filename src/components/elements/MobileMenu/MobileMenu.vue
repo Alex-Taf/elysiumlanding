@@ -3,6 +3,8 @@
     import socials from "../../../static/social.json"
     import Socials from "../Socials/Socials.vue"
 
+    import ELink from '../ELink/ELink.vue'
+
     const props = defineProps<{
         menuOpen: boolean,
         items: IMenuItem[]
@@ -22,7 +24,7 @@
                 <template v-for="menuItem in props.items" :key="menuItem">
                     <li class="text-[#A8ABAF] flex items-center text-xl px-11 py-4 font-bold list-none"
                         :class="{ 'bg-[#D8D8D8]': menuItem.subitems?.length }">
-                        <a v-if="menuItem.link" :href="menuItem.link" @click="closeMenu">{{ menuItem.title }}</a>
+                        <ELink v-if="menuItem.link" :href="menuItem.link" @click="closeMenu">{{ menuItem.title }}</ELink>
                         <details v-auto-animate v-else>
                             <summary class="list-none cursor-pointer">
                                 <div class="flex items-center">
@@ -41,7 +43,7 @@
                             </summary>
                             <nav class="flex flex-col">
                                 <template v-for="subitem in menuItem.subitems" :key="subitem">
-                                    <a class="m-4" :href="subitem.link" @click="closeMenu">{{ subitem.title }}</a>
+                                    <ELink classList="m-4" :href="subitem.link" @click="closeMenu">{{ subitem.title }}</ELink>
                                 </template>
                             </nav>
                         </details>

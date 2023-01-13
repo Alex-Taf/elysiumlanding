@@ -1,6 +1,6 @@
 <script setup lang="ts">
     const props = defineProps<{
-        classList: string,
+        classList?: string,
         href: string
     }>()
 

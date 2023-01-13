@@ -2,6 +2,8 @@
     import { computed } from "vue"
     import Socials from "../elements/Socials/Socials.vue"
 
+    import ELink from "../elements/ELink/ELink.vue"
+
     import footer from "../../static/footer.json"
     import socials from "../../static/social.json"
 
@@ -18,13 +20,13 @@
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('pages') }}</h5>
                 <li v-for="page in footerSet.pages">
-                    <a class="text-skin-text" :href="page.link">{{ page.title }}</a>
+                    <ELink classList="text-skin-text" :href="page.link">{{ page.title }}</ELink>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('services') }}</h5>
                 <li v-for="page in footerSet.service">
-                    <a class="text-skin-text" :href="page.link">{{ page.title }}</a>
+                    <ELink class="text-skin-text" :href="page.link">{{ page.title }}</ELink>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
