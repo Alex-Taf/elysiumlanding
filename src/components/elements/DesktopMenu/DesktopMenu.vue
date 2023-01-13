@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import { ref, watch, onMounted } from 'vue'
     import { IMenuItem } from '../../../interfaces/index'
+    import ELink from '../ELink/ELink.vue'
 
     const props = defineProps<{
         items: IMenuItem[]
@@ -17,7 +18,7 @@
         const details = document.querySelector('#menu-details')
         const target = e.target as HTMLElement
 
-        if(!details.contains(target)){
+        if(details && !details.contains(target)){
             details.removeAttribute('open')
         }
     }
@@ -41,12 +42,12 @@
             <li
                 class="text-[#A8ABAF] flex items-center text-xl font-bold list-none select-none"
             >
-                <a
-                    class="hover:text-skin-text"
+                <ELink
+                    classList="hover:text-skin-text"
                     v-if="menuItem.link"
                     :href="menuItem.link"
-                    >{{ menuItem.title }}</a
-                >
+                    >{{ menuItem.title }}
+                </Elink>
                 <details id="menu-details" class="relative" @toggle="toggleDetails" :open="detailsIsOpen" v-else>
                     <summary
                         class="list-none hover:text-skin-text cursor-pointer"
@@ -92,11 +93,11 @@
                             v-for="subitem in menuItem.subitems"
                             :key="subitem"
                         >
-                            <a
-                                class="p-4 hover:bg-skin-default hover:text-skin-text"
+                            <ELink
+                                classList="p-4 hover:bg-skin-default hover:text-skin-text"
                                 :href="subitem.link"
-                                >{{ subitem.title }}</a
-                            >
+                                >{{ subitem.title }}
+                            </ELink>
                         </template>
                     </nav>
                 </details>
