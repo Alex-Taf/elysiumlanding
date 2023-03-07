@@ -11,7 +11,9 @@ export const useChart: IUseChart = (options) => {
         dataLabels: {
             enabled: options.dataLabels.enabled,
             style: {
-                fontSize: options.dataLabels.style.fontSize
+                fontSize: options.dataLabels.style.fontSize,
+                fontFamily: options.dataLabels.style.fontFamily,
+                fontWeight: options.dataLabels.style.fontWeight
             },
             formatter: function (val: unknown, opts: any) {
                 if (options.dataLabels.formatter.defaultString) {
@@ -62,6 +64,7 @@ export const useChart: IUseChart = (options) => {
                             show: true,
                             showAlways: true,
                             label: options.donut.label,
+                            fontWeight: options.donut.labelsFontWeight,
                             fontSize: '20px',
                             formatter: function () {
                                 return options.donut.formatterString
@@ -69,7 +72,7 @@ export const useChart: IUseChart = (options) => {
                         },
                         name: {
                             show: true,
-                            fontSize: '42px'
+                            fontSize: '42px',
                         }
                     }
                 }

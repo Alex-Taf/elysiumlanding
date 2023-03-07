@@ -33,7 +33,7 @@
                     <div class="flex xl:flex-row sm:flex-col justify-between w-full xl:h-[516px] pt-[200px] xl:pl-[74px] sm:pl-5 sm:pt-10">
                         <section class="flex flex-col items-start xl:justify-start sm:justify-between sm:gap-y-6">
                             <span class="text-skin-title bg-white text-[17px] rounded-[16px] py-[5px] px-[12px] xl:mb-4 w-fit">{{ t('products') }}</span>
-                            <h3 class="text-white sm:text-[34px] xl:mb-4">{{ t('web') }}</h3>
+                            <h3 class="text-white sm:text-[36px] xl:mb-4">{{ t('web') }}</h3>
                             <span class="text-white text-left xl:w-[547px] sm:w-full sm:leading-5 xl:mb-4">
                                 {{ t('webDesc') }}
                             </span>
@@ -48,7 +48,7 @@
                     <div class="flex xl:flex-row sm:flex-col justify-between w-full xl:h-[516px] sm:h-[700px] pt-[200px] xl:pl-[74px] sm:pl-5 sm:pt-10">
                         <section class="flex flex-col items-start">
                             <span class="text-skin-title bg-white text-[17px] rounded-[16px] py-[5px] px-[12px] w-fit mb-12">{{ t('products') }}</span>
-                            <h3 class="text-white sm:text-[34px] xl:mb-4">{{ t('app') }}</h3>
+                            <h3 class="text-white sm:text-[36px] xl:mb-4">{{ t('app') }}</h3>
                             <span class="text-white text-left xl:w-[547px] sm:w-full sm:leading-5 xl:mb-4">
                                 {{ t('appDesc') }}
                             </span>

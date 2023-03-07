@@ -45,8 +45,8 @@
         exchangeArray: Exchange.items,
         exchange: {
             id: 1,
-            name: 'Binance',
-            value: '/exc/binance.png'
+            name: 'USD Coin (USDC)',
+            value: 'usdc'
         }
     })
 

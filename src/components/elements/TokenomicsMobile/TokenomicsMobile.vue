@@ -30,21 +30,22 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#800080', '#353C45'],
-        images: ['/reflections.png', '/charity.png', '/dev.png'],
-        labels: [t('chart1.labels.reflections'), t('chart1.labels.charity'), t('chart1.labels.dev')],
+        colors: ['#208089', '#353C45'],
+        images: ['/reflections.png', '/dev.png'],
+        labels: [t('chart1.labels.reflections'), t('chart1.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
                 fontSize: "27px"
             },
             formatter: {
-                customString: "0,1%"
+                customString: "0,5%"
             }
         },
         donut: {
-            label: `${t('chart1.donut.tax')} -0,3%`,
+            label: `${t('chart1.donut.tax')}: 0,3%`,
             labelsFontSize: '12px',
+            labelsFontWeight: 'bold',
             formatterString: t('chart1.donut.label'),
         }
     }))
@@ -54,9 +55,9 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#483D8B', '#353C45'],
-        images: ['/reflections.png', '/divers.png', '/dev.png'],
-        labels: [t('chart2.labels.reflections'), t('chart2.labels.divers'), t('chart2.labels.dev')],
+        colors: ['#208089', '#353C45'],
+        images: ['/reflections.png', '/dev.png'],
+        labels: [t('chart2.labels.reflections'), t('chart2.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
@@ -67,14 +68,15 @@
             }
         },
         donut: {
-            label: `${t('chart2.donut.tax')} -7%`,
+            label: `${t('chart2.donut.tax')}: 7%`,
             labelsFontSize: '12px',
+            labelsFontWeight: 'bold',
             formatterString: t('chart2.donut.label'),
         }
     }))
 
-    const series1 = [0.1, 0.1, 0.1]
-    const series2 = [1, 1, 1]
+    const series1 = [0.5, 0.5]
+    const series2 = [0.5, 0.5]
 
     const tokenomicsCarousel = ref()
 
@@ -124,8 +126,9 @@
         <TokenomicsCarousel :modal-tokenomics="modalTokenomics" :slide-num="state.slideNum" />
     </Modal>
     <div class="relative">
-        <section class="flex flex-col items-center gap-y-10 xl:h-[700px] sm:h-[520px] w-full py-[40px] bg-gray-900 rounded-xl sm:px-[16px]">
-            <h4 class="text-white">{{ t('tokenomics') }}</h4>
+        <section class="relative flex flex-col items-center gap-y-10 xl:h-[700px] sm:h-[520px] w-full py-[40px] bg-[#141414] rounded-xl sm:px-[16px]">
+            <img class="absolute top-0 w-full bg-repeat" src="../../../assets/surikat-mobile.png" />
+            <h4 class="text-white font-bold">{{ t('tokenomics') }}</h4>
             <span class="whitespace-pre-wrap text-center text-white text-[17px] mb-5">
                 <p class="break-words">{{ t('emission') }}</p>
             </span>
@@ -137,7 +140,7 @@
                                 <template v-if="item && item.popper">
                                     <Popper :content="item.popper.text" :show="item.popper.show">
                                         <li class="tokenomics-item"
-                                            @mouseover="item.popper.show = true"
+                                            @mouseenter="item.popper.show = true"
                                             @mouseleave="item.popper.show = false"
                                             @click="openModal(item.id - 1)"
                                         >

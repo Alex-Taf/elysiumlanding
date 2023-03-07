@@ -16,25 +16,25 @@
 
 <template>
     <footer class="flex justify-center bg-white py-[48px] xl:px-[162px] sm:px-[20px]">
-        <section class="flex xl:flex-row w-full xl:max-w-container sm:flex-col-reverse justify-between sm:gap-y-12">
+        <section class="flex text-g xl:flex-row w-full xl:max-w-container sm:flex-col-reverse justify-between sm:gap-y-12">
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('pages') }}</h5>
                 <li v-for="page in footerSet.pages">
-                    <ELink classList="text-skin-text" :href="page.link">{{ page.title }}</ELink>
+                    <ELink classList="text-skin-text hover:text-black" :href="page.link">{{ page.title }}</ELink>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('services') }}</h5>
                 <li v-for="page in footerSet.service">
-                    <ELink class="text-skin-text" :href="page.link">{{ page.title }}</ELink>
+                    <ELink classList="text-skin-text hover:text-black" :href="page.link">{{ page.title }}</ELink>
                 </li>
             </ul>
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('contact') }}</h5>
-                <li class="flex items-center">
+                <!-- <li class="flex items-center">
                     <img src="../../assets/phone.svg" />
                     <span class="text-skin-text ml-3">(603) 555-0123</span>
-                </li>
+                </li> -->
                 <li class="flex items-center">
                     <img src="../../assets/mail.svg" />
                     <span class="text-skin-text ml-3">ContactoElisiym@gmail.com</span>
@@ -46,7 +46,7 @@
             </ul>
             <ul class="flex flex-col gap-y-6">
                 <h5>{{ t('socialMedia') }}</h5>
-                <Socials :items="socials.footer.items" :type="'footer'" class="pl-0" />
+                <Socials :items="socials.items" class="pl-0" />
             </ul>
         </section>
     </footer>

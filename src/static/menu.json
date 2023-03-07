@@ -23,16 +23,33 @@
                 "link": "/#products"
             },
             {
-                "title": "Team",
-                "link": "/#team"
-            },
-            {
                 "title": "Listing",
                 "link": "/#listing"
             },
             {
+                "title": "Team",
+                "link": "/#team"
+            },
+            {
                 "title": "Whitepaper",
-                "link": "/#whitepaper"
+                "subitems": [
+                    {
+                        "title": "Document 1",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 2",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 3",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 4",
+                        "link": "/file-sample_500kB.doc"
+                    }
+                ]
             },
             {
                 "title": "How to buy?",
@@ -62,16 +79,33 @@
                 "link": "/#products"
             },
             {
-                "title": "Equipo",
-                "link": "/#team"
-            },
-            {
                 "title": "Listado",
                 "link": "/#listing"
             },
             {
+                "title": "Equipo",
+                "link": "/#team"
+            },
+            {
                 "title": "Informe técnico",
-                "link": "/#whitepaper"
+                "subitems": [
+                    {
+                        "title": "Document 1",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 2",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 3",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 4",
+                        "link": "/file-sample_500kB.doc"
+                    }
+                ]
             },
             {
                 "title": "Como comprar?",
@@ -101,16 +135,33 @@
                 "link": "/#products"
             },
             {
-                "title": "О команде",
-                "link": "/#team"
-            },
-            {
                 "title": "Спонсоры",
                 "link": "/#listing"
             },
             {
+                "title": "О команде",
+                "link": "/#team"
+            },
+            {
                 "title": "Документация",
-                "link": "/#whitepaper"
+                "subitems": [
+                    {
+                        "title": "Document 1",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 2",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 3",
+                        "link": "/file-sample_500kB.doc"
+                    },
+                    {
+                        "title": "Document 4",
+                        "link": "/file-sample_500kB.doc"
+                    }
+                ]
             },
             {
                 "title": "Как купить?",

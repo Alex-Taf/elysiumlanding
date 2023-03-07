@@ -18,10 +18,6 @@
                 "link": "/#listing"
             },
             {
-                "title": "Whitepaper",
-                "link": "/#whitepaper"
-            },
-            {
                 "title": "How to buy?",
                 "link": "/verify"
             }
@@ -67,10 +63,6 @@
                 "link": "/#team"
             },
             {
-                "title": "Informe técnico",
-                "link": "/#whitepaper"
-            },
-            {
                 "title": "Como comprar?",
                 "link": "/verify"
             }
@@ -114,10 +106,6 @@
             {
                 "title": "Команда",
                 "link": "/#team"
-            },
-            {
-                "title": "Документация",
-                "link": "/#whitepaper"
             },
             {
                 "title": "Как купить?",

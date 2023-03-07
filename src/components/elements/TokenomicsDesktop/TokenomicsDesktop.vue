@@ -28,21 +28,22 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#800080', '#353C45'],
-        images: ['/reflections.png', '/charity.png', '/dev.png'],
-        labels: [t('chart1.labels.reflections'), t('chart1.labels.charity'), t('chart1.labels.dev')],
+        colors: ['#208089', '#353C45'],
+        images: ['/reflections.png', '/dev.png'],
+        labels: [t('chart1.labels.reflections'), t('chart1.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
                 fontSize: "27px"
             },
             formatter: {
-                customString: "0,1%"
+                customString: "0,5%"
             }
         },
         donut: {
-            label: `${t('chart1.donut.tax')} -0,3%`,
+            label: `${t('chart1.donut.tax')}: 0,3%`,
             labelsFontSize: '14px',
+            labelsFontWeight: 'bold',
             formatterString: t('chart1.donut.label'),
         }
     }))
@@ -52,27 +53,28 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#483D8B', '#353C45'],
-        images: ['/reflections.png', '/divers.png', '/dev.png'],
-        labels: [t('chart2.labels.reflections'), t('chart2.labels.divers'), t('chart2.labels.dev')],
+        colors: ['#208089', '#353C45'],
+        images: ['/reflections.png', '/dev.png'],
+        labels: [t('chart2.labels.reflections'), t('chart2.labels.dev')],
         dataLabels: {
             enabled: true,
             style: {
                 fontSize: "27px"
             },
             formatter: {
-                defaultString: true
+                customString: "0,5%"
             }
         },
         donut: {
-            label: `${t('chart2.donut.tax')} -7%`,
+            label: `${t('chart2.donut.tax')}: 7%`,
             labelsFontSize: '14px',
+            labelsFontWeight: 'bold',
             formatterString: t('chart2.donut.label'),
         }
     }))
 
-    const series1 = [0.1, 0.1, 0.1]
-    const series2 = [1, 1, 1]
+    const series1 = [0.5, 0.5]
+    const series2 = [0.5, 0.5]
 
     const componentsIconsArray = [Icon1, Icon2, Icon3, Icon4, Icon5, Icon6]
 
@@ -103,15 +105,16 @@
     </Modal>
     <div class="relative">
         <section
-            class="flex flex-col items-center gap-y-10 max-w-[1440px] w-full min-w-[1280px] h-[700px] pt-[80px] bg-gray-900 rounded-xl"
+            class="relative flex flex-col items-center gap-y-10 max-w-[1440px] w-full min-w-[1280px] h-[700px] pt-[80px] bg-[#141414] rounded-xl"
         >
-            <h2 class="text-white">{{ t('tokenomics') }}</h2>
+            <img class="absolute top-0" src="../../../assets/surikat.png" />
+            <h2 class="text-white font-black">{{ t('tokenomics') }}</h2>
             <span class="whitespace-pre-wrap text-center text-white text-xl mb-5">
                 <p class="break-words">{{ t('emission') }}</p>
             </span>
             <div class="flex gap-x-32">
                 <ul
-                    v-for="group in tokenomicsSet.items"
+                    v-for="group in state.tokenomics.items"
                     class="flex flex-col gap-y-6"
                     v-auto-animate
                 >
@@ -123,7 +126,7 @@
                             >
                                 <li
                                     class="tokenomics-item"
-                                    @mouseover="item.popper.show = true"
+                                    @mouseenter="item.popper.show = true"
                                     @mouseleave="item.popper.show = false"
                                     @click="openModal(item.id - 1)"
                                 >

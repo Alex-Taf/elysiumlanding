@@ -1,7 +1,8 @@
 <script setup lang="ts">
     const props = defineProps<{
         classList?: string,
-        href: string
+        href: string,
+        target?: string
     }>()
 
     const checkToAnchor = (href: string): boolean => {
@@ -11,7 +12,7 @@
 
 <template>
     <span :class="props.classList">
-        <router-link v-if="!checkToAnchor(props.href)" :to="props.href">
+        <router-link v-if="!checkToAnchor(props.href) && props.target !== '_blank'" :to="props.href">
             <slot></slot>
         </router-link>
         <a v-else :href="props.href">

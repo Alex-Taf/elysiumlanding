@@ -10,26 +10,14 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 2,
-                        "title": "Charty Fund"
                     }
                 ]
             },
             {
                 "group": [
                     {
-                        "id": 4,
-                        "title": "Diversification",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
-                    },
-                    {
                         "id": 6,
-                        "title": "Development Manco Capac"
+                        "title": "Development & Marketing"
                     }
                 ]
             }
@@ -46,26 +34,14 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 2,
-                        "title": "Fondo de Gráficos"
                     }
                 ]
             },
             {
                 "group": [
                     {
-                        "id": 4,
-                        "title": "Diversificación",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
-                    },
-                    {
                         "id": 6,
-                        "title": "Desarrollo Manco Capac"
+                        "title": "Desarrollo & Marketing"
                     }
                 ]
             }
@@ -82,26 +58,14 @@
                             "show": false,
                             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
                         }
-                    },
-                    {
-                        "id": 2,
-                        "title": "Уставной фонд"
                     }
                 ]
             },
             {
                 "group": [
                     {
-                        "id": 4,
-                        "title": "Диверсификация",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
-                    },
-                    {
                         "id": 6,
-                        "title": "Разработка Manco Capac"
+                        "title": "Разработка & Маркетинг"
                     }
                 ]
             }

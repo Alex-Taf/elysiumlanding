@@ -28,10 +28,10 @@
         <!-- Table Body -->
         <div class="flex flex-col bg-white w-full min-w-[279px]">
             <div v-for="row in items.rows" class="flex">
-                <div class="flex justify-center items-center border-2 border-t-0 p-4 w-[279px]">
+                <div class="flex justify-center items-center border-2 border-t-0 p-4 min-h-[110px] w-[279px]">
                     <span class="text-[17px] w-[239px]" v-html="row.title"></span>
                 </div>
-                <div v-for="col in row.cols" class="flex justify-center items-center w-full border-2 border-l-0 border-t-0 p-4">
+                <div v-for="col in row.cols" class="flex justify-center items-center min-h-[110px] w-full border-2 border-l-0 border-t-0 p-4">
                     <span class="text-[17px] text-center" v-html="col.title"></span>
                 </div>
             </div>

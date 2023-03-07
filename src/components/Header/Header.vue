@@ -44,7 +44,7 @@
         <section class="sm:hidden xl:block h-[44px] w-full border-b-2 border-[#DFE0E1]">
             <section class="flex items-center justify-between h-[44px] w-full max-w-container m-auto">
                 <LangSwitcher />
-                <Socials :items="socials.header.items" :type="'header'" />
+                <Socials :items="socials.items" />
             </section>
         </section>
         <section class="py-4 px-11 w-full shadow-md">

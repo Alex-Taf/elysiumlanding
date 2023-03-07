@@ -24,11 +24,17 @@
             :clearable="false"
         >
             <template v-slot:selected-option="selected">
+                {{ selected.name }}
+            </template>
+            <template v-slot:option="option" slot-scope="option">
+                {{ option.name }}
+            </template>
+            <!-- <template v-slot:selected-option="selected">
                 <img :src='selected.value'/>
             </template>
             <template v-slot:option="option" slot-scope="option">
-                <img :src='option.value'/>
-            </template>
+                <img :src='option.value'/> -->
+            <!-- </template> -->
         </v-select>
     </div>
 </template>

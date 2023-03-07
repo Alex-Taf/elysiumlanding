@@ -29,7 +29,7 @@
 <template>
     <section class="flex flex-col items-center justify-between py-[12px] h-[360px] bg-white" id="listing">
         <span class="bg-black text-white text-[17px] py-[5px] px-[12px] rounded-[16px]">{{ t('listing') }}</span>
-        <h3>{{ t('text') }}</h3>
+        <h3 class="text-[27px]">{{ t('text') }}</h3>
         <Carousel ref="listingCarousel" :items-to-show="1.55" :items-to-scroll="1" :snap-align="'start'">
             <Slide :key="'slide'">
                 <img src="../../../assets/polygonscan.png" class="h-[40px]" />

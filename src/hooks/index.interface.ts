@@ -9,7 +9,9 @@ export interface IUseChartOptions {
     dataLabels: {
         enabled: boolean,
         style: {
-            fontSize: string
+            fontSize?: string,
+            fontFamily?: string,
+            fontWeight?: string
         },
         formatter: {
             customString?: string,
@@ -19,6 +21,7 @@ export interface IUseChartOptions {
     donut: {
         label: string,
         labelsFontSize: string, // in px
+        labelsFontWeight?: string | number,
         formatterString: string,
     }
 }

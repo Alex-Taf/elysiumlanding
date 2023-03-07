@@ -1,100 +1,52 @@
 {
-    "header": {
-        "items": [
-            {
-                "id": 1,
-                "alt": "Twitter",
-                "className": "header-social header-social--twitter",
-                "link": ""
-            },
-            {
-                "id": 2,
-                "alt": "Telegram",
-                "className": "header-social header-social--telegram",
-                "link": ""
-            },
-            {
-                "id": 3,
-                "alt": "Reddit",
-                "className": "header-social header-social--reddit",
-                "link": ""
-            },
-            {
-                "id": 4,
-                "alt": "Facebook",
-                "className": "header-social header-social--facebook",
-                "link": ""
-            },
-            {
-                "id": 5,
-                "alt": "YouTube",
-                "className": "header-social header-social--youtube",
-                "link": ""
-            },
-            {
-                "id": 6,
-                "alt": "TikTok",
-                "className": "header-social header-social--tiktok",
-                "link": ""
-            },
-            {
-                "id": 7,
-                "alt": "Instagram",
-                "className": "header-social header-social--inst",
-                "link": ""
-            }
-        ]
-    },
-    "footer": {
-        "items": [
-            {
-                "id": 1,
-                "alt": "Twitter",
-                "className": "header-social header-social--twitter",
-                "link": ""
-            },
-            {
-                "id": 2,
-                "alt": "Telegram",
-                "className": "header-social header-social--telegram",
-                "link": ""
-            },
-            {
-                "id": 3,
-                "alt": "Reddit",
-                "className": "header-social header-social--reddit",
-                "link": ""
-            },
-            {
-                "id": 4,
-                "alt": "Facebook",
-                "className": "header-social header-social--facebook",
-                "link": ""
-            },
-            {
-                "id": 5,
-                "alt": "YouTube",
-                "className": "header-social header-social--youtube",
-                "link": ""
-            },
-            {
-                "id": 6,
-                "alt": "TikTok",
-                "className": "header-social header-social--tiktok",
-                "link": ""
-            },
-            {
-                "id": 7,
-                "alt": "Instagram",
-                "className": "header-social header-social--inst",
-                "link": ""
-            },
-            {
-                "id": 8,
-                "alt": "Instagram",
-                "className": "header-social header-social--linkedin",
-                "link": ""
-            }
-        ]
-    }
+    "items": [
+        {
+            "id": 1,
+            "alt": "Twitter",
+            "className": "social social--twitter",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "alt": "Telegram",
+            "className": "social social--telegram",
+            "link": ""
+        },
+        {
+            "id": 3,
+            "alt": "Reddit",
+            "className": "social social--reddit",
+            "link": ""
+        },
+        {
+            "id": 4,
+            "alt": "Facebook",
+            "className": "social social--facebook",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "alt": "YouTube",
+            "className": "social social--youtube",
+            "link": ""
+        },
+        {
+            "id": 6,
+            "alt": "TikTok",
+            "className": "social social--tiktok",
+            "link": ""
+        },
+        {
+            "id": 7,
+            "alt": "Instagram",
+            "className": "social social--inst",
+            "link": ""
+        },
+        {
+            "id": 8,
+            "alt": "Linkedin",
+            "className": "social social--linkedin",
+            "link": ""
+        }
+    ]
 }

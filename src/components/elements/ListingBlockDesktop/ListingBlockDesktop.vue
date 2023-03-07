@@ -8,7 +8,7 @@
 <template>
     <section class="flex flex-col items-center justify-between py-[72px] h-[434px] bg-white" id="listing">
         <span class="bg-black text-white text-[17px] py-[5px] px-[12px] rounded-[16px]">{{ t('listing') }}</span>
-        <h1>{{ t('text') }}</h1>
+        <h2 class="text-[36px]">{{ t('text') }}</h2>
         <section class="flex gap-x-8">
             <img src="../../../assets/polygonscan.png" class="h-[40px]" />
             <img src="../../../assets/coinmarketcap.png" class="h-[40px]" />

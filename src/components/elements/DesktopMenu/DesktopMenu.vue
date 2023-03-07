@@ -15,12 +15,14 @@
 
     const checkDetailsState = (e: Event) => {
         // ANTIPATTERN ????
-        const details = document.querySelector('#menu-details')
+        const details = document.querySelectorAll('.menu-details')
         const target = e.target as HTMLElement
 
-        if(details && !details.contains(target)){
-            details.removeAttribute('open')
-        }
+        details.forEach((detailItem) => {
+            if(detailItem && !detailItem.contains(target)){
+                detailItem.removeAttribute('open')
+            }
+        })
     }
 
     onMounted(() => {
@@ -48,7 +50,7 @@
                     :href="menuItem.link"
                     >{{ menuItem.title }}
                 </Elink>
-                <details id="menu-details" class="relative" @toggle="toggleDetails" :open="detailsIsOpen" v-else>
+                <details class="menu-details relative" @toggle="toggleDetails" v-else>
                     <summary
                         class="list-none hover:text-skin-text cursor-pointer"
                     >
@@ -96,6 +98,7 @@
                             <ELink
                                 classList="p-4 hover:bg-skin-default hover:text-skin-text"
                                 :href="subitem.link"
+                                target="_blank"
                                 >{{ subitem.title }}
                             </ELink>
                         </template>
