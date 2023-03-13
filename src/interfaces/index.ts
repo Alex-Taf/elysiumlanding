@@ -37,3 +37,15 @@ export interface IFilterate {
 export interface IGetOptionLabel {
     (option: Record<string, string>): string
 }
+
+export interface ICountryMask {
+    mask: string,
+    placeholder: string
+}
+
+export interface IPhoneMaskInfo {
+    countryCode: string,
+    countryName: string,
+    countryMask: ICountryMask | Array<ICountryMask>,
+    value?: string
+}

@@ -1,4 +1,4 @@
-import { IUseDeviceWidth, ICopyToClipboard, IGetUserLocale, IGetStatusText } from "./index.interface"
+import { IUseDeviceWidth, ICopyToClipboard, IGetUserLocale, IGetStatusText, IGetPhonesLength, IGetValidMask } from "./index.interface"
 import { IEmailStatusObject } from "../interfaces"
 import emailstatus from "../static/emailstatus.json"
 
@@ -29,4 +29,46 @@ export const getStatusText: IGetStatusText = (statusCode) => {
     const locale = getUserLocale({ form: 'short' })
 
     return emailstatus[locale].find((value: IEmailStatusObject) => value.statusCode === statusCode).text
+}
+
+const getPhonesLength: IGetPhonesLength = (masks) => ({
+    _lengths: masks.map(mask => mask.mask.length),
+    getMinMax() {
+        return {
+            min: Math.min(...this._lengths),
+            max: Math.max(...this._lengths)
+        }
+    },
+    getCurrent() {
+        return this._lengths
+    }
+})
+
+export const getValidMask: IGetValidMask = (countryMask, input) => {
+    const validations = {
+        hasNumbers: (value: string) => /\d/.test(value),
+        lengths: {
+            current: Array.isArray(countryMask) ? getPhonesLength(countryMask).getCurrent() : countryMask.mask.length,
+            min: Array.isArray(countryMask) ? getPhonesLength(countryMask).getMinMax().min : countryMask.mask.length,
+            max: Array.isArray(countryMask) ? getPhonesLength(countryMask).getMinMax().max : countryMask.mask.length
+        }
+    }
+
+    let msk = null
+
+    if (Array.isArray(countryMask)) {
+        countryMask.forEach((item) => {
+            if (validations.hasNumbers(input) || input.length === item.mask.length) {
+                if (validations.hasNumbers(item.mask) || input.length === item.mask.length) {
+                    msk = item
+                }
+            }
+        })
+    } else {
+        msk = countryMask
+    }
+
+    console.log(msk)
+
+    return msk
 }

@@ -236,5 +236,14 @@ const phones = {
       return [key, value.replace(/[(]/g, ' (').replace(/[)]/g, ') ')]
     })
   )
+
+  const getPhonesLength = (phones) => {
+    const lengths = phones.map(phone => phone.length)
+
+    return {
+      min: Math.min(...lengths),
+      max: Math.max(...lengths)
+    }
+  }
   
-  console.log(JSON.stringify(newPhonesArr))
+  console.log(getPhonesLength([...Object.values(newPhonesArr)]))

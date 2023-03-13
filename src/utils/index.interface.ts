@@ -1,3 +1,5 @@
+import { ICoutryMask } from "../interfaces"
+
 export interface IUseDeviceWidth {
     (): {
         getWidth: () => number,
@@ -18,4 +20,22 @@ export interface IGetUserLocale {
 
 export interface IGetStatusText {
     (statusCode: number): string
+}
+
+export interface IGetPhonesLength {
+    (masks: Array<ICoutryMask>): {
+        _lengths: number[],
+        getMinMax: () => { min: number, max: number },
+        getCurrent: () => number[]
+    }
+}
+
+export interface IGetValidMask {
+    (mask: {
+        mask: string,
+        placeholder: string
+    } | Array<{
+        mask: string,
+        placeholder: string
+    }>, input: string): string | void
 }

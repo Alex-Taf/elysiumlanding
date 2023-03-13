@@ -1,1438 +1,1828 @@
 {
-    "phones": [
+    "items": [
         {
             "countryCode": "af",
             "countryName": "Afghanistan",
-            "countryMask": "+93-##-###-####",
-            "countryMaskPlaceholder": "+93 - __ - ___ - ____"
+            "countryMask": {
+                "mask": "+93-##-###-####",
+                "placeholder": "+93 - __ - ___ - ____"
+            }
         },
         {
             "countryCode": "ax",
             "countryName": "Åland Islands",
-            "countryMask": "+358 (###) ###-##-##",
-            "countryMaskPlaceholder": "+358 (___) ___-__-__"
+            "countryMask": {
+                "mask": "+358 (###) ###-##-##",
+                "placeholder": "+358 (___) ___-__-__"
+            }
         },
         {
             "countryCode": "al",
             "countryName": "Albania",
-            "countryMask": "+355 (###) ###-###",
-            "countryMaskPlaceholder": "+355 (___) ___-___"
+            "countryMask": {
+                "mask": "+355 (###) ###-###",
+                "placeholder": "+355 (___) ___-___"
+            }
         },
         {
             "countryCode": "dz",
             "countryName": "Algeria",
-            "countryMask": "+213-##-###-####",
-            "countryMaskPlaceholder": "+213-__-___-____"
+            "countryMask": {
+                "mask": "+213-##-###-####",
+                "placeholder": "+213-__-___-____"
+            }
         },
         {
             "countryCode": "as",
             "countryName": "American Samoa",
-            "countryMask": "+1 (684) ###-####",
-            "countryMaskPlaceholder": "+1 (684) ___-____"
+            "countryMask": {
+                "mask": "+1 (684) ###-####",
+                "placeholder": "+1 (684) ___-____"
+            }
         },
         {
             "countryCode": "ad",
             "countryName": "Andorra",
-            "countryMask": "+376-###-###",
-            "countryMaskPlaceholder": "+376-___-___"
+            "countryMask": {
+                "mask": "+376-###-###",
+                "placeholder": "+376-___-___"
+            }
         },
         {
             "countryCode": "ao",
             "countryName": "Angola",
-            "countryMask": "+244 (###) ###-###",
-            "countryMaskPlaceholder": "+244 (___) ___-___"
+            "countryMask": {
+                "mask": "+244 (###) ###-###",
+                "placeholder": "+244 (___) ___-___"
+            }
         },
         {
             "countryCode": "ar",
             "countryName": "Argentina",
-            "countryMask": "+54 (###) ###-####",
-            "countryMaskPlaceholder": "+54 (___) ___-____"
+            "countryMask": {
+                "mask": "+54 (###) ###-####",
+                "placeholder": "+54 (___) ___-____"
+            }
         },
         {
             "countryCode": "am",
             "countryName": "Armenia",
-            "countryMask": "+374-##-###-###",
-            "countryMaskPlaceholder": "+374-__-___-___"
+            "countryMask": {
+                "mask": "+374-##-###-###",
+                "placeholder": "+374-__-___-___"
+            }
         },
         {
             "countryCode": "aq",
             "countryName": "Antarctica",
-            "countryMask": "+672-1##-###",
-            "countryMaskPlaceholder": "+672-1__-___"
+            "countryMask": {
+                "mask": "+672-1##-###",
+                "placeholder": "+672-1__-___"
+            }
         },
         {
             "countryCode": "aw",
             "countryName": "Aruba",
-            "countryMask": "+297-###-####",
-            "countryMaskPlaceholder": "+297-___-____"
+            "countryMask": {
+                "mask": "+297-###-####",
+                "placeholder": "+297-___-____"
+            }
         },
         {
             "countryCode": "au",
             "countryName": "Australia",
-            "countryMask": "+61-#-####-####",
-            "countryMaskPlaceholder": "+61-_-____-____"
+            "countryMask": {
+                "mask": "+61-#-####-####",
+                "placeholder": "+61-_-____-____"
+            }
         },
         {
             "countryCode": "at",
             "countryName": "Austria",
-            "countryMask": "+43 (###) ###-####",
-            "countryMaskPlaceholder": "+43 (___) ___-____"
+            "countryMask": {
+                "mask": "+43 (###) ###-####",
+                "placeholder": "+43 (___) ___-____"
+            }
         },
         {
             "countryCode": "az",
             "countryName": "Azerbaijan",
-            "countryMask": "+994-##-###-##-##",
-            "countryMaskPlaceholder": "+994-__-___-__-__"
+            "countryMask": {
+                "mask": "+994-##-###-##-##",
+                "placeholder": "+994-__-___-__-__"
+            }
         },
         {
             "countryCode": "bs",
             "countryName": "Bahamas",
-            "countryMask": "+1 (242) ###-####",
-            "countryMaskPlaceholder": "+1 (242) ___-____"
+            "countryMask": {
+                "mask": "+1 (242) ###-####",
+                "placeholder": "+1 (242) ___-____"
+            }
         },
         {
             "countryCode": "bh",
             "countryName": "Bahrain",
-            "countryMask": "+973-####-####",
-            "countryMaskPlaceholder": "+973-____-____"
+            "countryMask": {
+                "mask": "+973-####-####",
+                "placeholder": "+973-____-____"
+            }
         },
         {
             "countryCode": "bd",
             "countryName": "Bangladesh",
-            "countryMask": "+880-##-###-###",
-            "countryMaskPlaceholder": "+880-__-___-___"
+            "countryMask": {
+                "mask": "+880-##-###-###",
+                "placeholder": "+880-__-___-___"
+            }
         },
         {
             "countryCode": "bb",
             "countryName": "Barbados",
-            "countryMask": "+1 (246) ###-####",
-            "countryMaskPlaceholder": "+1 (246) ___-____"
+            "countryMask": {
+                "mask": "+1 (246) ###-####",
+                "placeholder": "+1 (246) ___-____"
+            }
         },
         {
             "countryCode": "by",
             "countryName": "Belarus",
-            "countryMask": "+375 (##) ###-##-##",
-            "countryMaskPlaceholder": "+375 (__) ___-__-__"
+            "countryMask": {
+                "mask": "+375 (##) ###-##-##",
+                "placeholder": "+375 (__) ___-__-__"
+            }
         },
         {
             "countryCode": "be",
             "countryName": "Belgium",
-            "countryMask": "+32 (###) ###-###",
-            "countryMaskPlaceholder": "+32 (___) ___-___"
+            "countryMask": {
+                "mask": "+32 (###) ###-###",
+                "placeholder": "+32 (___) ___-___"
+            }
         },
         {
             "countryCode": "bz",
             "countryName": "Belize",
-            "countryMask": "+501-###-####",
-            "countryMaskPlaceholder": "+501-___-____"
+            "countryMask": {
+                "mask": "+501-###-####",
+                "placeholder": "+501-___-____"
+            }
         },
         {
             "countryCode": "bj",
             "countryName": "Benin",
-            "countryMask": "+229-##-##-####",
-            "countryMaskPlaceholder": "+229-__-__-____"
+            "countryMask": {
+                "mask": "+229-##-##-####",
+                "placeholder": "+229-__-__-____"
+            }
         },
         {
             "countryCode": "bm",
             "countryName": "Bermuda",
-            "countryMask": "+1 (441) ###-####",
-            "countryMaskPlaceholder": "+1 (441) ___-____"
+            "countryMask": {
+                "mask": "+1 (441) ###-####",
+                "placeholder": "+1 (441) ___-____"
+            }
         },
         {
             "countryCode": "bt",
             "countryName": "Bhutan",
-            "countryMask": "+975-17-###-###",
-            "countryMaskPlaceholder": "+975-17-___-___"
-        },
-        {
-            "countryCode": "bt",
-            "countryName": "Bhutan",
-            "countryMask": "+975-#-###-###",
-            "countryMaskPlaceholder": "+975-_-___-___"
+            "countryMask": [
+                {
+                    "mask": "+975-17-###-###",
+                    "placeholder": "+975-17-___-___"
+                },
+                {
+                    "mask": "+975-#-###-###",
+                    "placeholder": "+975-_-___-___"
+                }
+            ]
         },
         {
             "countryCode": "bo",
             "countryName": "Bolivia",
-            "countryMask": "+591-#-###-####",
-            "countryMaskPlaceholder": "+591-_-___-____"
+            "countryMask": {
+                "mask": "+591-#-###-####",
+                "placeholder": "+591-_-___-____"
+            }
         },
         {
             "countryCode": "ba",
             "countryName": "Bosnia and Herzegovina",
-            "countryMask": "+387-##-#####",
-            "countryMaskPlaceholder": "+387-__-_____"
-        },
-        {
-            "countryCode": "ba",
-            "countryName": "Bosnia and Herzegovina",
-            "countryMask": "+387-##-####",
-            "countryMaskPlaceholder": "+387-__-____"
+            "countryMask": [
+                {
+                    "mask": "+387-##-#####",
+                    "placeholder": "+387-__-_____"
+                },
+                {
+                    "mask": "+387-##-####",
+                    "placeholder": "+387-__-____"
+                }
+            ]
         },
         {
             "countryCode": "bw",
             "countryName": "Botswana",
-            "countryMask": "+267-##-###-###",
-            "countryMaskPlaceholder": "+267-__-___-___"
+            "countryMask": {
+                "mask": "+267-##-###-###",
+                "placeholder": "+267-__-___-___"
+            }
         },
         {
             "countryCode": "br",
             "countryName": "Brazil",
-            "countryMask": "+55 (##) ####-####",
-            "countryMaskPlaceholder": "+55 (__) ____-____"
-        },
-        {
-            "countryCode": "br",
-            "countryName": "Brazil",
-            "countryMask": "+55 (##) 7###-####",
-            "countryMaskPlaceholder": "+55 (__) 7___-____"
-        },
-        {
-            "countryCode": "br",
-            "countryName": "Brazil",
-            "countryMask": "+55 (##) 9####-####",
-            "countryMaskPlaceholder": "+55 (__) 9____-____"
+            "countryMask": [
+                {
+                    "mask": "+55 (##) ####-####",
+                    "placeholder": "+55 (__) ____-____"
+                },
+                {
+                    "mask": "+55 (##) 7###-####",
+                    "placeholder": "+55 (__) 7___-____"
+                },
+                {
+                    "mask": "+55 (##) 9####-####",
+                    "placeholder": "+55 (__) 9____-____"
+                }
+            ]
         },
         {
             "countryCode": "vg",
             "countryName": "Virgin Islands (British)",
-            "countryMask": "+1 (284) ###-####",
-            "countryMaskPlaceholder": "+1 (284) ___-____"
+            "countryMask": {
+                "mask": "+1 (284) ###-####",
+                "placeholder": "+1 (284) ___-____"
+            }
         },
         {
             "countryCode": "io",
             "countryName": "British Indian Ocean Territory",
-            "countryMask": "+246-###-####",
-            "countryMaskPlaceholder": "+246-___-____"
+            "countryMask": {
+                "mask": "+246-###-####",
+                "placeholder": "+246-___-____"
+            }
         },
         {
             "countryCode": "bn",
             "countryName": "Brunei Darussalam",
-            "countryMask": "+673-###-####",
-            "countryMaskPlaceholder": "+673-___-____"
+            "countryMask": {
+                "mask": "+673-###-####",
+                "placeholder": "+673-___-____"
+            }
         },
         {
             "countryCode": "bf",
             "countryName": "Burkina Faso",
-            "countryMask": "+226-##-##-####",
-            "countryMaskPlaceholder": "+226-__-__-____"
+            "countryMask": {
+                "mask": "+226-##-##-####",
+                "placeholder": "+226-__-__-____"
+            }
         },
         {
             "countryCode": "bi",
             "countryName": "Burundi",
-            "countryMask": "+257-##-##-####",
-            "countryMaskPlaceholder": "+257-__-__-____"
+            "countryMask": {
+                "mask": "+257-##-##-####",
+                "placeholder": "+257-__-__-____"
+            }
         },
         {
             "countryCode": "kh",
             "countryName": "Cambodia",
-            "countryMask": "+855-##-###-###",
-            "countryMaskPlaceholder": "+855-##-###-###"
+            "countryMask": {
+                "mask": "+855-##-###-###",
+                "placeholder": "+855-##-###-###"
+            }
         },
         {
             "countryCode": "cm",
             "countryName": "Cameroon",
-            "countryMask": "+237-####-####",
-            "countryMaskPlaceholder": "+237-____-____"
+            "countryMask": {
+                "mask": "+237-####-####",
+                "placeholder": "+237-____-____"
+            }
         },
         {
             "countryCode": "ca",
             "countryName": "Canada",
-            "countryMask": "+1 (###) ###-####",
-            "countryMaskPlaceholder": "+1 (___) ___-____"
+            "countryMask": {
+                "mask": "+1 (###) ###-####",
+                "placeholder": "+1 (___) ___-____"
+            }
         },
         {
             "countryCode": "cv",
             "countryName": "Cabo Verde",
-            "countryMask": "+238 (###) ##-##",
-            "countryMaskPlaceholder": "+238 (___) __-__"
+            "countryMask": {
+                "mask": "+238 (###) ##-##",
+                "placeholder": "+238 (___) __-__"
+            }
         },
         {
             "countryCode": "ky",
             "countryName": "Cayman Islands",
-            "countryMask": "+1 (345) ###-####",
-            "countryMaskPlaceholder": "+1 (345) ___-____"
+            "countryMask": {
+                "mask": "+1 (345) ###-####",
+                "placeholder": "+1 (345) ___-____"
+            }
         },
         {
             "countryCode": "cf",
             "countryName": "Central African Republic",
-            "countryMask": "+236-##-##-####",
-            "countryMaskPlaceholder": "+236-__-__-____"
+            "countryMask": {
+                "mask": "+236-##-##-####",
+                "placeholder": "+236-__-__-____"
+            }
         },
         {
             "countryCode": "td",
             "countryName": "Chad",
-            "countryMask": "+235-##-##-##-##",
-            "countryMaskPlaceholder": "+235-__-__-__-__"
+            "countryMask": {
+                "mask": "+235-##-##-##-##",
+                "placeholder": "+235-__-__-__-__"
+            }
         },
         {
             "countryCode": "cl",
             "countryName": "Chile",
-            "countryMask": "+56-_-____-____",
-            "countryMaskPlaceholder": "+56-_-____-____"
+            "countryMask": {
+                "mask": "+56-_-____-____",
+                "placeholder": "+56-_-____-____"
+            }
         },
         {
             "countryCode": "cn",
             "countryName": "China",
-            "countryMask": "+86 (###) ####-####",
-            "countryMaskPlaceholder": "+86 (___) ____-____"
-        },
-        {
-            "countryCode": "cn",
-            "countryName": "China",
-            "countryMask": "+86 (###) ####-###",
-            "countryMaskPlaceholder": "+86 (___) ____-___"
-        },
-        {
-            "countryCode": "cn",
-            "countryName": "China",
-            "countryMask": "+86-##-#####-#####",
-            "countryMaskPlaceholder": "+86-__-____-____"
+            "countryMask": [
+                {
+                    "mask": "+86 (###) ####-####",
+                    "placeholder": "+86 (___) ____-____"
+                },
+                {
+                    "mask": "+86 (###) ####-###",
+                    "placeholder": "+86 (___) ____-___"
+                },
+                {
+                    "mask": "+86-##-#####-#####",
+                    "placeholder": "+86-__-____-____"
+                }
+            ]
         },
         {
             "countryCode": "hk",
             "countryName": "Hong Kong",
-            "countryMask": "+852-####-####",
-            "countryMaskPlaceholder": "+852-____-____"
+            "countryMask": {
+                "mask": "+852-####-####",
+                "placeholder": "+852-____-____"
+            }
         },
         {
             "countryCode": "mo",
             "countryName": "Macao",
-            "countryMask": "+853-####-####",
-            "countryMaskPlaceholder": "+853-____-____"
+            "countryMask": {
+                "mask": "+853-####-####",
+                "placeholder": "+853-____-____"
+            }
         },
         {
             "countryCode": "co",
             "countryName": "Colombia",
-            "countryMask": "+57 (###) ###-####",
-            "countryMaskPlaceholder": "+57 (___) ___-____"
+            "countryMask": {
+                "mask": "+57 (###) ###-####",
+                "placeholder": "+57 (___) ___-____"
+            }
         },
         {
             "countryCode": "km",
             "countryName": "Comoros",
-            "countryMask": "+269-##-#####",
-            "countryMaskPlaceholder": "+269-__-_____"
+            "countryMask": {
+                "mask": "+269-##-#####",
+                "placeholder": "+269-__-_____"
+            }
         },
         {
             "countryCode": "cg",
             "countryName": "Congo",
-            "countryMask": "+242-##-###-####",
-            "countryMaskPlaceholder": "+242-__-___-____"
+            "countryMask": {
+                "mask": "+242-##-###-####",
+                "placeholder": "+242-__-___-____"
+            }
         },
         {
             "countryCode": "cd",
             "countryName": "Congo, Democratic Republic of the",
-            "countryMask": "+243 (###) ###-###",
-            "countryMaskPlaceholder": "+243 (___) ___-___"
+            "countryMask": {
+                "mask": "+243 (###) ###-###",
+                "placeholder": "+243 (___) ___-___"
+            }
         },
         {
             "countryCode": "ck",
             "countryName": "Cook Islands",
-            "countryMask": "+682-##-###",
-            "countryMaskPlaceholder": "+682-__-___"
+            "countryMask": {
+                "mask": "+682-##-###",
+                "placeholder": "+682-__-___"
+            }
         },
         {
             "countryCode": "cr",
             "countryName": "Costa Rica",
-            "countryMask": "+506-####-####",
-            "countryMaskPlaceholder": "+506-____-____"
+            "countryMask": {
+                "mask": "+506-####-####",
+                "placeholder": "+506-____-____"
+            }
         },
         {
             "countryCode": "ci",
             "countryName": "Côte d'Ivoire",
-            "countryMask": "+225-##-###-###",
-            "countryMaskPlaceholder": "+225-__-___-___"
+            "countryMask": {
+                "mask": "+225-##-###-###",
+                "placeholder": "+225-__-___-___"
+            }
         },
         {
             "countryCode": "hr",
             "countryName": "Croatia",
-            "countryMask": "+385-##-###-###",
-            "countryMaskPlaceholder": "+385-__-___-___"
+            "countryMask": {
+                "mask": "+385-##-###-###",
+                "placeholder": "+385-__-___-___"
+            }
         },
         {
             "countryCode": "cu",
             "countryName": "Cuba",
-            "countryMask": "+53-#-###-####",
-            "countryMaskPlaceholder": "+53-_-___-____"
+            "countryMask": {
+                "mask": "+53-#-###-####",
+                "placeholder": "+53-_-___-____"
+            }
         },
         {
             "countryCode": "cw",
             "countryName": "Curaçao",
-            "countryMask": "+599-###-####",
-            "countryMaskPlaceholder": "+599-___-____"
+            "countryMask": {
+                "mask": "+599-###-####",
+                "placeholder": "+599-___-____"
+            }
         },
         {
             "countryCode": "cy",
             "countryName": "Cyprus",
-            "countryMask": "+357-##-###-###",
-            "countryMaskPlaceholder": "+357-__-___-___"
+            "countryMask": {
+                "mask": "+357-##-###-###",
+                "placeholder": "+357-__-___-___"
+            }
         },
         {
             "countryCode": "cz",
             "countryName": "Czechia",
-            "countryMask": "+420 (###) ###-###",
-            "countryMaskPlaceholder": "+420 (___) ___-___"
+            "countryMask": {
+                "mask": "+420 (###) ###-###",
+                "placeholder": "+420 (___) ___-___"
+            }
         },
         {
             "countryCode": "de",
             "countryName": "Germany",
-            "countryMask": "+49-###-###",
-            "countryMaskPlaceholder": "+49-___-___"
+            "countryMask": {
+                "mask": "+49-###-###",
+                "placeholder": "+49-___-___"
+            }
         },
         {
             "countryCode": "dj",
             "countryName": "Djibouti",
-            "countryMask": "+253-##-##-##-##",
-            "countryMaskPlaceholder": "+253-__-__-__-__"
+            "countryMask": {
+                "mask": "+253-##-##-##-##",
+                "placeholder": "+253-__-__-__-__"
+            }
         },
         {
             "countryCode": "dk",
             "countryName": "Denmark",
-            "countryMask": "+45-##-##-##-##",
-            "countryMaskPlaceholder": "+45-__-__-__-__"
+            "countryMask": {
+                "mask": "+45-##-##-##-##",
+                "placeholder": "+45-__-__-__-__"
+            }
         },
         {
             "countryCode": "dm",
             "countryName": "Dominica",
-            "countryMask": "+1 (767) ###-####",
-            "countryMaskPlaceholder": "+1 (767) ___-____"
+            "countryMask": {
+                "mask": "+1 (767) ###-####",
+                "placeholder": "+1 (767) ___-____"
+            }
         },
         {
             "countryCode": "do",
             "countryName": "Dominican Republic",
-            "countryMask": "+1 (849) ###-####",
-            "countryMaskPlaceholder": "+1 (849) ___-____"
+            "countryMask": {
+                "mask": "+1 (849) ###-####",
+                "placeholder": "+1 (849) ___-____"
+            }
         },
         {
             "countryCode": "ec",
             "countryName": "Ecuador",
-            "countryMask": "+593-#-###-####",
-            "countryMaskPlaceholder": "+593-_-___-____"
+            "countryMask": {
+                "mask": "+593-#-###-####",
+                "placeholder": "+593-_-___-____"
+            }
         },
         {
             "countryCode": "ee",
             "countryName": "Estonia",
-            "countryMask": "+372-###-####",
-            "countryMaskPlaceholder": "+372-___-____"
+            "countryMask": {
+                "mask": "+372-###-####",
+                "placeholder": "+372-___-____"
+            }
         },
         {
             "countryCode": "eg",
             "countryName": "Egypt",
-            "countryMask": "+20 (###) ###-####",
-            "countryMaskPlaceholder": "+20 (___) ___-____"
+            "countryMask": {
+                "mask": "+20 (###) ###-####",
+                "placeholder": "+20 (___) ___-____"
+            }
         },
         {
             "countryCode": "er",
             "countryName": "Eritrea",
-            "countryMask": "+291-#-###-###",
-            "countryMaskPlaceholder": "+291-_-___-___"
+            "countryMask": {
+                "mask": "+291-#-###-###",
+                "placeholder": "+291-_-___-___"
+            }
         },
         {
             "countryCode": "es",
             "countryName": "Spain",
-            "countryMask": "+34 (###) ###-###",
-            "countryMaskPlaceholder": "+34 (___) ___-___"
+            "countryMask": {
+                "mask": "+34 (###) ###-###",
+                "placeholder": "+34 (___) ___-___"
+            }
         },
         {
             "countryCode": "et",
             "countryName": "Ethiopia",
-            "countryMask": "+251-##-###-####",
-            "countryMaskPlaceholder": "+251-__-___-____"
+            "countryMask": {
+                "mask": "+251-##-###-####",
+                "placeholder": "+251-__-___-____"
+            }
         },
         {
             "countryCode": "fi",
             "countryName": "Finland",
-            "countryMask": "+358 (###) ###-##-##",
-            "countryMaskPlaceholder": "+358 (___) ___-__-__"
+            "countryMask": {
+                "mask": "+358 (###) ###-##-##",
+                "placeholder": "+358 (___) ___-__-__"
+            }
         },
         {
             "countryCode": "fj",
             "countryName": "Fiji",
-            "countryMask": "+679-##-#####",
-            "countryMaskPlaceholder": "+679-__-_____"
+            "countryMask": {
+                "mask": "+679-##-#####",
+                "placeholder": "+679-__-_____"
+            }
         },
         {
             "countryCode": "fk",
             "countryName": "Falkland Islands (Malvinas)",
-            "countryMask": "+500-#####",
-            "countryMaskPlaceholder": "+500-_____"
+            "countryMask": {
+                "mask": "+500-#####",
+                "placeholder": "+500-_____"
+            }
         },
         {
             "countryCode": "fm",
             "countryName": "Micronesia (Federated States of)",
-            "countryMask": "+691-###-####",
-            "countryMaskPlaceholder": "+691-___-____"
+            "countryMask": {
+                "mask": "+691-###-####",
+                "placeholder": "+691-___-____"
+            }
         },
         {
             "countryCode": "fo",
             "countryName": "Faroe Islands",
-            "countryMask": "+298-###-###",
-            "countryMaskPlaceholder": "+298-___-___"
+            "countryMask": {
+                "mask": "+298-###-###",
+                "placeholder": "+298-___-___"
+            }
         },
         {
             "countryCode": "fr",
             "countryName": "France",
-            "countryMask": "+590 (###) ###-###",
-            "countryMaskPlaceholder": "+590 (___) ___-___"
+            "countryMask": {
+                "mask": "+590 (###) ###-###",
+                "placeholder": "+590 (___) ___-___"
+            }
         },
         {
             "countryCode": "ga",
             "countryName": "Gabon",
-            "countryMask": "+241-#-##-##-##",
-            "countryMaskPlaceholder": "+241-_-__-__-__"
+            "countryMask": {
+                "mask": "+241-#-##-##-##",
+                "placeholder": "+241-_-__-__-__"
+            }
         },
         {
             "countryCode": "gd",
             "countryName": "Grenada",
-            "countryMask": "+1 (473) ###-####",
-            "countryMaskPlaceholder": "+1 (473) ___-____"
+            "countryMask": {
+                "mask": "+1 (473) ###-####",
+                "placeholder": "+1 (473) ___-____"
+            }
         },
         {
             "countryCode": "ge",
             "countryName": "Georgia",
-            "countryMask": "+995 (###) ###-###",
-            "countryMaskPlaceholder": "+995 (___) ___-___"
+            "countryMask": {
+                "mask": "+995 (###) ###-###",
+                "placeholder": "+995 (___) ___-___"
+            }
         },
         {
             "countryCode": "gf",
             "countryName": "French Guiana",
-            "countryMask": "+594-#####-####",
-            "countryMaskPlaceholder": "+594-_____-____"
+            "countryMask": {
+                "mask": "+594-#####-####",
+                "placeholder": "+594-_____-____"
+            }
         },
         {
             "countryCode": "gh",
             "countryName": "Ghana",
-            "countryMask": "+233 (###) ###-###",
-            "countryMaskPlaceholder": "+233 (___) ___-___"
+            "countryMask": {
+                "mask": "+233 (###) ###-###",
+                "placeholder": "+233 (___) ___-___"
+            }
         },
         {
             "countryCode": "gi",
             "countryName": "Gibraltar",
-            "countryMask": "+350-###-#####",
-            "countryMaskPlaceholder": "+350-___-_____"
+            "countryMask": {
+                "mask": "+350-###-#####",
+                "placeholder": "+350-___-_____"
+            }
         },
         {
             "countryCode": "gl",
             "countryName": "Greenland",
-            "countryMask": "+299-##-##-##",
-            "countryMaskPlaceholder": "+299-__-__-__"
+            "countryMask": {
+                "mask": "+299-##-##-##",
+                "placeholder": "+299-__-__-__"
+            }
         },
         {
             "countryCode": "gm",
             "countryName": "Gambia",
-            "countryMask": "+220 (###) ##-##",
-            "countryMaskPlaceholder": "+220 (___) __-__"
+            "countryMask": {
+                "mask": "+220 (###) ##-##",
+                "placeholder": "+220 (___) __-__"
+            }
         },
         {
             "countryCode": "gn",
             "countryName": "Guinea",
-            "countryMask": "+224-##-###-###",
-            "countryMaskPlaceholder": "+224-__-___-___"
+            "countryMask": {
+                "mask": "+224-##-###-###",
+                "placeholder": "+224-__-___-___"
+            }
         },
         {
             "countryCode": "gq",
             "countryName": "Equatorial Guinea",
-            "countryMask": "+240-##-###-####",
-            "countryMaskPlaceholder": "+240-__-___-____"
+            "countryMask": {
+                "mask": "+240-##-###-####",
+                "placeholder": "+240-__-___-____"
+            }
         },
         {
             "countryCode": "gr",
             "countryName": "Greece",
-            "countryMask": "+30 (###) ###-####",
-            "countryMaskPlaceholder": "+30 (___) ___-____"
+            "countryMask": {
+                "mask": "+30 (###) ###-####",
+                "placeholder": "+30 (___) ___-____"
+            }
         },
         {
             "countryCode": "gt",
             "countryName": "Guatemala",
-            "countryMask": "+502-#-###-####",
-            "countryMaskPlaceholder": "+502-_-___-____"
+            "countryMask": {
+                "mask": "+502-#-###-####",
+                "placeholder": "+502-_-___-____"
+            }
         },
         {
             "countryCode": "gu",
             "countryName": "Guam",
-            "countryMask": "+1 (671) ###-####",
-            "countryMaskPlaceholder": "+1 (671) ___-____"
+            "countryMask": {
+                "mask": "+1 (671) ###-####",
+                "placeholder": "+1 (671) ___-____"
+            }
         },
         {
             "countryCode": "gw",
             "countryName": "Guinea-Bissau",
-            "countryMask": "+245-#-######",
-            "countryMaskPlaceholder": "+245-_-______"
+            "countryMask": {
+                "mask": "+245-#-######",
+                "placeholder": "+245-_-______"
+            }
         },
         {
             "countryCode": "gy",
             "countryName": "Guyana",
-            "countryMask": "+592-###-####",
-            "countryMaskPlaceholder": "+592-___-____"
-        },
-        {
-            "countryCode": "hk",
-            "countryName": "Hong Kong",
-            "countryMask": "+852-####-####",
-            "countryMaskPlaceholder": "+852-____-____"
+            "countryMask": {
+                "mask": "+592-###-####",
+                "placeholder": "+592-___-____"
+            }
         },
         {
             "countryCode": "hn",
             "countryName": "Honduras",
-            "countryMask": "+504-####-####",
-            "countryMaskPlaceholder": "+504-____-____"
-        },
-        {
-            "countryCode": "hr",
-            "countryName": "Croatia",
-            "countryMask": "+385-##-###-###",
-            "countryMaskPlaceholder": "+385-__-___-___"
+            "countryMask": {
+                "mask": "+504-####-####",
+                "placeholder": "+504-____-____"
+            }
         },
         {
             "countryCode": "ht",
             "countryName": "Haiti",
-            "countryMask": "+509-##-##-####",
-            "countryMaskPlaceholder": "+509-__-__-____"
+            "countryMask": {
+                "mask": "+509-##-##-####",
+                "placeholder": "+509-__-__-____"
+            }
         },
         {
             "countryCode": "hu",
             "countryName": "Hungary",
-            "countryMask": "+36 (###) ###-###",
-            "countryMaskPlaceholder": "+36 (___) ___-___"
+            "countryMask": {
+                "mask": "+36 (###) ###-###",
+                "placeholder": "+36 (___) ___-___"
+            }
         },
         {
             "countryCode": "id",
             "countryName": "Indonesia",
-            "countryMask": "+62 (8##) ###-##-###",
-            "countryMaskPlaceholder": "+62 (8__) ___-__-___"
+            "countryMask": {
+                "mask": "+62 (8##) ###-##-###",
+                "placeholder": "+62 (8__) ___-__-___"
+            }
         },
         {
             "countryCode": "ie",
             "countryName": "Ireland",
-            "countryMask": "+353 (###) ###-###",
-            "countryMaskPlaceholder": "+353 (___) ___-___"
+            "countryMask": {
+                "mask": "+353 (###) ###-###",
+                "placeholder": "+353 (___) ___-___"
+            }
         },
         {
             "countryCode": "il",
             "countryName": "Israel",
-            "countryMask": "+972-#-###-####",
-            "countryMaskPlaceholder": "+972-_-___-____"
+            "countryMask": {
+                "mask": "+972-#-###-####",
+                "placeholder": "+972-_-___-____"
+            }
         },
         {
             "countryCode": "in",
             "countryName": "India",
-            "countryMask": "+91 (####) ###-###",
-            "countryMaskPlaceholder": "+91 (____) ___-___"
-        },
-        {
-            "countryCode": "io",
-            "countryName": "British Indian Ocean Territory",
-            "countryMask": "+246-###-####",
-            "countryMaskPlaceholder": "+246-___-____"
+            "countryMask": {
+                "mask": "+91 (####) ###-###",
+                "placeholder": "+91 (____) ___-___"
+            }
         },
         {
             "countryCode": "iq",
             "countryName": "Iraq",
-            "countryMask": "+964 (###) ###-####",
-            "countryMaskPlaceholder": "+964 (___) ___-____"
+            "countryMask": {
+                "mask": "+964 (###) ###-####",
+                "placeholder": "+964 (___) ___-____"
+            }
         },
         {
             "countryCode": "ir",
             "countryName": "Iran (Islamic Republic of)",
-            "countryMask": "+98 (###) ###-####",
-            "countryMaskPlaceholder": "+98 (___) ___-____"
+            "countryMask": {
+                "mask": "+98 (###) ###-####",
+                "placeholder": "+98 (___) ___-____"
+            }
         },
         {
             "countryCode": "is",
             "countryName": "Iceland",
-            "countryMask": "+354-###-####",
-            "countryMaskPlaceholder": "+354-___-____"
+            "countryMask": {
+                "mask": "+354-###-####",
+                "placeholder": "+354-___-____"
+            }
         },
         {
             "countryCode": "it",
             "countryName": "Italy",
-            "countryMask": "+39 (###) ####-###",
-            "countryMaskPlaceholder": "+39 (___) ____-___"
+            "countryMask": {
+                "mask": "+39 (###) ####-###",
+                "placeholder": "+39 (___) ____-___"
+            }
         },
         {
             "countryCode": "jm",
             "countryName": "Jamaica",
-            "countryMask": "+1 (876) ###-####",
-            "countryMaskPlaceholder": "+1 (876) ___-____"
+            "countryMask": {
+                "mask": "+1 (876) ###-####",
+                "placeholder": "+1 (876) ___-____"
+            }
         },
         {
             "countryCode": "jo",
             "countryName": "Jordan",
-            "countryMask": "+962-#-####-####",
-            "countryMaskPlaceholder": "+962-_-____-____"
+            "countryMask": {
+                "mask": "+962-#-####-####",
+                "placeholder": "+962-_-____-____"
+            }
         },
         {
             "countryCode": "jp",
             "countryName": "Japan",
-            "countryMask": "+81 (###) ###-###",
-            "countryMaskPlaceholder": "+81 (___) ___-___"
+            "countryMask": {
+                "mask": "+81 (###) ###-###",
+                "placeholder": "+81 (___) ___-___"
+            }
         },
         {
             "countryCode": "ke",
             "countryName": "Kenya",
-            "countryMask": "+254-###-######",
-            "countryMaskPlaceholder": "+254-___-______"
+            "countryMask": {
+                "mask": "+254-###-######",
+                "placeholder": "+254-___-______"
+            }
         },
         {
             "countryCode": "kg",
             "countryName": "Kyrgyzstan",
-            "countryMask": "+996 (###) ###-###",
-            "countryMaskPlaceholder": "+996 (___) ___-___"
-        },
-        {
-            "countryCode": "kh",
-            "countryName": "Cambodia",
-            "countryMask": "+855-##-###-###",
-            "countryMaskPlaceholder": "+855-__-___-___"
+            "countryMask": {
+                "mask": "+996 (###) ###-###",
+                "placeholder": "+996 (___) ___-___"
+            }
         },
         {
             "countryCode": "ki",
             "countryName": "Kiribati",
-            "countryMask": "+686-##-###",
-            "countryMaskPlaceholder": "+686-__-___"
-        },
-        {
-            "countryCode": "km",
-            "countryName": "Comoros",
-            "countryMask": "+269-##-#####",
-            "countryMaskPlaceholder": "+269-__-_____"
+            "countryMask": {
+                "mask": "+686-##-###",
+                "placeholder": "+686-__-___"
+            }
         },
         {
             "countryCode": "kn",
             "countryName": "Saint Kitts and Nevis",
-            "countryMask": "+1 (869) ###-####",
-            "countryMaskPlaceholder": "+1 (869) ___-____"
+            "countryMask": {
+                "mask": "+1 (869) ###-####",
+                "placeholder": "+1 (869) ___-____"
+            }
         },
         {
             "countryCode": "kp",
             "countryName": "Korea (Democratic People's Republic of)",
-            "countryMask": "+850-####-#############",
-            "countryMaskPlaceholder": "+850-____-_____________"
+            "countryMask": {
+                "mask": "+850-####-#############",
+                "placeholder": "+850-____-_____________"
+            }
         },
         {
             "countryCode": "kr",
             "countryName": "Korea, Republic of",
-            "countryMask": "+82-##-###-####",
-            "countryMaskPlaceholder": "+82-__-___-____"
+            "countryMask": {
+                "mask": "+82-##-###-####",
+                "placeholder": "+82-__-___-____"
+            }
         },
         {
             "countryCode": "kw",
             "countryName": "Kuwait",
-            "countryMask": "+965-####-####",
-            "countryMaskPlaceholder": "+965-____-____"
-        },
-        {
-            "countryCode": "ky",
-            "countryName": "Cayman Islands",
-            "countryMask": "+1 (345) ###-####",
-            "countryMaskPlaceholder": "+1 (345) ___-____"
+            "countryMask": {
+                "mask": "+965-####-####",
+                "placeholder": "+965-____-____"
+            }
         },
         {
             "countryCode": "kz",
             "countryName": "Kazakhstan",
-            "countryMask": "+7 (7##) ###-##-##",
-            "countryMaskPlaceholder": "+7 (7__) ___-__-__"
+            "countryMask": {
+                "mask": "+7 (7##) ###-##-##",
+                "placeholder": "+7 (7__) ___-__-__"
+            }
         },
         {
             "countryCode": "la",
             "countryName": "Lao People's Democratic Republic",
-            "countryMask": "+856-##-###-###",
-            "countryMaskPlaceholder": "+856-__-___-___"
+            "countryMask": {
+                "mask": "+856-##-###-###",
+                "placeholder": "+856-__-___-___"
+            }
         },
         {
             "countryCode": "lb",
             "countryName": "Lebanon",
-            "countryMask": "+961-#-###-###",
-            "countryMaskPlaceholder": "+961-_-___-___"
+            "countryMask": {
+                "mask": "+961-#-###-###",
+                "placeholder": "+961-_-___-___"
+            }
         },
         {
             "countryCode": "lc",
             "countryName": "Saint Lucia",
-            "countryMask": "+1 (758) ###-####",
-            "countryMaskPlaceholder": "+1 (758) ___-____"
+            "countryMask": {
+                "mask": "+1 (758) ###-####",
+                "placeholder": "+1 (758) ___-____"
+            }
         },
         {
             "countryCode": "li",
             "countryName": "Liechtenstein",
-            "countryMask": "+423 (###) ###-####",
-            "countryMaskPlaceholder": "+423 (___) ___-____"
+            "countryMask": {
+                "mask": "+423 (###) ###-####",
+                "placeholder": "+423 (___) ___-____"
+            }
         },
         {
             "countryCode": "lk",
             "countryName": "Sri Lanka",
-            "countryMask": "+94-##-###-####",
-            "countryMaskPlaceholder": "+94-__-___-____"
+            "countryMask": {
+                "mask": "+94-##-###-####",
+                "placeholder": "+94-__-___-____"
+            }
         },
         {
             "countryCode": "lr",
             "countryName": "Liberia",
-            "countryMask": "+231-##-###-###",
-            "countryMaskPlaceholder": "+231-__-___-___"
+            "countryMask": {
+                "mask": "+231-##-###-###",
+                "placeholder": "+231-__-___-___"
+            }
         },
         {
             "countryCode": "ls",
             "countryName": "Lesotho",
-            "countryMask": "+266-#-###-####",
-            "countryMaskPlaceholder": "+266-_-___-____"
+            "countryMask": {
+                "mask": "+266-#-###-####",
+                "placeholder": "+266-_-___-____"
+            }
         },
         {
             "countryCode": "lt",
             "countryName": "Lithuania",
-            "countryMask": "+370 (###) ##-###",
-            "countryMaskPlaceholder": "+370 (___) __-___"
+            "countryMask": {
+                "mask": "+370 (###) ##-###",
+                "placeholder": "+370 (___) __-___"
+            }
         },
         {
             "countryCode": "lu",
             "countryName": "Luxembourg",
-            "countryMask": "+352 (###) ###-###",
-            "countryMaskPlaceholder": "+352 (___) ___-___"
+            "countryMask": {
+                "mask": "+352 (###) ###-###",
+                "placeholder": "+352 (___) ___-___"
+            }
         },
         {
             "countryCode": "lv",
             "countryName": "Latvia",
-            "countryMask": "+371-##-###-###",
-            "countryMaskPlaceholder": "+371-__-___-___"
+            "countryMask": {
+                "mask": "+371-##-###-###",
+                "placeholder": "+371-__-___-___"
+            }
         },
         {
             "countryCode": "ly",
             "countryName": "Libya",
-            "countryMask": "+218-21-###-####",
-            "countryMaskPlaceholder": "+218-21-___-____"
+            "countryMask": {
+                "mask": "+218-21-###-####",
+                "placeholder": "+218-21-___-____"
+            }
         },
         {
             "countryCode": "ma",
             "countryName": "Morocco",
-            "countryMask": "+212-##-####-###",
-            "countryMaskPlaceholder": "+212-__-____-___"
+            "countryMask": {
+                "mask": "+212-##-####-###",
+                "placeholder": "+212-__-____-___"
+            }
         },
         {
             "countryCode": "mc",
             "countryName": "Monaco",
-            "countryMask": "+377-##-###-###",
-            "countryMaskPlaceholder": "+377-__-___-___"
+            "countryMask": {
+                "mask": "+377-##-###-###",
+                "placeholder": "+377-__-___-___"
+            }
         },
         {
             "countryCode": "md",
             "countryName": "Moldova, Republic of",
-            "countryMask": "+373-####-####",
-            "countryMaskPlaceholder": "+373-____-____"
+            "countryMask": {
+                "mask": "+373-####-####",
+                "placeholder": "+373-____-____"
+            }
         },
         {
             "countryCode": "me",
             "countryName": "Montenegro",
-            "countryMask": "+382-##-###-###",
-            "countryMaskPlaceholder": "+382-__-___-___"
+            "countryMask": {
+                "mask": "+382-##-###-###",
+                "placeholder": "+382-__-___-___"
+            }
         },
         {
             "countryCode": "mg",
             "countryName": "Madagascar",
-            "countryMask": "+261-##-##-#####",
-            "countryMaskPlaceholder": "+261-__-__-_____"
+            "countryMask": {
+                "mask": "+261-##-##-#####",
+                "placeholder": "+261-__-__-_____"
+            }
         },
         {
             "countryCode": "mh",
             "countryName": "Marshall Islands",
-            "countryMask": "+692-###-####",
-            "countryMaskPlaceholder": "+692-___-____"
+            "countryMask": {
+                "mask": "+692-###-####",
+                "placeholder": "+692-___-____"
+            }
         },
         {
             "countryCode": "mk",
             "countryName": "North Macedonia",
-            "countryMask": "+389-##-###-###",
-            "countryMaskPlaceholder": "+389-__-___-___"
+            "countryMask": {
+                "mask": "+389-##-###-###",
+                "placeholder": "+389-__-___-___"
+            }
         },
         {
             "countryCode": "ml",
             "countryName": "Mali",
-            "countryMask": "+223-##-##-####",
-            "countryMaskPlaceholder": "+223-__-__-____"
+            "countryMask": {
+                "mask": "+223-##-##-####",
+                "placeholder": "+223-__-__-____"
+            }
         },
         {
             "countryCode": "mm",
             "countryName": "Myanmar",
-            "countryMask": "+95-###-###",
-            "countryMaskPlaceholder": "+95-___-___"
+            "countryMask": {
+                "mask": "+95-###-###",
+                "placeholder": "+95-___-___"
+            }
         },
         {
             "countryCode": "mn",
             "countryName": "Mongolia",
-            "countryMask": "+976-##-##-####",
-            "countryMaskPlaceholder": "+976-__-__-____"
-        },
-        {
-            "countryCode": "mo",
-            "countryName": "Macao",
-            "countryMask": "+853-####-####",
-            "countryMaskPlaceholder": "+853-____-____"
+            "countryMask": {
+                "mask": "+976-##-##-####",
+                "placeholder": "+976-__-__-____"
+            }
         },
         {
             "countryCode": "mp",
             "countryName": "Northern Mariana Islands",
-            "countryMask": "+1 (670) ###-####",
-            "countryMaskPlaceholder": "+1 (670) ___-____"
+            "countryMask": {
+                "mask": "+1 (670) ###-####",
+                "placeholder": "+1 (670) ___-____"
+            }
         },
         {
             "countryCode": "mq",
             "countryName": "Martinique",
-            "countryMask": "+596 (###) ##-##-##",
-            "countryMaskPlaceholder": "+596 (___) __-__-__"
+            "countryMask": {
+                "mask": "+596 (###) ##-##-##",
+                "placeholder": "+596 (___) __-__-__"
+            }
         },
         {
             "countryCode": "mr",
             "countryName": "Mauritania",
-            "countryMask": "+222-##-##-####",
-            "countryMaskPlaceholder": "+222-__-__-____"
+            "countryMask": {
+                "mask": "+222-##-##-####",
+                "placeholder": "+222-__-__-____"
+            }
         },
         {
             "countryCode": "ms",
             "countryName": "Montserrat",
-            "countryMask": "+1 (664) ###-####",
-            "countryMaskPlaceholder": "+1 (664) ___-____"
+            "countryMask": {
+                "mask": "+1 (664) ###-####",
+                "placeholder": "+1 (664) ___-____"
+            }
         },
         {
             "countryCode": "mt",
             "countryName": "Malta",
-            "countryMask": "+356-####-####",
-            "countryMaskPlaceholder": "+356-____-____"
+            "countryMask": {
+                "mask": "+356-####-####",
+                "placeholder": "+356-____-____"
+            }
         },
         {
             "countryCode": "mu",
             "countryName": "Mauritius",
-            "countryMask": "+230-###-####",
-            "countryMaskPlaceholder": "+230-___-____"
+            "countryMask": {
+                "mask": "+230-###-####",
+                "placeholder": "+230-___-____"
+            }
         },
         {
             "countryCode": "mv",
             "countryName": "Maldives",
-            "countryMask": "+960-###-####",
-            "countryMaskPlaceholder": "+960-___-____"
+            "countryMask": {
+                "mask": "+960-###-####",
+                "placeholder": "+960-___-____"
+            }
         },
         {
             "countryCode": "mw",
             "countryName": "Malawi",
-            "countryMask": "+265-#-####-####",
-            "countryMaskPlaceholder": "+265-_-____-____"
+            "countryMask": {
+                "mask": "+265-#-####-####",
+                "placeholder": "+265-_-____-____"
+            }
         },
         {
             "countryCode": "mx",
             "countryName": "Mexico",
-            "countryMask": "+52-##-##-####",
-            "countryMaskPlaceholder": "+52-__-__-____"
+            "countryMask": {
+                "mask": "+52-##-##-####",
+                "placeholder": "+52-__-__-____"
+            }
         },
         {
             "countryCode": "my",
             "countryName": "Malaysia",
-            "countryMask": "+60-#-###-###",
-            "countryMaskPlaceholder": "+60-_-___-___"
+            "countryMask": {
+                "mask": "+60-#-###-###",
+                "placeholder": "+60-_-___-___"
+            }
         },
         {
             "countryCode": "mz",
             "countryName": "Mozambique",
-            "countryMask": "+258-##-###-###",
-            "countryMaskPlaceholder": "+258-__-___-___"
+            "countryMask": {
+                "mask": "+258-##-###-###",
+                "placeholder": "+258-__-___-___"
+            }
         },
         {
             "countryCode": "na",
             "countryName": "Namibia",
-            "countryMask": "+264-##-###-####",
-            "countryMaskPlaceholder": "+264-__-___-____"
+            "countryMask": {
+                "mask": "+264-##-###-####",
+                "placeholder": "+264-__-___-____"
+            }
         },
         {
             "countryCode": "nc",
             "countryName": "New Caledonia",
-            "countryMask": "+687-##-####",
-            "countryMaskPlaceholder": "+687-__-____"
+            "countryMask": {
+                "mask": "+687-##-####",
+                "placeholder": "+687-__-____"
+            }
         },
         {
             "countryCode": "ne",
             "countryName": "Niger",
-            "countryMask": "+227-##-##-####",
-            "countryMaskPlaceholder": "+227-__-__-____"
+            "countryMask": {
+                "mask": "+227-##-##-####",
+                "placeholder": "+227-__-__-____"
+            }
         },
         {
             "countryCode": "nf",
             "countryName": "Norfolk Island",
-            "countryMask": "+672-3##-###",
-            "countryMaskPlaceholder": "+672-3__-___"
+            "countryMask": {
+                "mask": "+672-3##-###",
+                "placeholder": "+672-3__-___"
+            }
         },
         {
             "countryCode": "ng",
             "countryName": "Nigeria",
-            "countryMask": "+234 (###) ###-####",
-            "countryMaskPlaceholder": "+234 (___) ___-____"
+            "countryMask": {
+                "mask": "+234 (###) ###-####",
+                "placeholder": "+234 (___) ___-____"
+            }
         },
         {
             "countryCode": "ni",
             "countryName": "Nicaragua",
-            "countryMask": "+505-####-####",
-            "countryMaskPlaceholder": "+505-____-____"
+            "countryMask": {
+                "mask": "+505-####-####",
+                "placeholder": "+505-____-____"
+            }
         },
         {
             "countryCode": "nl",
             "countryName": "Netherlands",
-            "countryMask": "+31-##-###-####",
-            "countryMaskPlaceholder": "+31-__-___-____"
+            "countryMask": {
+                "mask": "+31-##-###-####",
+                "placeholder": "+31-__-___-____"
+            }
         },
         {
             "countryCode": "no",
             "countryName": "Norway",
-            "countryMask": "+47 (###) ##-###",
-            "countryMaskPlaceholder": "+47 (___) __-___"
+            "countryMask": {
+                "mask": "+47 (###) ##-###",
+                "placeholder": "+47 (___) __-___"
+            }
         },
         {
             "countryCode": "np",
             "countryName": "Nepal",
-            "countryMask": "+977-##-###-###",
-            "countryMaskPlaceholder": "+977-__-___-___"
+            "countryMask": {
+                "mask": "+977-##-###-###",
+                "placeholder": "+977-__-___-___"
+            }
         },
         {
             "countryCode": "nr",
             "countryName": "Nauru",
-            "countryMask": "+674-###-####",
-            "countryMaskPlaceholder": "+674-___-____"
+            "countryMask": {
+                "mask": "+674-###-####",
+                "placeholder": "+674-___-____"
+            }
         },
         {
             "countryCode": "nu",
             "countryName": "Niue",
-            "countryMask": "+683-####",
-            "countryMaskPlaceholder": "+683-____"
+            "countryMask": {
+                "mask": "+683-####",
+                "placeholder": "+683-____"
+            }
         },
         {
             "countryCode": "nz",
             "countryName": "New Zealand",
-            "countryMask": "+64 (###) ###-####",
-            "countryMaskPlaceholder": "+64 (___) ___-____"
+            "countryMask": {
+                "mask": "+64 (###) ###-####",
+                "placeholder": "+64 (___) ___-____"
+            }
         },
         {
             "countryCode": "om",
             "countryName": "Oman",
-            "countryMask": "+968-##-###-###",
-            "countryMaskPlaceholder": "+968-__-___-___"
+            "countryMask": {
+                "mask": "+968-##-###-###",
+                "placeholder": "+968-__-___-___"
+            }
         },
         {
             "countryCode": "pa",
             "countryName": "Panama",
-            "countryMask": "+507-###-####",
-            "countryMaskPlaceholder": "+507-___-____"
+            "countryMask": {
+                "mask": "+507-###-####",
+                "placeholder": "+507-___-____"
+            }
         },
         {
             "countryCode": "pe",
             "countryName": "Peru",
-            "countryMask": "+51 (###) ###-###",
-            "countryMaskPlaceholder": "+51 (___) ___-___"
+            "countryMask": {
+                "mask": "+51 (###) ###-###",
+                "placeholder": "+51 (___) ___-___"
+            }
         },
         {
             "countryCode": "pf",
             "countryName": "French Polynesia",
-            "countryMask": "+689-##-##-##",
-            "countryMaskPlaceholder": "+689-__-__-__"
+            "countryMask": {
+                "mask": "+689-##-##-##",
+                "placeholder": "+689-__-__-__"
+            }
         },
         {
             "countryCode": "pg",
             "countryName": "Papua New Guinea",
-            "countryMask": "+675 (###) ##-###",
-            "countryMaskPlaceholder": "+675 (___) __-___"
+            "countryMask": {
+                "mask": "+675 (###) ##-###",
+                "placeholder": "+675 (___) __-___"
+            }
         },
         {
             "countryCode": "ph",
             "countryName": "Philippines",
-            "countryMask": "+63 (###) ###-####",
-            "countryMaskPlaceholder": "+63 (___) ___-____"
+            "countryMask": {
+                "mask": "+63 (###) ###-####",
+                "placeholder": "+63 (___) ___-____"
+            }
         },
         {
             "countryCode": "pk",
             "countryName": "Pakistan",
-            "countryMask": "+92 (###) ###-####",
-            "countryMaskPlaceholder": "+92 (___) ___-____"
+            "countryMask": {
+                "mask": "+92 (###) ###-####",
+                "placeholder": "+92 (___) ___-____"
+            }
         },
         {
             "countryCode": "pl",
             "countryName": "Poland",
-            "countryMask": "+48 (###) ###-###",
-            "countryMaskPlaceholder": "+48 (___) ___-___"
+            "countryMask": {
+                "mask": "+48 (###) ###-###",
+                "placeholder": "+48 (___) ___-___"
+            }
         },
         {
             "countryCode": "ps",
             "countryName": "Palestine, State of",
-            "countryMask": "+970-##-###-####",
-            "countryMaskPlaceholder": "+970-__-___-____"
+            "countryMask": {
+                "mask": "+970-##-###-####",
+                "placeholder": "+970-__-___-____"
+            }
         },
         {
             "countryCode": "pt",
             "countryName": "Portugal",
-            "countryMask": "+351-##-###-####",
-            "countryMaskPlaceholder": "+351-__-___-____"
+            "countryMask": {
+                "mask": "+351-##-###-####",
+                "placeholder": "+351-__-___-____"
+            }
         },
         {
             "countryCode": "pw",
             "countryName": "Palau",
-            "countryMask": "+680-###-####",
-            "countryMaskPlaceholder": "+680-___-____"
+            "countryMask": {
+                "mask": "+680-###-####",
+                "placeholder": "+680-___-____"
+            }
         },
         {
             "countryCode": "py",
             "countryName": "Paraguay",
-            "countryMask": "+595 (###) ###-###",
-            "countryMaskPlaceholder": "+595 (___) ___-___"
+            "countryMask": {
+                "mask": "+595 (###) ###-###",
+                "placeholder": "+595 (___) ___-___"
+            }
         },
         {
             "countryCode": "qa",
             "countryName": "Qatar",
-            "countryMask": "+974-####-####",
-            "countryMaskPlaceholder": "+974-____-____"
+            "countryMask": {
+                "mask": "+974-####-####",
+                "placeholder": "+974-____-____"
+            }
         },
         {
             "countryCode": "re",
             "countryName": "Réunion",
-            "countryMask": "+262-#####-####",
-            "countryMaskPlaceholder": "+262-_____-____"
+            "countryMask": {
+                "mask": "+262-#####-####",
+                "placeholder": "+262-_____-____"
+            }
         },
         {
             "countryCode": "ro",
             "countryName": "Romania",
-            "countryMask": "+40-##-###-####",
-            "countryMaskPlaceholder": "+40-__-___-____"
+            "countryMask": {
+                "mask": "+40-##-###-####",
+                "placeholder": "+40-__-___-____"
+            }
         },
         {
             "countryCode": "rs",
             "countryName": "Serbia",
-            "countryMask": "+381-##-###-####",
-            "countryMaskPlaceholder": "+381-__-___-____"
+            "countryMask": {
+                "mask": "+381-##-###-####",
+                "placeholder": "+381-__-___-____"
+            }
         },
         {
             "countryCode": "ru",
             "countryName": "Russian Federation",
-            "countryMask": "+7 (###) ###-##-##",
-            "countryMaskPlaceholder": "+7 (___) ___-__-__"
+            "countryMask": {
+                "mask": "+7 (###) ###-##-##",
+                "placeholder": "+7 (___) ___-__-__"
+            }
         },
         {
             "countryCode": "rw",
             "countryName": "Rwanda",
-            "countryMask": "+250 (###) ###-###",
-            "countryMaskPlaceholder": "+250 (___) ___-___"
+            "countryMask": {
+                "mask": "+250 (###) ###-###",
+                "placeholder": "+250 (___) ___-___"
+            }
         },
         {
             "countryCode": "sa",
             "countryName": "Saudi Arabia",
-            "countryMask": "+966-#-###-####",
-            "countryMaskPlaceholder": "+966-_-___-____"
+            "countryMask": {
+                "mask": "+966-#-###-####",
+                "placeholder": "+966-_-___-____"
+            }
         },
         {
             "countryCode": "sb",
             "countryName": "Solomon Islands",
-            "countryMask": "+677-#####",
-            "countryMaskPlaceholder": "+677-_____"
+            "countryMask": {
+                "mask": "+677-#####",
+                "placeholder": "+677-_____"
+            }
         },
         {
             "countryCode": "sc",
             "countryName": "Seychelles",
-            "countryMask": "+248-#-###-###",
-            "countryMaskPlaceholder": "+248-_-___-___"
+            "countryMask": {
+                "mask": "+248-#-###-###",
+                "placeholder": "+248-_-___-___"
+            }
         },
         {
             "countryCode": "sd",
             "countryName": "Sudan",
-            "countryMask": "+249-##-###-####",
-            "countryMaskPlaceholder": "+249-__-___-____"
+            "countryMask": {
+                "mask": "+249-##-###-####",
+                "placeholder": "+249-__-___-____"
+            }
         },
         {
             "countryCode": "se",
             "countryName": "Sweden",
-            "countryMask": "+46-##-###-####",
-            "countryMaskPlaceholder": "+46-__-___-____"
+            "countryMask": {
+                "mask": "+46-##-###-####",
+                "placeholder": "+46-__-___-____"
+            }
         },
         {
             "countryCode": "sg",
             "countryName": "Singapore",
-            "countryMask": "+65-####-####",
-            "countryMaskPlaceholder": "+65-____-____"
+            "countryMask": {
+                "mask": "+65-####-####",
+                "placeholder": "+65-____-____"
+            }
         },
         {
             "countryCode": "sh",
             "countryName": "Saint Helena, Ascension and Tristan da Cunha",
-            "countryMask": "+290-####",
-            "countryMaskPlaceholder": "+290-____"
+            "countryMask": {
+                "mask": "+290-####",
+                "placeholder": "+290-____"
+            }
         },
         {
             "countryCode": "si",
             "countryName": "Slovenia",
-            "countryMask": "+386-##-###-###",
-            "countryMaskPlaceholder": "+386-__-___-___"
+            "countryMask": {
+                "mask": "+386-##-###-###",
+                "placeholder": "+386-__-___-___"
+            }
         },
         {
             "countryCode": "sk",
             "countryName": "Slovakia",
-            "countryMask": "+421 (###) ###-###",
-            "countryMaskPlaceholder": "+421 (___) ___-___"
+            "countryMask": {
+                "mask": "+421 (###) ###-###",
+                "placeholder": "+421 (___) ___-___"
+            }
         },
         {
             "countryCode": "sl",
             "countryName": "Sierra Leone",
-            "countryMask": "+232-##-######",
-            "countryMaskPlaceholder": "+232-__-______"
+            "countryMask": {
+                "mask": "+232-##-######",
+                "placeholder": "+232-__-______"
+            }
         },
         {
             "countryCode": "sm",
             "countryName": "San Marino",
-            "countryMask": "+378-####-######",
-            "countryMaskPlaceholder": "+378-____-______"
+            "countryMask": {
+                "mask": "+378-####-######",
+                "placeholder": "+378-____-______"
+            }
         },
         {
             "countryCode": "sn",
             "countryName": "Senegal",
-            "countryMask": "+221-##-###-####",
-            "countryMaskPlaceholder": "+221-__-___-____"
+            "countryMask": {
+                "mask": "+221-##-###-####",
+                "placeholder": "+221-__-___-____"
+            }
         },
         {
             "countryCode": "so",
             "countryName": "Somalia",
-            "countryMask": "+252-#-###-###",
-            "countryMaskPlaceholder": "+252-_-___-___"
+            "countryMask": {
+                "mask": "+252-#-###-###",
+                "placeholder": "+252-_-___-___"
+            }
         },
         {
             "countryCode": "sr",
             "countryName": "Suriname",
-            "countryMask": "+597-###-###",
-            "countryMaskPlaceholder": "+597-___-___"
+            "countryMask": {
+                "mask": "+597-###-###",
+                "placeholder": "+597-___-___"
+            }
         },
         {
             "countryCode": "ss",
             "countryName": "South Sudan",
-            "countryMask": "+211-##-###-####",
-            "countryMaskPlaceholder": "+211-__-___-____"
+            "countryMask": {
+                "mask": "+211-##-###-####",
+                "placeholder": "+211-__-___-____"
+            }
         },
         {
             "countryCode": "st",
             "countryName": "Sao Tome and Principe",
-            "countryMask": "+239-##-#####",
-            "countryMaskPlaceholder": "+239-__-_____"
+            "countryMask": {
+                "mask": "+239-##-#####",
+                "placeholder": "+239-__-_____"
+            }
         },
         {
             "countryCode": "sv",
             "countryName": "El Salvador",
-            "countryMask": "+503-##-##-####",
-            "countryMaskPlaceholder": "+503-__-__-____"
+            "countryMask": {
+                "mask": "+503-##-##-####",
+                "placeholder": "+503-__-__-____"
+            }
         },
         {
             "countryCode": "sx",
             "countryName": "Sint Maarten (Dutch part)",
-            "countryMask": "+1 (721) ###-####",
-            "countryMaskPlaceholder": "+1 (721) ___-____"
+            "countryMask": {
+                "mask": "+1 (721) ###-####",
+                "placeholder": "+1 (721) ___-____"
+            }
         },
         {
             "countryCode": "sy",
             "countryName": "Syrian Arab Republic",
-            "countryMask": "+963-##-####-###",
-            "countryMaskPlaceholder": "+963-__-____-___"
+            "countryMask": {
+                "mask": "+963-##-####-###",
+                "placeholder": "+963-__-____-___"
+            }
         },
         {
             "countryCode": "sz",
             "countryName": "Eswatini",
-            "countryMask": "+268-##-##-####",
-            "countryMaskPlaceholder": "+268-__-__-____"
+            "countryMask": {
+                "mask": "+268-##-##-####",
+                "placeholder": "+268-__-__-____"
+            }
         },
         {
             "countryCode": "tc",
             "countryName": "Turks and Caicos Islands",
-            "countryMask": "+1 (649) ###-####",
-            "countryMaskPlaceholder": "+1 (649) ___-____"
-        },
-        {
-            "countryCode": "td",
-            "countryName": "Chad",
-            "countryMask": "+235-##-##-##-##",
-            "countryMaskPlaceholder": "+235-__-__-__-__"
+            "countryMask": {
+                "mask": "+1 (649) ###-####",
+                "placeholder": "+1 (649) ___-____"
+            }
         },
         {
             "countryCode": "tg",
             "countryName": "Togo",
-            "countryMask": "+228-##-###-###",
-            "countryMaskPlaceholder": "+228-__-___-___"
+            "countryMask": {
+                "mask": "+228-##-###-###",
+                "placeholder": "+228-__-___-___"
+            }
         },
         {
             "countryCode": "th",
             "countryName": "Thailand",
-            "countryMask": "+66-##-###-###",
-            "countryMaskPlaceholder": "+66-__-___-___"
+            "countryMask": {
+                "mask": "+66-##-###-###",
+                "placeholder": "+66-__-___-___"
+            }
         },
         {
             "countryCode": "tj",
             "countryName": "Tajikistan",
-            "countryMask": "+992-##-###-####",
-            "countryMaskPlaceholder": "+992-__-___-____"
+            "countryMask": {
+                "mask": "+992-##-###-####",
+                "placeholder": "+992-__-___-____"
+            }
         },
         {
             "countryCode": "tk",
             "countryName": "Tokelau",
-            "countryMask": "+690-####",
-            "countryMaskPlaceholder": "+690-____"
+            "countryMask": {
+                "mask": "+690-####",
+                "placeholder": "+690-____"
+            }
         },
         {
             "countryCode": "tl",
             "countryName": "Timor-Leste",
-            "countryMask": "+670-78#-#####",
-            "countryMaskPlaceholder": "+670-78_-_____"
+            "countryMask": {
+                "mask": "+670-78#-#####",
+                "placeholder": "+670-78_-_____"
+            }
         },
         {
             "countryCode": "tm",
             "countryName": "Turkmenistan",
-            "countryMask": "+993-#-###-####",
-            "countryMaskPlaceholder": "+993-_-___-____"
+            "countryMask": {
+                "mask": "+993-#-###-####",
+                "placeholder": "+993-_-___-____"
+            }
         },
         {
             "countryCode": "tn",
             "countryName": "Tunisia",
-            "countryMask": "+216-##-###-###",
-            "countryMaskPlaceholder": "+216-__-___-___"
+            "countryMask": {
+                "mask": "+216-##-###-###",
+                "placeholder": "+216-__-___-___"
+            }
         },
         {
             "countryCode": "to",
             "countryName": "Tonga",
-            "countryMask": "+676-#####",
-            "countryMaskPlaceholder": "+676-_____"
+            "countryMask": {
+                "mask": "+676-#####",
+                "placeholder": "+676-_____"
+            }
         },
         {
             "countryCode": "tr",
             "countryName": "Turkey",
-            "countryMask": "+90 (###) ###-####",
-            "countryMaskPlaceholder": "+90 (___) ___-____"
+            "countryMask": {
+                "mask": "+90 (###) ###-####",
+                "placeholder": "+90 (___) ___-____"
+            }
         },
         {
             "countryCode": "tt",
             "countryName": "Trinidad and Tobago",
-            "countryMask": "+1 (868) ###-####",
-            "countryMaskPlaceholder": "+1 (868) ___-____"
+            "countryMask": {
+                "mask": "+1 (868) ###-####",
+                "placeholder": "+1 (868) ___-____"
+            }
         },
         {
             "countryCode": "tv",
             "countryName": "Tuvalu",
-            "countryMask": "+688-2####",
-            "countryMaskPlaceholder": "+688-2____"
+            "countryMask": {
+                "mask": "+688-2####",
+                "placeholder": "+688-2____"
+            }
         },
         {
             "countryCode": "tw",
             "countryName": "Taiwan, Province of China",
-            "countryMask": "+886-####-####",
-            "countryMaskPlaceholder": "+886-____-____"
+            "countryMask": {
+                "mask": "+886-####-####",
+                "placeholder": "+886-____-____"
+            }
         },
         {
             "countryCode": "tz",
             "countryName": "Tanzania, United Republic of",
-            "countryMask": "+255-##-###-####",
-            "countryMaskPlaceholder": "+255-__-___-____"
+            "countryMask": {
+                "mask": "+255-##-###-####",
+                "placeholder": "+255-__-___-____"
+            }
         },
         {
             "countryCode": "ua",
             "countryName": "Ukraine",
-            "countryMask": "+380 (##) ###-##-##",
-            "countryMaskPlaceholder": "+380 (__) ___-__-__"
+            "countryMask": {
+                "mask": "+380 (##) ###-##-##",
+                "placeholder": "+380 (__) ___-__-__"
+            }
         },
         {
             "countryCode": "ug",
             "countryName": "Uganda",
-            "countryMask": "+256 (###) ###-###",
-            "countryMaskPlaceholder": "+256 (___) ___-___"
+            "countryMask": {
+                "mask": "+256 (###) ###-###",
+                "placeholder": "+256 (___) ___-___"
+            }
         },
         {
             "countryCode": "gb",
             "countryName": "United Kingdom of Great Britain and Northern Ireland",
-            "countryMask": "+44-##-####-####",
-            "countryMaskPlaceholder": "+44-__-____-____"
+            "countryMask": {
+                "mask": "+44-##-####-####",
+                "placeholder": "+44-__-____-____"
+            }
         },
         {
             "countryCode": "us",
             "countryName": "United States of America",
-            "countryMask": "+1 (###) ###-####",
-            "countryMaskPlaceholder": "+1 (___) ___-____"
+            "countryMask": {
+                "mask": "+1 (###) ###-####",
+                "placeholder": "+1 (___) ___-____"
+            }
         },
         {
             "countryCode": "uy",
             "countryName": "Uruguay",
-            "countryMask": "+598-#-###-##-##",
-            "countryMaskPlaceholder": "+598-_-___-__-__"
+            "countryMask": {
+                "mask": "+598-#-###-##-##",
+                "placeholder": "+598-_-___-__-__"
+            }
         },
         {
             "countryCode": "uz",
             "countryName": "Uzbekistan",
-            "countryMask": "+998-##-###-####",
-            "countryMaskPlaceholder": "+998-__-___-____"
+            "countryMask": {
+                "mask": "+998-##-###-####",
+                "placeholder": "+998-__-___-____"
+            }
         },
         {
             "countryCode": "va",
             "countryName": "Holy See",
-            "countryMask": "+39-6-698-#####",
-            "countryMaskPlaceholder": "+39-6-698-_____"
+            "countryMask": {
+                "mask": "+39-6-698-#####",
+                "placeholder": "+39-6-698-_____"
+            }
         },
         {
             "countryCode": "vc",
             "countryName": "Saint Vincent and the Grenadines",
-            "countryMask": "+1 (784) ###-####",
-            "countryMaskPlaceholder": "+1 (784) ___-____"
+            "countryMask": {
+                "mask": "+1 (784) ###-####",
+                "placeholder": "+1 (784) ___-____"
+            }
         },
         {
             "countryCode": "ve",
             "countryName": "Venezuela (Bolivarian Republic of)",
-            "countryMask": "+58 (###) ###-####",
-            "countryMaskPlaceholder": "+58 (___) ___-____"
-        },
-        {
-            "countryCode": "vg",
-            "countryName": "Virgin Islands (British)",
-            "countryMask": "+1 (284) ###-####",
-            "countryMaskPlaceholder": "+1 (284) ___-____"
+            "countryMask": {
+                "mask": "+58 (###) ###-####",
+                "placeholder": "+58 (___) ___-____"
+            }
         },
         {
             "countryCode": "vi",
             "countryName": "Virgin Islands (U.S.)",
-            "countryMask": "+1 (340) ###-####",
-            "countryMaskPlaceholder": "+1 (340) ___-____"
+            "countryMask": {
+                "mask": "+1 (340) ###-####",
+                "placeholder": "+1 (340) ___-____"
+            }
         },
         {
             "countryCode": "vn",
             "countryName": "Viet Nam",
-            "countryMask": "+84 (###) ####-###",
-            "countryMaskPlaceholder": "+84 (___) ____-___"
+            "countryMask": {
+                "mask": "+84 (###) ####-###",
+                "placeholder": "+84 (___) ____-___"
+            }
         },
         {
             "countryCode": "vu",
             "countryName": "Vanuatu",
-            "countryMask": "+678-#####",
-            "countryMaskPlaceholder": "+678-_____"
+            "countryMask": {
+                "mask": "+678-#####",
+                "placeholder": "+678-_____"
+            }
         },
         {
             "countryCode": "wf",
             "countryName": "Wallis and Futuna",
-            "countryMask": "+681-##-####",
-            "countryMaskPlaceholder": "+681-__-____"
+            "countryMask": {
+                "mask": "+681-##-####",
+                "placeholder": "+681-__-____"
+            }
         },
         {
             "countryCode": "ws",
             "countryName": "Samoa",
-            "countryMask": "+685-##-####",
-            "countryMaskPlaceholder": "+685-__-____"
+            "countryMask": {
+                "mask": "+685-##-####",
+                "placeholder": "+685-__-____"
+            }
         },
         {
             "countryCode": "ye",
             "countryName": "Yemen",
-            "countryMask": "+967-##-###-###",
-            "countryMaskPlaceholder": "+967-__-___-___"
+            "countryMask": {
+                "mask": "+967-##-###-###",
+                "placeholder": "+967-__-___-___"
+            }
         },
         {
             "countryCode": "za",
             "countryName": "South Africa",
-            "countryMask": "+27-##-###-####",
-            "countryMaskPlaceholder": "+27-__-___-____"
+            "countryMask": {
+                "mask": "+27-##-###-####",
+                "placeholder": "+27-__-___-____"
+            }
         },
         {
             "countryCode": "zm",
             "countryName": "Zambia",
-            "countryMask": "+260-##-###-####",
-            "countryMaskPlaceholder": "+260-__-___-____"
+            "countryMask": {
+                "mask": "+260-##-###-####",
+                "placeholder": "+260-__-___-____"
+            }
         },
         {
             "countryCode": "zw",
             "countryName": "Zimbabwe",
-            "countryMask": "+263-#-######",
-            "countryMaskPlaceholder": "+263-_-______"
+            "countryMask": {
+                "mask": "+263-#-######",
+                "placeholder": "+263-_-______"
+            }
         }
     ]
 }

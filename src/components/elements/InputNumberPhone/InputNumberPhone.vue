@@ -1,7 +1,8 @@
 <script setup lang="ts">
-    import { ref, onMounted } from 'vue'
-    import { IPhoneMaskInfo } from "./inputNumberPhone.interface"
+    import { ref, onMounted, watchEffect, reactive } from 'vue'
+    import { IPhoneMaskInfo } from "../../../interfaces"
     import { IFilterate, IGetOptionLabel } from "../../../interfaces/index"
+    import { getValidMask } from '../../../utils'
     import CountryFlag from 'vue-country-flag-next'
 
     const props = defineProps<{
@@ -9,6 +10,13 @@
         options: Array<IPhoneMaskInfo>,
         modelValue: IPhoneMaskInfo
     }>()
+
+    const state = reactive({
+        countryMask: {
+            mask: '',
+            placeholder: ''
+        }
+    })
 
     const select = ref(null)
 
@@ -23,6 +31,23 @@
     const emit = defineEmits(['update:modelValue'])
 
     const updateSelectValue = (value: IPhoneMaskInfo) => {
+        if (!Array.isArray(value.countryMask)) {
+            value.countryMask = {
+                mask: value.countryMask.mask,
+                placeholder: value.countryMask.placeholder
+            }
+            state.countryMask.mask = value.countryMask.mask
+            state.countryMask.placeholder = value.countryMask.placeholder
+        } else {
+            value.countryMask = {
+                mask: value.countryMask[0].mask,
+                placeholder: value.countryMask[0].placeholder
+            }
+
+            state.countryMask.mask = value.countryMask.mask
+            state.countryMask.placeholder = value.countryMask.placeholder
+        }
+
         value.value = '' // init new value field
         emit('update:modelValue', value)
     }
@@ -33,8 +58,7 @@
         const newVal = {
             countryCode: props.modelValue.countryCode,
             countryName: props.modelValue.countryName,
-            countryMask: props.modelValue.countryMask,
-            countryMaskPlaceholder: props.modelValue.countryMaskPlaceholder,
+            countryMask: getValidMask(props.modelValue.countryMask, input.value),
             value: input.value
         }
 
@@ -42,6 +66,14 @@
     }
 
     onMounted(() => {
+        if (Array.isArray(props.modelValue.countryMask)) {
+            state.countryMask.mask = props.modelValue.countryMask[0].mask
+            state.countryMask.placeholder = props.modelValue.countryMask[0].placeholder
+        } else {
+            state.countryMask.mask = props.modelValue.countryMask.mask
+            state.countryMask.placeholder = props.modelValue.countryMask.placeholder
+        }
+
         // init default select value
         // default values not init, when :value binds modelValue in v-select lib
         // ISSUE
@@ -78,8 +110,8 @@
             type="text"
             class="border-none w-full"
             @change="updateInputValue"
-            :placeholder="modelValue.countryMaskPlaceholder"
-            v-maska="modelValue.countryMask"
+            :placeholder="state.countryMask.placeholder"
+            v-maska="state.countryMask.mask"
         />
     </div>
 </template>

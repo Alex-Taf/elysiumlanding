@@ -34,12 +34,14 @@
             value: "ru"
         },
         symbolicSum: '',
-        phoneOptions: Phones.phones,
+        phoneOptions: Phones.items,
         phoneSelected: {
             countryCode: "rus",
             countryName: "Russian Federation",
-            countryMask: '+7 (###) ###-##-##',
-            countryMaskPlaceholder: "+7 (___) ___ - __ - __",
+            countryMask: {
+                mask: '+7 (###) ###-##-##',
+                placeholder: "+7 (___) ___ - __ - __"
+            },
             value: ''
         },
         exchangeArray: Exchange.items,
