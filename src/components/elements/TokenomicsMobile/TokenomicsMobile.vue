@@ -30,7 +30,7 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#353C45'],
+        colors: ['#483D8B', '#353C45'],
         images: ['/reflections.png', '/dev.png'],
         labels: [t('chart1.labels.reflections'), t('chart1.labels.dev')],
         dataLabels: {
@@ -55,7 +55,7 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#353C45'],
+        colors: ['#483D8B', '#353C45'],
         images: ['/reflections.png', '/dev.png'],
         labels: [t('chart2.labels.reflections'), t('chart2.labels.dev')],
         dataLabels: {
@@ -191,7 +191,7 @@
                 </button>
             </div>
         </section>
-        <section class="flex xl:flex-row sm:flex-col justify-center gap-x-5 w-full" id="token-sale-metrics">
+        <section class="flex xl:flex-row sm:flex-col justify-center gap-x-5 w-full">
             <div class="flex justify-center items-center xl:w-[570px] sm:min-w-[348px] sm:w-full h-[500px] bg-white shadow-lg rounded-xl sm:mt-[18px]">
                 <apexchart width="448" type="donut" :options="options1" :series="series1"></apexchart>
             </div>

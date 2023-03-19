@@ -45,72 +45,96 @@
     .social--twitter {
         background-position: 0px;
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--twitter:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--telegram {
         background-position: var(--sprite-px-value);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--telegram:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--reddit {
         background-position: calc(var(--sprite-px-value) * 2);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--reddit:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--facebook {
         background-position: calc(var(--sprite-px-value) * 3);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--facebook:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--youtube {
         background-position: calc(var(--sprite-px-value) * 4);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--youtube:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--tiktok {
         background-position: calc(var(--sprite-px-value) * 5);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--tiktok:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--inst {
         background-position: calc(var(--sprite-px-value) * 6);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--inst:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 
     .social--linkedin {
         background-position: calc(var(--sprite-px-value) * 7);
         filter: var(--raw-filter);
+        -webkit-filter: var(--raw-filter);
     }
 
     .social--linkedin:hover {
         filter: var(--hover-filter);
+        -webkit-filter: var(--hover-filter);
+        transform: scale(1);
     }
 </style>

@@ -5,11 +5,7 @@
                 "group": [
                     {
                         "id": 1,
-                        "title": "Reflections",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
+                        "title": "Reflections"
                     }
                 ]
             },
@@ -29,11 +25,7 @@
                 "group": [
                     {
                         "id": 1,
-                        "title": "Reflections",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
+                        "title": "Reflections"
                     }
                 ]
             },
@@ -53,11 +45,7 @@
                 "group": [
                     {
                         "id": 1,
-                        "title": "Reflections",
-                        "popper": {
-                            "show": false,
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent"
-                        }
+                        "title": "Reflections"
                     }
                 ]
             },

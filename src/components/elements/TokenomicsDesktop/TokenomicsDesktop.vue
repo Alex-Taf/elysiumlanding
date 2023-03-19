@@ -28,7 +28,7 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#353C45'],
+        colors: ['#483D8B', '#353C45'],
         images: ['/reflections.png', '/dev.png'],
         labels: [t('chart1.labels.reflections'), t('chart1.labels.dev')],
         dataLabels: {
@@ -53,7 +53,7 @@
         legend: {
             show: false
         },
-        colors: ['#208089', '#353C45'],
+        colors: ['#483D8B', '#353C45'],
         images: ['/reflections.png', '/dev.png'],
         labels: [t('chart2.labels.reflections'), t('chart2.labels.dev')],
         dataLabels: {
@@ -108,11 +108,11 @@
             class="relative flex flex-col items-center gap-y-10 max-w-[1440px] w-full min-w-[1280px] h-[700px] pt-[80px] bg-[#141414] rounded-xl"
         >
             <img class="absolute top-0" src="../../../assets/surikat.png" />
-            <h2 class="text-white font-black">{{ t('tokenomics') }}</h2>
+            <h2 class="text-white text-[53px] font-black">{{ t('tokenomics') }}</h2>
             <span class="whitespace-pre-wrap text-center text-white text-xl mb-5">
                 <p class="break-words">{{ t('emission') }}</p>
             </span>
-            <div class="flex gap-x-32">
+            <div class="flex gap-x-32 mt-28">
                 <ul
                     v-for="group in state.tokenomics.items"
                     class="flex flex-col gap-y-6"
@@ -158,7 +158,7 @@
                 </ul>
             </div>
         </section>
-        <section class="relative bottom-28 flex justify-center gap-x-8 w-full" id="token-sale-metrics">
+        <section class="relative bottom-28 flex justify-center gap-x-8 w-full">
             <div
                 class="flex justify-center items-center w-[570px] h-[500px] bg-white shadow-lg rounded-xl"
             >

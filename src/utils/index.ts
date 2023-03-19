@@ -22,7 +22,7 @@ export const getUserLocale: IGetUserLocale = (options) => {
     : navigator.language
 
     if (options.form === 'full') return locale
-    if (options.form === 'short') return locale.slice(0, 2) 
+    if (options.form === 'short') return locale.slice(0, 2)
 }
 
 export const getStatusText: IGetStatusText = (statusCode) => {
@@ -67,8 +67,6 @@ export const getValidMask: IGetValidMask = (countryMask, input) => {
     } else {
         msk = countryMask
     }
-
-    console.log(msk)
 
     return msk
 }

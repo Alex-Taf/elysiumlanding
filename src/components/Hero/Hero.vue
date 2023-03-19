@@ -25,7 +25,7 @@
     <section class="flex sm:flex-col xl:flex-row xl:max-w-container m-auto" id="about-token">
         <section class="flex flex-col xl:justify-between sm:gap-y-4 w-full py-[72px] px-[48px]">
             <span class="bg-skin-title text-white text-[17px] rounded-[16px] py-[5px] px-[12px] w-fit">{{ t('token') }}</span>
-            <h2 class="text-4xl">{{ t('aboutToken') }}</h2>
+            <h2 class="text-4xl font-black">{{ t('aboutToken') }}</h2>
             <span>
                 <span class="sm:text-sm xl:text-[17px] text-skin-text">
                     <p>{{ t('tokenDesc') }}</p>
@@ -34,7 +34,7 @@
                     <p>{{ t('tokenDesc2') }}</p>
                 </span>
             </span>
-            <span class="text-[17px] font-bold">Elysium Contract</span>
+            <span class="text-[17px] font-[800] tracking-[-0.2px] mt-20 leading-5">Elysium Contract</span>
             <section class="flex gap-x-2">
                 <ReadonlyInput :value="state.token" />
                 <EButton @click="copy(state.token)">

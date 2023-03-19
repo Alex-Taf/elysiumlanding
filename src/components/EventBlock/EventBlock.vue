@@ -10,10 +10,10 @@
 </script>
 
 <template>
-    <section class="relative flex flex-col h-full bg-skin-default" id="whitepaper">
+    <section class="relative flex flex-col h-full bg-skin-default" id="token-sale-metrics">
         <div class="absolute xl:block sm:hidden bg-white h-[700px] w-full"></div>
         <div class="flex flex-col items-center w-full pt-[72px] mb-[72px] sm:px-3 z-10">
-            <h2 class="font-black text-[36px] sm:text-[27px] mb-9">{{ t('title') }}</h2>
+            <h2 class="font-black xl:text-[53px] sm:text-[27px] mb-9">{{ t('title') }}</h2>
             <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
                 <EventBlockTable />
             </RenderOnBreakpoint>
