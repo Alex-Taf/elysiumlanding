@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col">
+    <div class="relative flex flex-col">
         <notifications position="bottom center"
                         classes="bg-black opacity-70 text-white text-xl p-4 mb-10 rounded-xl text-center select-none" />
         <Header />

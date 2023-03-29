@@ -4,29 +4,70 @@
     import Socials from "../Socials/Socials.vue"
 
     import ELink from '../ELink/ELink.vue'
+    import { onMounted, ref } from "vue";
 
     const props = defineProps<{
         menuOpen: boolean,
         items: IMenuItem[]
     }>()
 
+    const detailsState = ref([])
+
+    const toggleDetails = (num: number) => {
+        detailsState.value.find(d => d.num === num).isOpen = !detailsState.value.find(d => d.num === num).isOpen
+    }
+
+    const detailIsOpen = (num: number) => {
+        if (detailsState.value.length > 0) {
+            return detailsState.value.find(d => d.num === num).isOpen
+        }
+    }
+
     const emit = defineEmits(['close'])
 
     const closeMenu = () => {
         emit('close', false)
-    } 
+    }
+
+    onMounted(() => {
+        const items = props.items.map((item, index) => {
+            if (item.subitems?.length) {
+                return {
+                    id: index,
+                    title: item.title,
+                    subitems: item.subitems
+                }
+            } else {
+                return {
+                    id: index,
+                    title: item.title,
+                    link: item.link
+                }
+            }
+        })
+
+        const hasSubitems = items.filter((item) => item.subitems?.length)
+        
+        hasSubitems.forEach((value) => {
+            detailsState.value.push({
+                num: value.id,
+                isOpen: false
+            })
+        })
+    })
 </script>
 
 <template>
-    <section class="xl:hidden flex-col justify-between relative bg-skin-default w-full h-screen py-9"
+    <section class="xl:hidden flex-col justify-between relative bg-white w-full h-screen py-9"
                 :class="{ 'hidden overflow-y-scroll': !props.menuOpen, 'flex overflow-y-hidden': props.menuOpen }">
             <nav class="flex-col w-full">
-                <template v-for="menuItem in props.items" :key="menuItem">
-                    <li class="text-[#A8ABAF] flex items-center text-xl px-11 py-4 font-bold list-none"
-                        :class="{ 'bg-[#D8D8D8]': menuItem.subitems?.length }">
-                        <ELink v-if="menuItem.link" :href="menuItem.link" @click="closeMenu">{{ menuItem.title }}</ELink>
-                        <details v-auto-animate v-else>
-                            <summary class="list-none cursor-pointer">
+                <template v-for="(menuItem, index) in props.items" :key="menuItem">
+                    <li class="text-[#A8ABAF] flex items-center text-xl font-bold list-none" :class="{ 'px-11 py-4': !menuItem.subitems?.length }">
+                        <ELink v-if="menuItem.link" :href="menuItem.link" @click="closeMenu">
+                            {{ menuItem.title }}
+                        </ELink>
+                        <details v-auto-animate @toggle="toggleDetails(index)" class="w-full" v-else>
+                            <summary class="list-none cursor-pointer px-11 py-4 w-full" :class="{ 'bg-[#D8D8D8]': detailIsOpen(index) }">
                                 <div class="flex items-center">
                                     <span class="detailer-title">{{ menuItem.title }}</span>
                                     <span class="detailer-icon--open">
@@ -41,7 +82,7 @@
                                     </span>
                                 </div>
                             </summary>
-                            <nav class="flex flex-col">
+                            <nav class="flex flex-col px-11 py-4">
                                 <template v-for="subitem in menuItem.subitems" :key="subitem">
                                     <ELink classList="m-4" :href="subitem.link" @click="closeMenu">{{ subitem.title }}</ELink>
                                 </template>

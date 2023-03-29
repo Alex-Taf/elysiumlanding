@@ -85,24 +85,6 @@
                     ]
                 },
                 {
-                    "id": 6,
-                    "title": "Participants",
-                    "cols": [
-                        {
-                            "id": 1,
-                            "title": "Institutional funds" 
-                        },
-                        {
-                            "id": 2,
-                            "title": "Qualified Crypto Users" 
-                        },
-                        {
-                            "id": 3,
-                            "title": "Qualified crypto users, participants who have passed certification in the educational program of blockchain technologies <span style='font-weight: bold'>Manco Capac</span>" 
-                        }
-                    ]
-                },
-                {
                     "id": 7,
                     "title": "Vesting schedule and comments",
                     "cols": [

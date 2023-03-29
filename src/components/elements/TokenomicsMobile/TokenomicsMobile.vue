@@ -127,7 +127,7 @@
     </Modal>
     <div class="relative">
         <section class="relative flex flex-col items-center gap-y-10 xl:h-[700px] sm:h-[520px] w-full py-[40px] bg-[#141414] rounded-xl sm:px-[16px]">
-            <img class="absolute top-0 w-full bg-repeat" src="../../../assets/surikat-mobile.png" />
+            <img class="absolute top-0 w-full bg-repeat sm:h-full" src="../../../assets/surikat-mobile.png" />
             <h4 class="text-white font-bold">{{ t('tokenomics') }}</h4>
             <span class="whitespace-pre-wrap text-center text-white text-[17px] mb-5">
                 <p class="break-words">{{ t('emission') }}</p>
@@ -180,7 +180,7 @@
                     </Slide>
                 </Carousel>
             </div>
-            <div class="flex gap-x-2">
+            <div class="flex gap-x-2 z-10">
                 <button class="w-[11px] h-[11px] rounded-full transition-all"
                         :class="{ 'w-[31px] bg-white': state.currentSlide === 0, 'bg-gray-400': state.currentSlide !== 0 }"
                         @click="setSlide(0)">

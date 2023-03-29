@@ -30,16 +30,16 @@
             <div v-for="(row, rowIndex) in items.rows" :key="rowIndex" class="flex">
                 <div
                     :class="rowIndex === items.rows.length - 1 ? 'rounded-bl-[20px]' : '' "
-                    class="flex justify-center items-center border-2 border-t-0 p-4 min-h-[110px] w-[279px]"
+                    class="flex justify-center items-center border-2 border-t-0 p-4 min-h-fit w-[279px]"
                 >
-                    <span class="text-[17px] w-[239px]" v-html="row.title"></span>
+                    <span class="text-[17px] leading-[21px] -tracking-[0.2px] w-[239px]" v-html="row.title"></span>
                 </div>
                 <template v-for="(col, colIndex) in row.cols">
                     <div
-                        :class="rowIndex === items.rows.length - 1 && colIndex === 0 ? 'rounded-br-[20px]' : '' "
-                        class="flex justify-center items-center min-h-[110px] w-full border-2 border-l-0 border-t-0 p-4"
+                        :class="{ 'rounded-br-[20px]': rowIndex === items.rows.length - 1 && colIndex === 0, 'h-[150px]': rowIndex === items.rows.length - 1 }"
+                        class="flex justify-center items-center min-h-fit w-full border-2 border-l-0 border-t-0 p-4"
                     >
-                        <span class="text-[17px] text-center" v-html="col.title"></span>
+                        <span class="text-[17px] leading-[21px] -tracking-[0.2px] text-center" :class="{ 'w-[600px]': rowIndex === items.rows.length - 1 }" v-html="col.title"></span>
                     </div>
                 </template>
             </div>

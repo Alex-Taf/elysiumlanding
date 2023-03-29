@@ -1,6 +1,6 @@
 <script setup lang="ts">
     // Utils
-    import { reactive, computed, watchEffect } from "vue"
+    import { reactive, computed } from "vue"
     // Components
     import RenderOnBreakpoint from "../utils/RenderOnBreakpoint.vue"
     import Socials from "../elements/Socials/Socials.vue"
@@ -40,14 +40,14 @@
 </script>
 
 <template>
-    <header class="flex flex-col justify-center w-full">
+    <header class="xl:static sm:sticky sm:top-0 bg-white flex flex-col justify-center w-full sm:z-20">
         <section class="sm:hidden xl:block h-[44px] w-full border-b-2 border-[#DFE0E1]">
             <section class="flex items-center justify-between h-[44px] w-full max-w-container m-auto">
                 <LangSwitcher />
                 <Socials :items="socials.items" />
             </section>
         </section>
-        <section class="py-4 px-11 w-full shadow-md">
+        <section class="py-4 px-11 w-full shadow-md z-10">
             <section class="flex justify-between items-center max-w-container m-auto">
                 <router-link to="/">
                     <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
