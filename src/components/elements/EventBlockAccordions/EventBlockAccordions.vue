@@ -13,7 +13,7 @@
 
 <template>
     <section class="flex flex-col gap-y-4">
-        <div v-for="row in items.rows" class="min-w-[328px] border-4 rounded-[10px] py-5">
+        <div v-for="row in items.rows" class="min-w-[328px] border-2 rounded-[10px]">
             <vue-collapsible-panel-group :expanded="true" base-color="#DBDBDB">
                 <vue-collapsible-panel>
                     <template #title>
