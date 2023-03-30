@@ -218,7 +218,7 @@
             "rows": [
                 {
                     "id": 1,
-                    "title": "Количество токенов <span style='font-weight: bold'>ELYS</span>, выставленных на Pre-Sale",
+                    "title": "Доступные токены <span style='font-weight: bold'>ELYS</span>",
                     "cols": [
                         {
                             "id": 1,
@@ -228,55 +228,55 @@
                 },
                 {
                     "id": 2,
-                    "title": "Минимальный объем обмена stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span> на токены <span style='font-weight: bold'>ELYS</span>",
+                    "title": "Распределение токенов",
                     "cols": [
                         {
                             "id": 1,
-                            "title": "10 000 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "680'000'000 <span style='font-weight: bold'>ELYS</span>" 
                         },
                         {
                             "id": 2,
-                            "title": "3 000 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "300'000'000 <span style='font-weight: bold'>ELYS</span>" 
                         },
                         {
                             "id": 3,
-                            "title": "1 000 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "220'000'000 <span style='font-weight: bold'>ELYS</span>" 
                         }
                     ]
                 },
                 {
                     "id": 3,
-                    "title": "Эквивалентость 1 токена <span style='font-weight: bold'>ELYS</span> к stablecoin <span style='font-weight: bold'>(USDT, USDC, BUSD)</span>",
+                    "title": "Минимальный объём обмена",
                     "cols": [
                         {
                             "id": 1,
-                            "title": "0,0005 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "5'000 <span style='font-weight: bold'>USDT/USDC</span>" 
                         },
                         {
                             "id": 2,
-                            "title": "0,0007 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "3'000 <span style='font-weight: bold'>USDT/USDC</span>" 
                         },
                         {
                             "id": 3,
-                            "title": "0,001 <span style='font-weight: bold'>USDT</span>" 
+                            "title": "1'000 <span style='font-weight: bold'>USDT/USDC</span>" 
                         }
                     ]
                 },
                 {
                     "id": 4,
-                    "title": "Объем предложения токенов <span style='font-weight: bold'>ELYS</span>",
+                    "title": "Параметры обмена",
                     "cols": [
                         {
                             "id": 1,
-                            "title": "680 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                            "title": "1 <span style='font-weight: bold'>ELYS</span> = 0,0005 <br><span style='font-weight: bold'>USDT/USDC</span>" 
                         },
                         {
                             "id": 2,
-                            "title": "300 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                            "title": "1 <span style='font-weight: bold'>ELYS</span> = 0,0008 <br><span style='font-weight: bold'>USDT/USDC</span>" 
                         },
                         {
                             "id": 3,
-                            "title": "220 000 000 <span style='font-weight: bold'>ELYS</span>" 
+                            "title": "1 <span style='font-weight: bold'>ELYS</span> = 0,001 <br><span style='font-weight: bold'>USDT/USDC</span>" 
                         }
                     ]
                 },
@@ -286,25 +286,25 @@
                     "cols": [
                         {
                             "id": 1,
-                            "title": "До полного выкупа" 
+                            "title": "4 месяца" 
                         },
                         {
                             "id": 2,
-                            "title": "1 месяц. Остаточнные токены перейдут в <span style='font-weight: bold'>Round N°3</span>" 
+                            "title": "4 месяца" 
                         },
                         {
                             "id": 3,
-                            "title": "До полного выкупа" 
+                            "title": "4 месяца" 
                         }
                     ]
                 },
                 {
                     "id": 7,
-                    "title": "График наделения полномочиями и комментарии",
+                    "title": "График вестинга",
                     "cols": [
                         {
                             "id": 1,
-                            "title": "Участники Pre-Sale получат 25% токенов ELYS сразу при проведении операции обмена. Остаточный объем своих токенов участники будут получать – 15% каждый квартал, от даты приобретения токенов." 
+                            "title": "Участники <span style='font-weight: bold'>Pre-Exchange</span> смогут надёжно приобрести токены, через смарт-контракт. При проведении операции обмена, участники получат только - 25% токенов от общего положенного объёма. Смарт-контракт разблокирует остаточные токены в объёме - 15% каждый квартал (<span style='font-style: italic'>всего 5 кварталов</span>)." 
                         }
                     ]
                 }
