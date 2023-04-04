@@ -1,6 +1,7 @@
 <script setup lang="ts">
     // Utils
-    import { reactive, computed } from "vue"
+    import { reactive, computed, onMounted, ref, watchEffect } from "vue"
+    import { useIntersectionObserver } from "../../utils"
     // Components
     import RenderOnBreakpoint from "../utils/RenderOnBreakpoint.vue"
     import Socials from "../elements/Socials/Socials.vue"
@@ -16,6 +17,9 @@
 
     const { locale } = useI18n({ useScope: 'global' })
 
+    const observer = useIntersectionObserver()
+    const isObserved = ref(false)
+    
     const menuSet = computed(() => menu.items[String(locale.value)])
 
     const state = reactive({
@@ -37,31 +41,41 @@
         document.documentElement.style.overflowY = 'scroll'
         state.menuOpen = Boolean(e)
     }
+
+    onMounted(() => {
+        observer.observeElement(document.getElementById('observed-el'))
+    })
+
+    window.onscroll = () => {
+        isObserved.value = !!observer.getEntryElement(true)?.getAttribute('in-entry-ratio') || false
+    }
 </script>
 
 <template>
-    <header class="xl:static sm:sticky sm:top-0 bg-white flex flex-col justify-center w-full sm:z-20">
-        <section class="sm:hidden xl:block h-[44px] w-full border-b-2 border-[#DFE0E1]">
+    <header class="bg-white flex flex-col justify-center w-full sm:z-20">
+        <section class="h-[44px] w-full border-b-2 border-[#DFE0E1]">
             <section class="flex items-center justify-between h-[44px] w-full max-w-container m-auto">
                 <LangSwitcher />
-                <Socials :items="socials.items" />
+                <Socials class="sm:hidden xl:block" :items="socials.items" />
             </section>
         </section>
-        <section class="py-4 px-11 w-full shadow-md z-10">
-            <section class="flex justify-between items-center max-w-container m-auto">
-                <router-link to="/">
-                    <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
-                </router-link>
-                <RenderOnBreakpoint :px="1280">
-                    <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
-                </RenderOnBreakpoint>
-                <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
-                    <DesktopMenu :items="menuSet" />
-                </RenderOnBreakpoint>
+        <section :class="{ 'sm:fixed sm:w-full sm:bg-white sm:top-0': isObserved }">
+            <section class="py-4 px-11 w-full shadow-md z-10">
+                <section class="flex justify-between items-center max-w-container m-auto">
+                    <router-link to="/">
+                        <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
+                    </router-link>
+                    <RenderOnBreakpoint :px="1280">
+                        <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
+                    </RenderOnBreakpoint>
+                    <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
+                        <DesktopMenu :items="menuSet" />
+                    </RenderOnBreakpoint>
+                </section>
             </section>
+            <RenderOnBreakpoint :px="1280">
+                <MobileMenu :menu-open="state.menuOpen" :items="menuSet" @close="closeMenu" />
+            </RenderOnBreakpoint>
         </section>
-        <RenderOnBreakpoint :px="1280">
-            <MobileMenu :menu-open="state.menuOpen" :items="menuSet" @close="closeMenu" />
-        </RenderOnBreakpoint>
     </header>
 </template>

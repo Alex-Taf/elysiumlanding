@@ -24,7 +24,7 @@
 <template>
     <section class="flex sm:flex-col xl:flex-row xl:max-w-container m-auto" id="about-token">
         <section class="flex flex-col xl:justify-between sm:gap-y-4 w-full py-[72px] px-[48px]">
-            <span class="bg-skin-title text-white text-[17px] rounded-[16px] py-[5px] px-[12px] w-fit">{{ t('token') }}</span>
+            <span id="observed-el" class="bg-skin-title text-white text-[17px] rounded-[16px] py-[5px] px-[12px] w-fit">{{ t('token') }}</span>
             <h2 class="text-4xl font-black">{{ t('aboutToken') }}</h2>
             <span>
                 <span class="sm:text-sm xl:text-[17px] text-skin-text">

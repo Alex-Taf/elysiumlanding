@@ -12,6 +12,34 @@ export const useDeviceWidth: IUseDeviceWidth = () => ({
         cw >= pxMin && cw <= pxMax   
 })
 
+export const useIntersectionObserver = () => ({
+    observeElement: (element: HTMLElement) => {
+        const attribute = {
+            name: 'in-entry-ratio',
+            value: 'true',
+            negative: 'false'
+        }
+
+        const o = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.setAttribute(attribute.name, attribute.negative)
+                } else {
+                    entry.target.setAttribute(attribute.name, attribute.value)
+                }
+            })
+        })
+
+        if (element) {
+            element.setAttribute(attribute.name, attribute.negative)
+            o.observe(element)
+        }
+    },
+    getEntryElement: (entryStatus: boolean) => {
+        return document.querySelector(`[in-entry-ratio="${entryStatus}"]`) || null
+    }
+})
+
 export const copyToClipboard: ICopyToClipboard = (text) => {
     navigator.clipboard.writeText(text)
 }

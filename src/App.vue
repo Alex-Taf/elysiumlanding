@@ -13,7 +13,7 @@
     }
 
     #app {
-        overflow: visible;
+        overflow: hidden;
     }
 
     .vs__dropdown-toggle {
