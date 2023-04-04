@@ -108,6 +108,10 @@
         @apply text-skin-title
     }
 
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+
     details[open] .detailer-icon--open {
         display: block;
     }

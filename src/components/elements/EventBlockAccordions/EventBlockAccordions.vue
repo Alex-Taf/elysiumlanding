@@ -17,7 +17,7 @@
             <vue-collapsible-panel-group :expanded="true" base-color="#DBDBDB">
                 <vue-collapsible-panel>
                     <template #title>
-                        <span class="text-[17px] w-[239px]" v-html="row.title"></span>
+                        <span class="text-[17px] w-full" v-html="row.title"></span>
                     </template>
                     <template #content>
                         <div v-for="(col, index) in row.cols" class="border-b border-t py-4">
@@ -36,3 +36,9 @@
         </div>
     </section>
 </template>
+
+<style>
+.vcp__header {
+    height: 100% !important;
+}
+</style>

@@ -55,7 +55,7 @@
 <template>
     <div @click="state.showDesc = !state.showDesc" class="relative flex flex-col xl:w-[407px] xl:h-[553px] sm:w-[328px] sm:h-[443px]
                 bg-white shadow-sm rounded-xl cursor-pointer hover:scale-105 transition-transform">
-        <div class="absolute top-0 flex flex-col justify-between w-full xl:h-[450px] sm:h-[363px] p-9 transition-opacity ease-in-out duration-400"
+        <div class="absolute top-0 flex flex-col justify-between w-full xl:h-[450px] sm:h-[373px] p-9 transition-opacity ease-in-out duration-400"
             :class="{ 'visible opacity-100': state.showDesc, 'invisible opacity-0': !state.showDesc }">
             <div class="absolute top-0 left-0 w-full h-full bg-skin-blue opacity-75 rounded-tl-xl rounded-tr-xl"></div>
             <span class="xl:text-[17px] sm:text-[14px] sm:leading-4 xl:leading-[21px] tracking-[-0.2px] text-white z-10">
