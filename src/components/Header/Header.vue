@@ -1,6 +1,6 @@
 <script setup lang="ts">
     // Utils
-    import { reactive, computed, onMounted, ref, watchEffect } from "vue"
+    import { reactive, computed, onMounted, ref } from "vue"
     import { useIntersectionObserver } from "../../utils"
     // Components
     import RenderOnBreakpoint from "../utils/RenderOnBreakpoint.vue"
@@ -59,18 +59,24 @@
                 <Socials class="sm:hidden xl:block" :items="socials.items" />
             </section>
         </section>
-        <section :class="{ 'sm:fixed sm:w-full sm:bg-white sm:top-0': isObserved }">
-            <section class="py-4 px-11 w-full shadow-md z-10">
+        <section :class="{ 'fixed w-full bg-white top-0 sm:h-10 xl:h-14': isObserved }">
+            <section class="px-11 w-full shadow-md z-10 h-full" :class="{ 'py-4': !isObserved }">
                 <section class="flex justify-between items-center max-w-container m-auto">
                     <router-link to="/">
-                        <img class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]" src="../../assets/logo.png">
+                        <img
+                            class="sm:w-[85px] sm:h-[32px] xl:w-[165px] xl:h-[62px]"
+                            :class="{ 'sm:w-[65px] sm:h-[28px] xl:w-[125px] xl:h-[48px] mt-1': isObserved }"
+                            src="../../assets/logo.png"
+                        >
                     </router-link>
-                    <RenderOnBreakpoint :px="1280">
-                        <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
-                    </RenderOnBreakpoint>
-                    <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
-                        <DesktopMenu :items="menuSet" />
-                    </RenderOnBreakpoint>
+                    <section class="mt-1">
+                        <RenderOnBreakpoint :px="1280">
+                            <menu-button @is-open="getMenuStatement" :open="state.menuOpen" />
+                        </RenderOnBreakpoint>
+                        <RenderOnBreakpoint :pxMin="1280" :pxMax="4000">
+                            <DesktopMenu :items="menuSet" />
+                        </RenderOnBreakpoint>
+                    </section>
                 </section>
             </section>
             <RenderOnBreakpoint :px="1280">
